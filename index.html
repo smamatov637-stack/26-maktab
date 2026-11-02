@@ -1,910 +1,1192 @@
 <!DOCTYPE html>
-<html lang="uz" data-theme="light">
+<html lang="uz" data-theme="light" data-font-scale="md" data-grayscale="false">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════════════════
        SEO — ASOSIY META TEGLAR
-  ═══════════════════════════════════════════ -->
+  ═══════════════════════════════════════════════════════════════════ -->
   <title>Marg'ilon 26-son Maktab | Farg'ona viloyati umumiy o'rta ta'lim maktabi</title>
 
   <meta name="description"
-        content="Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining rasmiy veb-sayti. O'quvchilar, o'qituvchilar va maktab haqida to'liq ma'lumot." />
+        content="Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining rasmiy axborot portali. O'quvchilar, pedagogik jamoa, dars va qo'ng'iroqlar jadvali, to'garaklar, yangiliklar va onlayn murojaat." />
 
   <meta name="keywords"
-        content="Marg'ilon 26-maktab, Farg'ona viloyati maktab, 26-son maktab Marg'ilon, umumiy o'rta ta'lim, Marg'ilon shahri maktab, Farg'ona maktab, O'zbekiston maktab" />
+        content="Marg'ilon 26-maktab, Farg'ona viloyati maktab, 26-son maktab Marg'ilon, umumiy o'rta ta'lim, Marg'ilon shahri maktab, eMaktab, O'zbekiston maktablari" />
 
   <meta name="robots" content="index, follow" />
   <meta name="author" content="26-son Umumiy o'rta ta'lim maktabi, Marg'ilon" />
-  <meta name="language" content="Uzbek" />
-  <meta name="revisit-after" content="7 days" />
+  <meta name="theme-color" content="#1e40af" />
 
-  <!-- Canonical URL — o'zingizning domeningizni yozing -->
-  <link rel="canonical" href="https://maktab26margilan.uz/" />
+  <link rel="canonical" href="https://smamatov637-stack.github.io/26-maktab/" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/emblem.svg" />
 
-  <!-- ═══════════════════════════════════════════
-       OPEN GRAPH (Facebook, Telegram, WhatsApp)
-  ═══════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════════════════════════
+       OPEN GRAPH (Telegram, Facebook, WhatsApp ulashish uchun)
+  ═══════════════════════════════════════════════════════════════════ -->
   <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://maktab26margilan.uz/" />
-  <meta property="og:title"       content="Marg'ilon 26-son Maktab — Rasmiy sayt" />
-  <meta property="og:description" content="Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining rasmiy veb-sayti." />
+  <meta property="og:url"         content="https://smamatov637-stack.github.io/26-maktab/" />
+  <meta property="og:title"       content="Marg'ilon 26-son Maktab — Rasmiy axborot portali" />
+  <meta property="og:description" content="Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining rasmiy veb-portali: ko'rsatkichlar, jadval, to'garaklar, yangiliklar va bog'lanish." />
+  <meta property="og:image"       content="https://i.ibb.co/sdQpJkkP/photo-2-2026-02-18-11-37-07.jpg" />
   <meta property="og:locale"      content="uz_UZ" />
   <meta property="og:site_name"   content="26-son Maktab Marg'ilon" />
 
-  <!-- ═══════════════════════════════════════════
-       GOOGLE STRUCTURED DATA (JSON-LD)
-       Google bu ma'lumotlarni qidiruv natijalarida ko'rsatadi
-  ═══════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════════════════════════
+       GOOGLE STRUCTURED DATA (Schema.org School + FAQPage)
+  ═══════════════════════════════════════════════════════════════════ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "School",
-    "name": "Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi",
-    "alternateName": "Marg'ilon 26-maktab",
-    "description": "Farg'ona viloyati Marg'ilon shahridagi 26-son umumiy o'rta ta'lim maktabi. Sifatli ta'lim va zamonaviy o'quv muhiti.",
-    "url": "https://maktab26margilan.uz/",
-    "telephone": "",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Marg'ilon shahri",
-      "addressLocality": "Marg'ilon",
-      "addressRegion": "Farg'ona viloyati",
-      "addressCountry": "UZ"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.4765,
-      "longitude": 71.7380
-    },
-    "openingHours": "Mo-Sa 08:00-17:00",
-    "inLanguage": "uz",
-    "foundingDate": "1990",
-    "areaServed": "Marg'ilon shahri, Farg'ona viloyati",
-    "educationalLevel": "Umumiy o'rta ta'lim"
+    "@graph": [
+      {
+        "@type": "School",
+        "name": "Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi",
+        "alternateName": "Marg'ilon 26-maktab",
+        "description": "Farg'ona viloyati Marg'ilon shahridagi 26-son umumiy o'rta ta'lim maktabi. Sifatli ta'lim va zamonaviy o'quv muhiti.",
+        "url": "https://smamatov637-stack.github.io/26-maktab/",
+        "telephone": "+998-73-253-26-00",
+        "email": "info@maktab26margilan.uz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Marg'ilon shahri",
+          "addressLocality": "Marg'ilon",
+          "addressRegion": "Farg'ona viloyati",
+          "addressCountry": "UZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.4765,
+          "longitude": 71.7380
+        },
+        "openingHours": "Mo-Sa 08:00-17:00",
+        "inLanguage": ["uz", "ru"],
+        "foundingDate": "1990",
+        "numberOfStudents": 936,
+        "areaServed": "Marg'ilon shahri, Farg'ona viloyati",
+        "educationalLevel": "Umumiy o'rta ta'lim (1–11-sinflar)"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "1-sinfga qabul uchun hujjatlar qanday topshiriladi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1-sinfga qabul har yili 20-iyundan boshlab Maktabgacha va maktab ta'limi vazirligining my.maktab.uz elektron platformasi orqali yoki maktab qabul komissiyasiga murojaat qilish orqali amalga oshiriladi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Maktabdagi fan va sport to'garaklari pullikmi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yo'q, maktab qoshida faoliyat yurituvchi barcha fan, IT va sport to'garaklari o'quvchilar uchun mutlaqo bepul olib boriladi."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
-  <!-- ═══════════════════════════════════════════
-       FAVICON
-  ═══════════════════════════════════════════ -->
-  <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>" />
-
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Lotin va Kirill yozuvlarini mukammal qo'llab-quvvatlaydi) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 
-  <style>
-    :root {
-      --bg-primary:   #f4f6f9;
-      --bg-card:      #ffffff;
-      --bg-header:    #ffffff;
-      --border:       #e2e8f0;
-      --text-primary: #0f172a;
-      --text-muted:   #94a3b8;
-      --accent:       #1e40af;
-      --accent-soft:  #dbeafe;
-      --accent-hover: #1d3a9e;
-      --danger:       #dc2626;
-      --shadow-sm:    0 1px 3px rgba(0,0,0,.06);
-      --shadow-md:    0 4px 16px rgba(0,0,0,.08);
-      --shadow-lg:    0 10px 32px rgba(0,0,0,.14);
-      --radius:       12px;
-      --radius-sm:    8px;
-      --tr:           .22s cubic-bezier(.4,0,.2,1);
-    }
-    [data-theme="dark"] {
-      --bg-primary:   #0b0f1a;
-      --bg-card:      #1a2236;
-      --bg-header:    #111827;
-      --border:       #1e2d45;
-      --text-primary: #e8edf5;
-      --text-muted:   #4b5a73;
-      --accent:       #3b82f6;
-      --accent-soft:  #1e3a5f;
-      --accent-hover: #60a5fa;
-      --shadow-sm:    0 1px 3px rgba(0,0,0,.3);
-      --shadow-md:    0 4px 16px rgba(0,0,0,.4);
-      --shadow-lg:    0 10px 32px rgba(0,0,0,.55);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Outfit', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      min-height: 100vh;
-      transition: background var(--tr), color var(--tr);
-    }
-
-    /* HEADER */
-    header {
-      position: sticky; top: 0; z-index: 300;
-      background: var(--bg-header);
-      border-bottom: 1px solid var(--border);
-      box-shadow: var(--shadow-sm);
-      transition: background var(--tr), border-color var(--tr);
-    }
-    .header-inner {
-      max-width: 1300px; margin: 0 auto;
-      padding: 0 24px; height: 64px;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    }
-    .school-brand { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
-    .brand-icon {
-      width: 38px; height: 38px; background: var(--accent);
-      border-radius: var(--radius-sm); display: grid; place-items: center;
-      flex-shrink: 0; font-size: 18px;
-    }
-    .brand-title {
-      font-family: 'DM Serif Display', serif; font-size: 15px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.3;
-    }
-    .brand-sub { font-size: 11px; color: var(--text-muted); }
-    .header-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-
-    .btn-theme {
-      width: 40px; height: 40px; border-radius: var(--radius-sm);
-      border: 1px solid var(--border); background: var(--bg-card);
-      color: var(--text-muted); cursor: pointer;
-      display: grid; place-items: center; font-size: 16px; transition: all var(--tr);
-    }
-    .btn-theme:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
-    .btn-login {
-      padding: 0 18px; height: 40px; border-radius: var(--radius-sm);
-      border: 1px solid var(--accent); background: transparent; color: var(--accent);
-      font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600;
-      cursor: pointer; transition: all var(--tr);
-    }
-    .btn-login:hover { background: var(--accent); color: #fff; }
-    .btn-logout {
-      padding: 0 16px; height: 40px; border-radius: var(--radius-sm);
-      border: 1px solid var(--danger); background: transparent; color: var(--danger);
-      font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600;
-      cursor: pointer; transition: all var(--tr);
-    }
-    .btn-logout:hover { background: var(--danger); color: #fff; }
-
-    /* MAIN */
-    main { max-width: 1300px; margin: 0 auto; padding: 32px 24px 64px; }
-
-    /* SEO uchun muhim — semantik sarlavha */
-    .page-header { margin-bottom: 32px; }
-    .page-title {
-      font-family: 'DM Serif Display', serif; font-size: 26px;
-      font-weight: 400; margin-bottom: 6px;
-    }
-    .page-desc { font-size: 14px; color: var(--text-muted); }
-
-    .section-label {
-      font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
-      text-transform: uppercase; color: var(--text-muted); margin-bottom: 16px;
-    }
-
-    /* STATISTIKA */
-    .stats-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 16px; margin-bottom: 40px;
-    }
-    @media (max-width: 900px) { .stats-grid { grid-template-columns: repeat(2,1fr); } }
-    @media (max-width: 500px) { .stats-grid { grid-template-columns: 1fr; } }
-
-    .stat-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 22px 20px 18px;
-      position: relative; overflow: hidden;
-      transition: box-shadow var(--tr), transform var(--tr), border-color var(--tr);
-      box-shadow: var(--shadow-sm); animation: fadeUp .4s ease both;
-    }
-    .stat-card:nth-child(1){animation-delay:.05s}
-    .stat-card:nth-child(2){animation-delay:.10s}
-    .stat-card:nth-child(3){animation-delay:.15s}
-    .stat-card:nth-child(4){animation-delay:.20s}
-    .stat-card::before {
-      content:''; position:absolute; top:0;left:0;right:0; height:3px;
-      background:var(--card-accent,var(--accent));
-      border-radius:var(--radius) var(--radius) 0 0;
-      transform:scaleX(0); transform-origin:left; transition:transform var(--tr);
-    }
-    .stat-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); border-color:var(--card-accent,var(--accent)); }
-    .stat-card:hover::before { transform:scaleX(1); }
-    .stat-card.blue   {--card-accent:#3b82f6}
-    .stat-card.green  {--card-accent:#10b981}
-    .stat-card.amber  {--card-accent:#f59e0b}
-    .stat-card.purple {--card-accent:#8b5cf6}
-    .stat-icon { width:40px;height:40px;border-radius:var(--radius-sm);display:grid;place-items:center;font-size:18px;margin-bottom:14px;transition:transform var(--tr); }
-    .stat-card:hover .stat-icon { transform:scale(1.1); }
-    .stat-card.blue   .stat-icon {background:#eff6ff;color:#3b82f6}
-    .stat-card.green  .stat-icon {background:#ecfdf5;color:#10b981}
-    .stat-card.amber  .stat-icon {background:#fffbeb;color:#f59e0b}
-    .stat-card.purple .stat-icon {background:#f5f3ff;color:#8b5cf6}
-    [data-theme="dark"] .stat-card.blue   .stat-icon {background:#1e3a5f;color:#60a5fa}
-    [data-theme="dark"] .stat-card.green  .stat-icon {background:#064e3b;color:#34d399}
-    [data-theme="dark"] .stat-card.amber  .stat-icon {background:#451a03;color:#fcd34d}
-    [data-theme="dark"] .stat-card.purple .stat-icon {background:#3b0764;color:#c4b5fd}
-    .stat-value { font-size:30px;font-weight:700;line-height:1;margin-bottom:6px;font-variant-numeric:tabular-nums; }
-    .stat-label { font-size:12.5px;color:var(--text-muted);font-weight:500; }
-
-    /* XARITA */
-    .map-panel {
-      background:var(--bg-card);border:1px solid var(--border);
-      border-radius:var(--radius);box-shadow:var(--shadow-sm);
-      overflow:hidden;margin-bottom:40px;transition:box-shadow var(--tr);
-    }
-    .map-panel:hover { box-shadow:var(--shadow-md); }
-    .panel-head { padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px; }
-    .panel-head-title { font-size:13px;font-weight:600; }
-    .panel-body { padding:18px; }
-    #map { width:100%;height:300px;border-radius:var(--radius-sm);background:var(--bg-primary); }
-    .map-fallback {
-      width:100%;height:300px;border-radius:var(--radius-sm);
-      background:var(--bg-primary);border:1px solid var(--border);
-      display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--text-muted);
-    }
-    .map-fallback .ico { font-size:36px; }
-    .map-fallback p { font-size:13px;text-align:center; }
-    .map-fallback a {
-      display:inline-flex;align-items:center;gap:6px;padding:8px 18px;
-      border-radius:var(--radius-sm);background:var(--accent);color:#fff;
-      font-size:13px;font-weight:600;text-decoration:none;transition:all var(--tr);
-    }
-    .map-fallback a:hover { background:var(--accent-hover);transform:translateY(-1px); }
-    .map-info { margin-top:10px;font-size:12px;color:var(--text-muted); }
-
-    /* GALEREYA */
-    .gallery-section { margin-bottom:40px; }
-    .no-image-state {
-      height:280px;display:flex;flex-direction:column;align-items:center;
-      justify-content:center;gap:12px;color:var(--text-muted);
-      background:var(--bg-card);border:2px dashed var(--border);border-radius:var(--radius);
-    }
-    .no-image-state .ico { font-size:40px; }
-    .no-image-state p { font-size:14px;text-align:center;padding:0 20px; }
-    .slider-wrap {
-      position:relative;width:100%;background:#000;
-      border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);
-    }
-    .slider-track { display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform; }
-    .slide { min-width:100%; }
-    .slide img { width:100%;height:460px;object-fit:cover;display:block;user-select:none;pointer-events:none; }
-    @media (max-width:700px) { .slide img { height:240px; } }
-    .slider-btn {
-      position:absolute;top:50%;transform:translateY(-50%);
-      width:46px;height:46px;border-radius:50%;
-      background:rgba(0,0,0,.45);backdrop-filter:blur(6px);
-      border:1.5px solid rgba(255,255,255,.2);color:#fff;font-size:20px;
-      cursor:pointer;display:grid;place-items:center;
-      transition:all var(--tr);z-index:10;opacity:0;pointer-events:none;
-    }
-    .slider-wrap:hover .slider-btn { opacity:1;pointer-events:all; }
-    .slider-btn:hover { background:rgba(0,0,0,.72);border-color:rgba(255,255,255,.45); }
-    .slider-btn.prev { left:14px; }
-    .slider-btn.next { right:14px; }
-    .slide-counter {
-      position:absolute;bottom:14px;right:14px;
-      background:rgba(0,0,0,.52);backdrop-filter:blur(4px);
-      color:#fff;font-size:12px;font-weight:600;padding:4px 11px;border-radius:20px;
-    }
-    .slider-dots { display:flex;justify-content:center;gap:6px;padding:12px 0 6px; }
-    .dot { width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;border:none;transition:all var(--tr); }
-    .dot.active { background:var(--accent);transform:scale(1.35); }
-    .thumbs-row { display:flex;gap:10px;margin-top:12px;flex-wrap:wrap; }
-    .thumb-item {
-      position:relative;width:90px;height:66px;border-radius:var(--radius-sm);
-      overflow:hidden;cursor:pointer;border:2.5px solid transparent;flex-shrink:0;
-      transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr);
-    }
-    .thumb-item:hover { transform:translateY(-2px);box-shadow:var(--shadow-md); }
-    .thumb-item.active { border-color:var(--accent); }
-    .thumb-item img { width:100%;height:100%;object-fit:cover;display:block; }
-
-    /* ADMIN */
-    #admin-section { display:none; }
-    #admin-section.visible { display:block; }
-    .admin-panel {
-      background:var(--bg-card);border:1px solid var(--border);
-      border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;
-    }
-    .admin-panel-head {
-      padding:16px 22px;border-bottom:1px solid var(--border);
-      display:flex;align-items:center;gap:12px;background:var(--accent-soft);
-    }
-    .admin-badge {
-      font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
-      color:var(--accent);border:1.5px solid var(--accent);border-radius:20px;padding:2px 10px;
-    }
-    .admin-body { padding:26px 22px; }
-    .admin-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:28px; }
-    @media (max-width:600px) { .admin-grid { grid-template-columns:1fr; } }
-    .form-label { display:block;font-size:12px;font-weight:600;color:var(--text-muted);margin-bottom:6px; }
-    .form-input {
-      width:100%;padding:10px 14px;background:var(--bg-primary);
-      border:1.5px solid var(--border);border-radius:var(--radius-sm);
-      color:var(--text-primary);font-family:'Outfit',sans-serif;font-size:14px;
-      outline:none;transition:border-color var(--tr),box-shadow var(--tr);
-    }
-    .form-input:focus { border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.12); }
-    .upload-zone {
-      border:2px dashed var(--border);border-radius:var(--radius-sm);
-      padding:22px;text-align:center;cursor:pointer;
-      transition:all var(--tr);position:relative;background:var(--bg-primary);margin-bottom:16px;
-    }
-    .upload-zone:hover { border-color:var(--accent);background:var(--accent-soft); }
-    .upload-zone input[type="file"] { position:absolute;inset:0;opacity:0;cursor:pointer; }
-    .upload-zone .ico { font-size:26px;display:block;margin-bottom:6px; }
-    .upload-zone p { font-size:13px;color:var(--text-muted); }
-    .upload-zone strong { color:var(--accent); }
-    .img-count-badge {
-      display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted);
-      background:var(--bg-primary);border:1px solid var(--border);border-radius:20px;
-      padding:4px 12px;margin-bottom:14px;
-    }
-    .admin-gallery-grid { display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px; }
-    .admin-thumb {
-      position:relative;width:100px;height:74px;border-radius:var(--radius-sm);
-      overflow:hidden;border:1.5px solid var(--border);transition:border-color var(--tr);
-    }
-    .admin-thumb:hover { border-color:var(--danger); }
-    .admin-thumb img { width:100%;height:100%;object-fit:cover;display:block; }
-    .admin-del-btn {
-      position:absolute;top:4px;right:4px;width:22px;height:22px;border-radius:50%;
-      background:rgba(220,38,38,.9);color:#fff;border:none;font-size:11px;font-weight:700;
-      cursor:pointer;display:grid;place-items:center;opacity:0;transition:all var(--tr);
-    }
-    .admin-thumb:hover .admin-del-btn { opacity:1; }
-    .admin-del-btn:hover { background:#b91c1c;transform:scale(1.1); }
-    .btn-save {
-      padding:11px 26px;background:var(--accent);color:#fff;border:none;
-      border-radius:var(--radius-sm);font-family:'Outfit',sans-serif;font-size:13.5px;
-      font-weight:600;cursor:pointer;transition:all var(--tr);
-      display:inline-flex;align-items:center;gap:8px;
-    }
-    .btn-save:hover { background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 12px rgba(30,64,175,.3); }
-
-    /* MODAL */
-    .modal-overlay {
-      position:fixed;inset:0;background:rgba(0,0,0,.55);
-      backdrop-filter:blur(4px);z-index:500;
-      display:flex;align-items:center;justify-content:center;
-      opacity:0;pointer-events:none;transition:opacity var(--tr);
-    }
-    .modal-overlay.active { opacity:1;pointer-events:all; }
-    .modal {
-      background:var(--bg-card);border:1px solid var(--border);border-radius:16px;
-      padding:32px;width:100%;max-width:380px;margin:16px;
-      box-shadow:var(--shadow-lg);position:relative;
-      transform:translateY(20px) scale(.97);transition:transform var(--tr);
-    }
-    .modal-overlay.active .modal { transform:translateY(0) scale(1); }
-    .modal-icon { width:52px;height:52px;background:var(--accent-soft);border-radius:14px;display:grid;place-items:center;font-size:24px;margin:0 auto 18px; }
-    .modal-title { font-family:'DM Serif Display',serif;font-size:22px;text-align:center;margin-bottom:5px; }
-    .modal-sub { font-size:13px;color:var(--text-muted);text-align:center;margin-bottom:22px; }
-    .modal-fg { margin-bottom:16px; }
-    .error-msg { font-size:12px;color:var(--danger);margin-top:4px;display:none; }
-    .error-msg.show { display:block; }
-    .btn-primary {
-      width:100%;padding:12px;background:var(--accent);color:#fff;border:none;
-      border-radius:var(--radius-sm);font-family:'Outfit',sans-serif;font-size:14px;
-      font-weight:600;cursor:pointer;transition:all var(--tr);
-    }
-    .btn-primary:hover { background:var(--accent-hover);transform:translateY(-1px); }
-    .btn-close-modal {
-      position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;
-      border:1px solid var(--border);background:var(--bg-card);
-      color:var(--text-muted);cursor:pointer;display:grid;place-items:center;font-size:13px;transition:all var(--tr);
-    }
-    .btn-close-modal:hover { color:var(--text-primary); }
-
-    /* TOAST */
-    .toast {
-      position:fixed;bottom:26px;right:26px;background:var(--accent);color:#fff;
-      padding:12px 20px;border-radius:10px;font-size:13.5px;font-weight:500;
-      box-shadow:var(--shadow-lg);z-index:999;opacity:0;transform:translateY(14px);
-      transition:all var(--tr);pointer-events:none;
-    }
-    .toast.show { opacity:1;transform:translateY(0); }
-
-    /* FOOTER */
-    footer {
-      border-top:1px solid var(--border);padding:24px;
-      text-align:center;font-size:12px;color:var(--text-muted);
-      line-height:1.8;
-    }
-    footer address { font-style:normal;margin-top:4px; }
-
-    .hidden { display:none !important; }
-    @keyframes fadeUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
-  </style>
+  <!-- Portal Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
-
-<!-- ═══════════════════════════════════════════════════
-     BODY — Semantik HTML teglar (Google uchun muhim)
-═══════════════════════════════════════════════════ -->
 <body>
 
-<!-- HEADER -->
-<header role="banner">
-  <div class="header-inner">
-    <div class="school-brand">
-      <div class="brand-icon" aria-hidden="true">🏫</div>
-      <div>
-        <h1 class="brand-title">Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi</h1>
-        <p class="brand-sub">Rasmiy axborot portali</p>
+  <!-- ═══════════════════════════════════════════════════════════════════
+       1. YUQORI RASMIY PANEL (TOPBAR)
+  ═══════════════════════════════════════════════════════════════════ -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="ministry-badge">
+        <span class="uz-flag-bar" aria-hidden="true"></span>
+        <span data-i18n="ministry_line">O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligi · Marg'ilon shahar MMTB</span>
       </div>
-    </div>
-    <div class="header-actions">
-      <button class="btn-theme" id="themeBtn" aria-label="Mavzuni o'zgartirish">🌙</button>
-      <button class="btn-login"  id="loginBtn" aria-label="Admin kirish">🔐 Kirish</button>
-      <button class="btn-logout hidden" id="logoutBtn">Chiqish</button>
-    </div>
-  </div>
-</header>
 
-<!-- ASOSIY MAZMUN -->
-<main role="main">
-
-  <!-- Sarlavha -->
-  <div class="page-header">
-    <h2 class="page-title">Boshqaruv paneli</h2>
-    <p class="page-desc">Maktab faoliyati to'g'risidagi umumiy ma'lumotlar — 2025-yil</p>
-  </div>
-
-  <!-- STATISTIKA -->
-  <section aria-label="Maktab ko'rsatkichlari">
-    <p class="section-label">Asosiy ko'rsatkichlar</p>
-    <div class="stats-grid">
-      <article class="stat-card blue">
-        <div class="stat-icon" aria-hidden="true">🎓</div>
-        <div class="stat-value" id="val-students">0</div>
-        <p class="stat-label">O'quvchilar soni</p>
-      </article>
-      <article class="stat-card green">
-        <div class="stat-icon" aria-hidden="true">👩‍🏫</div>
-        <div class="stat-value" id="val-staff">0</div>
-        <p class="stat-label">Pedagogik xodimlar</p>
-      </article>
-      <article class="stat-card amber">
-        <div class="stat-icon" aria-hidden="true">🚪</div>
-        <div class="stat-value" id="val-rooms">0</div>
-        <p class="stat-label">O'quv xonalari</p>
-      </article>
-      <article class="stat-card purple">
-        <div class="stat-icon" aria-hidden="true">📊</div>
-        <div class="stat-value" id="val-capacity">0</div>
-        <p class="stat-label">Maktab sig'imi</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- JOYLASHUV -->
-  <section aria-label="Maktab joylashuvi">
-    <p class="section-label">Maktab joylashuvi</p>
-    <div class="map-panel">
-      <div class="panel-head">
-        <span aria-hidden="true">📍</span>
-        <h3 class="panel-head-title">Maktab manzili — Marg'ilon shahri, Farg'ona viloyati</h3>
-      </div>
-      <div class="panel-body">
-        <div id="map" role="img" aria-label="Maktab joylashuvining xaritasi"></div>
-        <div class="map-fallback hidden" id="mapFallback">
-          <span class="ico" aria-hidden="true">📍</span>
-          <p>Xarita yuklanmadi. Bevosita ko'rish uchun tugmani bosing.</p>
-          <a href="https://www.openstreetmap.org/?mlat=40.4765&mlon=71.7380&zoom=15"
-             target="_blank" rel="noopener noreferrer">🗺️ Xaritada ko'rish</a>
+      <div class="topbar-controls">
+        <!-- Jonli Toshkent vaqti va dars holati -->
+        <div class="live-clock-pill" title="Toshkent vaqti (UTC+5)">
+          <span class="pulse-dot" id="livePulseDot"></span>
+          <span id="liveClockText">08:00 · Yuklanmoqda...</span>
         </div>
-        <p class="map-info">
-          📌 Marg'ilon shahri · Farg'ona viloyati · Koordinata: 40.4765° Sh, 71.7380° Sh
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- GALEREYA -->
-  <section aria-label="Maktab rasmlari galereya">
-    <p class="section-label">Maktab rasmlari galereya</p>
-    <div class="gallery-section">
-      <div class="no-image-state" id="noImageState">
-        <span class="ico" aria-hidden="true">🖼️</span>
-        <p>Rasmlar hali yuklanmagan.<br>Admin kirishi orqali rasm qo'shishingiz mumkin.</p>
-      </div>
-      <div class="slider-wrap hidden" id="sliderWrap">
-        <div class="slider-track" id="sliderTrack" role="list"></div>
-        <button class="slider-btn prev" id="slidePrev" aria-label="Oldingi rasm">&#8592;</button>
-        <button class="slider-btn next" id="slideNext" aria-label="Keyingi rasm">&#8594;</button>
-        <div class="slide-counter" id="slideCounter" aria-live="polite">1 / 1</div>
-      </div>
-      <div class="slider-dots hidden" id="sliderDots" role="tablist"></div>
-      <div class="thumbs-row hidden" id="thumbsRow"></div>
-    </div>
-  </section>
+        <!-- Til almashtirgich: Lotin / Kirill / Rus -->
+        <div class="lang-switcher" role="group" aria-label="Tilni tanlash">
+          <button type="button" class="lang-btn active" data-lang="uz">O'Z</button>
+          <button type="button" class="lang-btn" data-lang="uzc">ЎЗ</button>
+          <button type="button" class="lang-btn" data-lang="ru">РУ</button>
+        </div>
 
-  <!-- ADMIN PANEL -->
-  <div id="admin-section">
-    <div class="admin-panel">
-      <div class="admin-panel-head">
-        <span class="admin-badge">Admin</span>
-        <span style="font-size:15px;font-weight:600;">Ma'lumotlarni tahrirlash</span>
-      </div>
-      <div class="admin-body">
-        <p class="section-label">Ko'rsatkichlarni yangilash</p>
-        <div class="admin-grid">
-          <div>
-            <label class="form-label" for="inp-students">O'quvchilar soni</label>
-            <input class="form-input" type="number" id="inp-students" min="0" placeholder="Masalan: 850" />
-          </div>
-          <div>
-            <label class="form-label" for="inp-staff">Pedagogik xodimlar soni</label>
-            <input class="form-input" type="number" id="inp-staff" min="0" placeholder="Masalan: 60" />
-          </div>
-          <div>
-            <label class="form-label" for="inp-rooms">O'quv xonalari soni</label>
-            <input class="form-input" type="number" id="inp-rooms" min="0" placeholder="Masalan: 32" />
-          </div>
-          <div>
-            <label class="form-label" for="inp-capacity">Maktab sig'imi</label>
-            <input class="form-input" type="number" id="inp-capacity" min="0" placeholder="Masalan: 1200" />
+        <!-- Maxsus imkoniyatlar -->
+        <div class="a11y-wrap">
+          <button type="button" class="a11y-btn" id="a11yToggleBtn" aria-expanded="false">
+            <span aria-hidden="true">👁️</span>
+            <span data-i18n="a11y_label">Maxsus imkoniyatlar</span>
+          </button>
+          <div class="a11y-popover hidden" id="a11yPopover" role="dialog" aria-label="Ko'rish sozlamalari">
+            <div class="a11y-row">
+              <span class="a11y-row-label" data-i18n="a11y_font">Shrift o'lchami</span>
+              <div class="font-scale-group">
+                <button type="button" class="scale-btn" data-scale="sm">A−</button>
+                <button type="button" class="scale-btn active" data-scale="md">A</button>
+                <button type="button" class="scale-btn" data-scale="lg">A+</button>
+              </div>
+            </div>
+            <div class="a11y-row">
+              <button type="button" class="contrast-toggle" id="contrastToggleBtn">
+                <span data-i18n="a11y_contrast">Oq-qora rejim</span>
+                <span aria-hidden="true">◐</span>
+              </button>
+            </div>
           </div>
         </div>
-        <p class="section-label">Rasmlar galereya boshqaruvi</p>
-        <div class="img-count-badge" id="imgCountBadge">🖼️ 0 ta rasm mavjud</div>
-        <div class="upload-zone">
-          <input type="file" accept="image/*" multiple id="imgUpload"
-                 aria-label="Rasm fayllarini tanlang" />
-          <span class="ico" aria-hidden="true">⬆️</span>
-          <p><strong>Rasmlarni tanlash uchun bosing</strong></p>
-          <p>Bir vaqtda bir nechta rasm yuklash mumkin · JPG, PNG, WEBP</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       2. ASOSIY NAVIGATSIYA PANELI (STICKY HEADER)
+  ═══════════════════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#hero" class="school-brand">
+        <img src="./assets/img/emblem.svg" alt="26-maktab gerbi" class="brand-emblem" width="44" height="44" />
+        <div class="brand-text">
+          <h1 class="brand-title" data-i18n="brand_title">Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi</h1>
+          <p class="brand-sub" data-i18n="brand_sub">Rasmiy axborot portali · Farg'ona viloyati</p>
         </div>
-        <div class="admin-gallery-grid hidden" id="adminGallery"></div>
-        <button class="btn-save" id="saveBtn">💾 Ko'rsatkichlarni saqlash</button>
+      </a>
+
+      <nav class="main-nav" aria-label="Asosiy menyu">
+        <a href="#stats" class="nav-link" data-i18n="nav_stats">Ko'rsatkichlar</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Maktab haqida</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Jadval</a>
+        <a href="#news" class="nav-link" data-i18n="nav_news">Yangiliklar</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Galereya</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Aloqa</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="themeBtn" aria-label="Tungi yoki kunduzgi rejim">🌙</button>
+        <button type="button" class="btn-outline-accent" id="loginBtn" data-i18n="btn_login">🔐 Kirish</button>
+        <button type="button" class="btn-admin-jump hidden" id="adminJumpBtn">
+          <span data-i18n="btn_admin_panel">⚙️ Boshqaruv</span>
+          <span class="unread-pill hidden" id="unreadAppealsBadge">0</span>
+        </button>
+        <button type="button" class="btn-logout hidden" id="logoutBtn" data-i18n="btn_logout">Chiqish</button>
+        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyuni ochish">☰</button>
       </div>
+    </div>
+
+    <!-- Mobil menyu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-list" aria-label="Mobil menyu">
+        <a href="#stats" class="nav-link" data-i18n="nav_stats">Ko'rsatkichlar</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Maktab haqida</a>
+        <a href="#schedule" class="nav-link" data-i18n="nav_schedule">Jadval va to'garaklar</a>
+        <a href="#news" class="nav-link" data-i18n="nav_news">Yangiliklar</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Fotogalereya</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Joylashuv va aloqa</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       ASOSIY SAHIFA MAZMUNI
+  ═══════════════════════════════════════════════════════════════════ -->
+  <main role="main">
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         3. HERO SECTION
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-eyebrow" data-i18n="hero_badge">
+            🏛️ 1990-yildan buyon sifatli ta'lim maskani · Marg'ilon shahri
+          </div>
+          <h2 class="hero-title" data-i18n="hero_title">
+            Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi
+          </h2>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Zamonaviy ta'lim muhiti, milliy qadriyatlar va ilg'or pedagogik yondashuv uyg'unlashgan maskan. 1-sinfdan 11-sinfgacha har bir o'quvchining bilim va salohiyatini yuzaga chiqaramiz.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-cta-primary" data-i18n="hero_cta_primary">📬 Murojaat va qabul</a>
+            <a href="#schedule" class="btn-cta-secondary" data-i18n="hero_cta_schedule">🕒 Qo'ng'iroqlar jadvali</a>
+            <button type="button" class="btn-cta-secondary" id="printPassportBtn" data-i18n="hero_cta_passport">🖨️ Maktab pasporti</button>
+          </div>
+
+          <div class="hero-trust-strip">
+            <span class="hero-trust-item" data-i18n="hero_pill_1">✓ 1–11-sinflar (DTS asosida)</span>
+            <span class="hero-trust-item" data-i18n="hero_pill_2">✓ eMaktab raqamli kundalik</span>
+            <span class="hero-trust-item" data-i18n="hero_pill_3">✓ Bepul fan va sport to'garaklari</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img id="heroPreviewImg"
+                 src="https://i.ibb.co/sdQpJkkP/photo-2-2026-02-18-11-37-07.jpg"
+                 alt="Marg'ilon 26-son maktab binosi" />
+            <div class="hero-frame-overlay">
+              <div class="hero-year-chip" id="heroYearStat">
+                2026–2027 o'quv yili
+              </div>
+              <div class="hero-live-card">
+                <div class="hero-live-top">
+                  <span data-i18n="hero_live_title">O'quv jarayoni holati (Toshkent UTC+5)</span>
+                  <span id="heroLiveSubText">Dushanba – Shanba</span>
+                </div>
+                <div class="hero-live-status">
+                  <span class="pulse-dot" id="heroLiveDot"></span>
+                  <span id="heroLiveStatusText">Jadval tekshirilmoqda...</span>
+                </div>
+                <div class="hero-live-bar">
+                  <div class="hero-live-bar-fill" id="heroLiveProgressFill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         ADMIN BOSHQARUV MARKAZI (Faqat Admin kirganda ochiladi)
+    ───────────────────────────────────────────────────────────────── -->
+    <section id="admin-section" aria-label="Admin boshqaruv markazi">
+      <div class="container">
+        <div class="admin-shell">
+          <div class="admin-header">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+              <span class="admin-badge">🔐 Admin CMS</span>
+              <strong>26-son Maktab portalini boshqarish markazi</strong>
+            </div>
+            <span style="font-size:0.8rem;color:var(--text-muted);">Barcha o'zgarishlar darhol sahifada aks etadi</span>
+          </div>
+
+          <div class="admin-tabs" role="tablist">
+            <button type="button" class="admin-tab active" data-pane="pane-stats">📊 Ko'rsatkichlar va Pasport</button>
+            <button type="button" class="admin-tab" data-pane="pane-gallery">🖼️ Galereya</button>
+            <button type="button" class="admin-tab" data-pane="pane-news">📰 Yangiliklar va E'lonlar</button>
+            <button type="button" class="admin-tab" data-pane="pane-clubs">🎯 To'garaklar</button>
+            <button type="button" class="admin-tab" data-pane="pane-appeals">
+              📬 Murojaatlar <span class="unread-pill hidden" id="tabAppealsCount">0</span>
+            </button>
+            <button type="button" class="admin-tab" data-pane="pane-settings">⚙️ Zaxira va Xavfsizlik</button>
+          </div>
+
+          <!-- PANE 1: KO'RSATKICHLAR VA PASPORT -->
+          <div class="admin-pane active" id="pane-stats">
+            <p class="admin-subhead">Asosiy raqamlar</p>
+            <div class="admin-form-grid">
+              <div>
+                <label class="form-label" for="inp-students">O'quvchilar soni</label>
+                <input class="form-input" type="number" id="inp-students" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-staff">Pedagogik xodimlar</label>
+                <input class="form-input" type="number" id="inp-staff" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-rooms">O'quv xonalari</label>
+                <input class="form-input" type="number" id="inp-rooms" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-capacity">Maktab sig'imi</label>
+                <input class="form-input" type="number" id="inp-capacity" min="1" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-grad-rate">Bitiruvchilar OTM/kasb qamrovi (%)</label>
+                <input class="form-input" type="number" id="inp-grad-rate" min="0" max="100" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-books">Kutubxona fondi (kitoblar)</label>
+                <input class="form-input" type="number" id="inp-books" min="0" />
+              </div>
+            </div>
+
+            <p class="admin-subhead">Pedagoglar malaka toifalari</p>
+            <div class="admin-form-grid">
+              <div>
+                <label class="form-label" for="inp-t-top">Oliy toifali ustozlar</label>
+                <input class="form-input" type="number" id="inp-t-top" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-t-first">I toifali ustozlar</label>
+                <input class="form-input" type="number" id="inp-t-first" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-t-second">II toifali ustozlar</label>
+                <input class="form-input" type="number" id="inp-t-second" min="0" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-t-spec">Mutaxassis o'qituvchilar</label>
+                <input class="form-input" type="number" id="inp-t-spec" min="0" />
+              </div>
+            </div>
+
+            <p class="admin-subhead">Aloqa va Rahbariyat qabul jadvali</p>
+            <div class="admin-form-grid">
+              <div>
+                <label class="form-label" for="inp-phone">Telefon raqami</label>
+                <input class="form-input" type="text" id="inp-phone" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-email">Elektron pochta</label>
+                <input class="form-input" type="email" id="inp-email" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-telegram">Telegram sahifa (URL)</label>
+                <input class="form-input" type="url" id="inp-telegram" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-address">Manzil</label>
+                <input class="form-input" type="text" id="inp-address" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-hours">Ish tartibi</label>
+                <input class="form-input" type="text" id="inp-hours" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dir-name">Direktor F.I.Sh. / Lavozim</label>
+                <input class="form-input" type="text" id="inp-dir-name" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dir-rec">Direktor qabul kunlari</label>
+                <input class="form-input" type="text" id="inp-dir-rec" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dep1-name">O'IBDO' F.I.Sh. / Lavozim</label>
+                <input class="form-input" type="text" id="inp-dep1-name" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dep1-rec">O'IBDO' qabul kunlari</label>
+                <input class="form-input" type="text" id="inp-dep1-rec" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dep2-name">MMIBDO' F.I.Sh. / Lavozim</label>
+                <input class="form-input" type="text" id="inp-dep2-name" />
+              </div>
+              <div>
+                <label class="form-label" for="inp-dep2-rec">MMIBDO' qabul kunlari</label>
+                <input class="form-input" type="text" id="inp-dep2-rec" />
+              </div>
+            </div>
+
+            <button type="button" class="btn-save" id="saveStatsPassportBtn">💾 Barcha ko'rsatkichlarni saqlash</button>
+          </div>
+
+          <!-- PANE 2: GALEREYA -->
+          <div class="admin-pane" id="pane-gallery">
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;align-items:center;justify-content:space-between;">
+              <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                <span class="stat-tag" id="imgCountBadge">🖼️ 0 ta rasm</span>
+                <span class="stat-tag" id="storageUsageBadge">💾 Xotira: 0 KB</span>
+              </div>
+              <button type="button" class="mini-btn" id="resetDefaultImgsBtn">↺ Standart rasmlarni tiklash</button>
+            </div>
+
+            <div class="upload-zone">
+              <input type="file" accept="image/*" multiple id="imgUpload" aria-label="Rasm fayllarini yuklash" />
+              <div style="font-size:1.8rem;margin-bottom:6px;">⬆️</div>
+              <p><strong>Kompyuter yoki telefondan rasm yuklash uchun bosing</strong></p>
+              <p style="font-size:0.8rem;color:var(--text-muted);margin-top:4px;">
+                Rasmlar avtomatik ravishda sifatni yo'qotmay siqiladi (JPG, PNG, WEBP) — xotira to'lib qolmaydi!
+              </p>
+            </div>
+
+            <p class="admin-subhead">Yoki internet havola (URL) orqali rasm qo'shish</p>
+            <div class="admin-form-grid" style="grid-template-columns: 1.2fr 1.2fr auto; align-items:end;">
+              <div>
+                <label class="form-label" for="imgUrlInput">Rasm URL manzili</label>
+                <input class="form-input" type="url" id="imgUrlInput" placeholder="https://..." />
+              </div>
+              <div>
+                <label class="form-label" for="imgCaptionInput">Rasm izohi (ixtiyoriy)</label>
+                <input class="form-input" type="text" id="imgCaptionInput" placeholder="Masalan: Maktab kutubxonasi" />
+              </div>
+              <button type="button" class="btn-save" id="addImgUrlBtn">+ Qo'shish</button>
+            </div>
+
+            <div class="admin-gallery-grid" id="adminGallery"></div>
+          </div>
+
+          <!-- PANE 3: YANGILIKLAR VA E'LONLAR -->
+          <div class="admin-pane" id="pane-news">
+            <p class="admin-subhead">Yangi yangilik yoki e'lon chop etish</p>
+            <div class="admin-form-grid">
+              <div>
+                <label class="form-label" for="newsTitleInp">Sarlavha *</label>
+                <input class="form-input" type="text" id="newsTitleInp" placeholder="Yangilik sarlavhasi..." />
+              </div>
+              <div>
+                <label class="form-label" for="newsCatInp">Rukn</label>
+                <select class="form-select" id="newsCatInp">
+                  <option value="yangiliklar">Yangiliklar</option>
+                  <option value="elonlar">E'lonlar</option>
+                  <option value="yutuqlar">Yutuqlar</option>
+                  <option value="tadbirlar">Tadbirlar</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label" for="newsDateInp">Sana</label>
+                <input class="form-input" type="date" id="newsDateInp" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newsSummaryInp">Qisqacha mazmuni *</label>
+              <input class="form-input" type="text" id="newsSummaryInp" placeholder="Kartochkada ko'rinadigan 1–2 jumla..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="newsBodyInp">To'liq matn *</label>
+              <textarea class="form-textarea" id="newsBodyInp" placeholder="Batafsil maqola matni..."></textarea>
+            </div>
+            <button type="button" class="btn-save" id="addNewsBtn">📢 E'lonni joylash</button>
+
+            <p class="admin-subhead" style="margin-top:26px;">Mavjud e'lonlar ro'yxati</p>
+            <div id="adminNewsList"></div>
+          </div>
+
+          <!-- PANE 4: TO'GARAKLAR -->
+          <div class="admin-pane" id="pane-clubs">
+            <p class="admin-subhead">Yangi to'garak qo'shish</p>
+            <div class="admin-form-grid">
+              <div>
+                <label class="form-label" for="clubNameInp">To'garak nomi *</label>
+                <input class="form-input" type="text" id="clubNameInp" placeholder="Masalan: Yosh kimyogarlar" />
+              </div>
+              <div>
+                <label class="form-label" for="clubCatInp">Yo'nalish</label>
+                <select class="form-select" id="clubCatInp">
+                  <option value="stem">Aniq va tabiiy fanlar</option>
+                  <option value="lang">Xorijiy tillar</option>
+                  <option value="it">IT va Texnika</option>
+                  <option value="sport">Sport va Ijodkorlik</option>
+                </select>
+              </div>
+              <div>
+                <label class="form-label" for="clubGradesInp">Sinflar</label>
+                <input class="form-input" type="text" id="clubGradesInp" placeholder="5–11-sinflar" />
+              </div>
+              <div>
+                <label class="form-label" for="clubRoomInp">Xona</label>
+                <input class="form-input" type="text" id="clubRoomInp" placeholder="208-xona" />
+              </div>
+              <div>
+                <label class="form-label" for="clubSchedInp">Kunlari va vaqti *</label>
+                <input class="form-input" type="text" id="clubSchedInp" placeholder="Seshanba · Payshanba | 14:00" />
+              </div>
+              <div>
+                <label class="form-label" for="clubMentorInp">Mas'ul bo'lim / Ustoz</label>
+                <input class="form-input" type="text" id="clubMentorInp" placeholder="Tabiiy fanlar birlashmasi" />
+              </div>
+            </div>
+            <button type="button" class="btn-save" id="addClubBtn">+ To'garakni qo'shish</button>
+
+            <p class="admin-subhead" style="margin-top:26px;">Faol to'garaklar</p>
+            <div id="adminClubsList"></div>
+          </div>
+
+          <!-- PANE 5: KELIB TUSHKAN MUROJAATLAR -->
+          <div class="admin-pane" id="pane-appeals">
+            <p class="admin-subhead">Fuqarolar va ota-onalardan kelgan murojaatlar</p>
+            <div id="adminAppealsList"></div>
+          </div>
+
+          <!-- PANE 6: SOZLAMALAR, EKSPORT/IMPORT VA PAROL -->
+          <div class="admin-pane" id="pane-settings">
+            <p class="admin-subhead">Ma'lumotlar zaxirasi (JSON Eksport / Import)</p>
+            <p style="font-size:0.86rem;color:var(--text-muted);margin-bottom:14px;">
+              Barcha kiritilgan ko'rsatkichlar, rasmlar, yangiliklar va to'garaklarni fayl sifatida yuklab olishingiz yoki boshqa qurilmaga ko'chirishingiz mumkin.
+            </p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;">
+              <button type="button" class="btn-save" id="exportJsonBtn">⬇️ JSON zaxira yuklab olish</button>
+              <label class="btn-cta-secondary" style="cursor:pointer;">
+                ⬆️ JSON fayldan tiklash
+                <input type="file" accept=".json,application/json" id="importJsonInput" class="hidden" />
+              </label>
+            </div>
+
+            <p class="admin-subhead">Admin parolini yangilash</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;max-width:480px;margin-bottom:28px;">
+              <input class="form-input" type="password" id="newAdminPassInp" placeholder="Yangi parol (kamida 4 belgi)" style="flex:1;" />
+              <button type="button" class="btn-save" id="savePassBtn">🔑 Parolni yangilash</button>
+            </div>
+
+            <p class="admin-subhead">Boshlang'ich holatga qaytarish</p>
+            <button type="button" class="btn-logout" id="factoryResetBtn">⚠️ Barcha o'zgarishlarni boshlang'ich holatga qaytarish</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         4. STATISTIKA VA TAHLILIY KO'RSATKICHLAR (#stats)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section" id="stats" aria-label="Maktab ko'rsatkichlari">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="stats_kicker">ASOSIY KO'RSATKICHLAR</span>
+            <h2 class="section-title" data-i18n="stats_title">Maktab raqamlar va tahlillarda</h2>
+            <p class="section-desc" data-i18n="stats_desc">
+              Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining 2026–2027 o'quv yilidagi ochiq ko'rsatkichlari
+            </p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card blue">
+            <div class="stat-top">
+              <div class="stat-icon" aria-hidden="true">🎓</div>
+              <span class="stat-tag">1–11</span>
+            </div>
+            <div class="stat-value" id="val-students">936</div>
+            <h3 class="stat-label" data-i18n="stat_students">O'quvchilar soni</h3>
+            <p class="stat-sub" data-i18n="stat_students_sub">1–11-sinflarda tahsil olmoqda</p>
+          </article>
+
+          <article class="stat-card green">
+            <div class="stat-top">
+              <div class="stat-icon" aria-hidden="true">👩‍🏫</div>
+              <span class="stat-tag" id="tag-ratio">14.2 : 1</span>
+            </div>
+            <div class="stat-value" id="val-staff">66</div>
+            <h3 class="stat-label" data-i18n="stat_staff">Pedagogik xodimlar</h3>
+            <p class="stat-sub" data-i18n="stat_staff_sub">Malakali ustoz va murabbiylar</p>
+          </article>
+
+          <article class="stat-card amber">
+            <div class="stat-top">
+              <div class="stat-icon" aria-hidden="true">🚪</div>
+              <span class="stat-tag">AKT + Lab</span>
+            </div>
+            <div class="stat-value" id="val-rooms">32</div>
+            <h3 class="stat-label" data-i18n="stat_rooms">O'quv xonalari</h3>
+            <p class="stat-sub" data-i18n="stat_rooms_sub">Jihozlangan fan kabinetlari</p>
+          </article>
+
+          <article class="stat-card purple">
+            <div class="stat-top">
+              <div class="stat-icon" aria-hidden="true">📊</div>
+              <span class="stat-tag" id="tag-occupancy">93.6%</span>
+            </div>
+            <div class="stat-value" id="val-capacity">1 000</div>
+            <h3 class="stat-label" data-i18n="stat_capacity">Maktab sig'imi</h3>
+            <p class="stat-sub" data-i18n="stat_capacity_sub">Loyihaviy o'quvchi o'rni</p>
+          </article>
+        </div>
+
+        <!-- Tahliliy infografika -->
+        <div class="analytics-grid">
+          <div class="analytics-card">
+            <h3 class="analytics-card-title">
+              <span aria-hidden="true">🏅</span>
+              <span data-i18n="analytics_teachers_title">Pedagogik jamoa salohiyati</span>
+            </h3>
+            <div class="segmented-bar" role="img" aria-label="O'qituvchilar toifalari ulushi">
+              <div class="seg-piece seg-top" id="seg-top" style="width:27%"></div>
+              <div class="seg-piece seg-first" id="seg-first" style="width:36%"></div>
+              <div class="seg-piece seg-second" id="seg-second" style="width:23%"></div>
+              <div class="seg-piece seg-spec" id="seg-spec" style="width:14%"></div>
+            </div>
+            <div class="legend-grid">
+              <div class="legend-item">
+                <span class="legend-left"><span class="legend-dot seg-top"></span><span data-i18n="cat_top">Oliy toifali</span></span>
+                <span class="legend-val" id="cnt-top">18</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-left"><span class="legend-dot seg-first"></span><span data-i18n="cat_first">I toifali</span></span>
+                <span class="legend-val" id="cnt-first">24</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-left"><span class="legend-dot seg-second"></span><span data-i18n="cat_second">II toifali</span></span>
+                <span class="legend-val" id="cnt-second">15</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-left"><span class="legend-dot seg-spec"></span><span data-i18n="cat_spec">Mutaxassis</span></span>
+                <span class="legend-val" id="cnt-spec">9</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="analytics-card">
+            <h3 class="analytics-card-title">
+              <span aria-hidden="true">📈</span>
+              <span data-i18n="analytics_infra_title">Infratuzilma va samaradorlik</span>
+            </h3>
+            <div class="metric-rows">
+              <div>
+                <div class="metric-row-top">
+                  <span class="metric-row-label" data-i18n="metric_occupancy">Quvvatdan foydalanish darajasi</span>
+                  <span class="metric-row-val" id="metric-occ-val">93.6%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="metric-occ-bar" style="width:93.6%"></div></div>
+              </div>
+              <div>
+                <div class="metric-row-top">
+                  <span class="metric-row-label" data-i18n="metric_grad">Bitiruvchilar OTM va kasb-hunarga qamrovi</span>
+                  <span class="metric-row-val" id="metric-grad-val">84%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="metric-grad-bar" style="width:84%"></div></div>
+              </div>
+              <div>
+                <div class="metric-row-top">
+                  <span class="metric-row-label" data-i18n="metric_books">Axborot-resurs markazi (kutubxona fondi)</span>
+                  <span class="metric-row-val" id="metric-books-val">14 500+</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" id="metric-books-bar" style="width:88%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         5. MAKTAB HAQIDA, YO'NALISHLAR VA PASPORT (#about)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section alt-bg" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="about_kicker">MAKTAB HAQIDA</span>
+            <h2 class="section-title" data-i18n="about_title">Ta'lim yo'nalishlari va maktab pasporti</h2>
+            <p class="section-desc" data-i18n="about_desc">
+              Fundamental bilimlar, xorijiy tillar, zamonaviy axborot texnologiyalari va ma'naviy-ma'rifiy tarbiya uyg'unligi
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">🔬</div>
+            <h3 class="pillar-title" data-i18n="pillar_1_t">Aniq va tabiiy fanlar (STEM)</h3>
+            <p class="pillar-desc" data-i18n="pillar_1_d">Matematika, fizika, kimyo va biologiya fanlaridan laboratoriya mashg'ulotlari hamda chuqurlashtirilgan o'quv dasturlari.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">🌍</div>
+            <h3 class="pillar-title" data-i18n="pillar_2_t">Xorijiy tillar muloqot muhiti</h3>
+            <p class="pillar-desc" data-i18n="pillar_2_d">Ingliz va rus tillarini interaktiv metodika asosida o'rgatish hamda xalqaro CEFR sertifikatlariga tayyorlash.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">💻</div>
+            <h3 class="pillar-title" data-i18n="pillar_3_t">Raqamli texnologiyalar va AKT</h3>
+            <p class="pillar-desc" data-i18n="pillar_3_d">Kompyuter savodxonligi, algoritmlash va zamonaviy axborot texnologiyalari xonalarida amaliy ko'nikmalar.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">🏆</div>
+            <h3 class="pillar-title" data-i18n="pillar_4_t">Fan olimpiadalari va Zakovat</h3>
+            <p class="pillar-desc" data-i18n="pillar_4_d">Iqtidorli o'quvchilarni saralash, fan olimpiadalari va respublika intellektual tanlovlariga tizimli tayyorlash.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">⚽</div>
+            <h3 class="pillar-title" data-i18n="pillar_5_t">Sport va Besh muhim tashabbus</h3>
+            <p class="pillar-desc" data-i18n="pillar_5_d">Shaxmat, mini-futbol, voleybol, tasviriy san'at va musiqa to'garaklari orqali sog'lom va ijodkor avlod tarbiyasi.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-ico" aria-hidden="true">📚</div>
+            <h3 class="pillar-title" data-i18n="pillar_6_t">Axborot-resurs markazi</h3>
+            <p class="pillar-desc" data-i18n="pillar_6_d">O'zbek va jahon adabiyoti durdonalari, darsliklar hamda o'quv zali bilan ta'minlangan zamonaviy maktab kutubxonasi.</p>
+          </article>
+        </div>
+
+        <div class="passport-leadership-grid">
+          <!-- Rasmiy pasport -->
+          <div class="info-panel">
+            <h3 class="info-panel-title" data-i18n="passport_title">📋 Maktabning rasmiy pasporti</h3>
+            <table class="passport-table">
+              <tbody>
+                <tr>
+                  <th data-i18n="pass_name_lbl">Rasmiy nomi</th>
+                  <td data-i18n="pass_name_val">Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_year_lbl">Tashkil etilgan yili</th>
+                  <td id="pass-year">1990-yil</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_type_lbl">Muassasa turi</th>
+                  <td data-i18n="pass_type_val">Davlat umumiy o'rta ta'lim maktabi (1–11-sinflar)</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_lang_lbl">Ta'lim tili</th>
+                  <td data-i18n="pass_lang_val">O'zbek tili</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_shift_lbl">O'quv smenasi</th>
+                  <td id="pass-shifts">2 smenali · 1–11-sinflar</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_hours_lbl">Ish tartibi</th>
+                  <td id="pass-hours">Dushanba – Shanba, 08:00 – 17:00</td>
+                </tr>
+                <tr>
+                  <th data-i18n="pass_addr_lbl">Yuridik manzil</th>
+                  <td id="pass-address">Marg'ilon shahri, Farg'ona viloyati, O'zbekiston</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Rahbariyat va qabul kunlari -->
+          <div class="info-panel">
+            <h3 class="info-panel-title" data-i18n="admin_card_title">🏛️ Rahbariyat va fuqarolar qabuli</h3>
+            <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:14px;" data-i18n="admin_card_sub">
+              Ota-onalar va fuqarolar belgilangan qabul soatlarida yoki onlayn murojaat orqali bog'lanishlari mumkin
+            </p>
+            <div class="leader-list" id="leadershipList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         6. QO'NG'IROQLAR JADVALI VA BEPUL TO'GARAKLAR (#schedule)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section" id="schedule">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="sched_kicker">O'QUV TARTIBI VA TO'GARAKLAR</span>
+            <h2 class="section-title" data-i18n="sched_title">Qo'ng'iroqlar jadvali va to'garaklar</h2>
+            <p class="section-desc" data-i18n="sched_desc">
+              Dars soatlarining aniq vaqtlari (jonli holat ko'rsatkichi bilan) hamda o'quvchilar uchun bepul to'garaklar
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-grid">
+          <!-- Qo'ng'iroqlar -->
+          <div class="card-panel">
+            <div class="card-panel-head">
+              <h3 class="card-panel-title" data-i18n="bell_panel_title">🔔 Qo'ng'iroqlar jadvali</h3>
+              <div class="shift-tabs" role="tablist">
+                <button type="button" class="shift-tab active" data-shift="shift1" data-i18n="shift_1_btn">1-smena (08:00)</button>
+                <button type="button" class="shift-tab" data-shift="shift2" data-i18n="shift_2_btn">2-smena (13:30)</button>
+              </div>
+            </div>
+            <div class="bell-list" id="bellScheduleList"></div>
+          </div>
+
+          <!-- To'garaklar -->
+          <div class="card-panel">
+            <div class="card-panel-head">
+              <h3 class="card-panel-title" data-i18n="clubs_panel_title">🎯 Bepul fan va sport to'garaklari</h3>
+            </div>
+            <div class="clubs-toolbar">
+              <div class="pill-filters" role="group" aria-label="To'garak yo'nalishlari">
+                <button type="button" class="pill-btn club-filter-btn active" data-cat="all" data-i18n="filter_all">Barchasi</button>
+                <button type="button" class="pill-btn club-filter-btn" data-cat="stem" data-i18n="filter_stem">Aniq fanlar</button>
+                <button type="button" class="pill-btn club-filter-btn" data-cat="lang" data-i18n="filter_lang">Tillar</button>
+                <button type="button" class="pill-btn club-filter-btn" data-cat="it" data-i18n="filter_it">IT</button>
+                <button type="button" class="pill-btn club-filter-btn" data-cat="sport" data-i18n="filter_sport">Sport va san'at</button>
+              </div>
+              <input type="search" class="search-input" id="clubSearchInput"
+                     data-i18n-placeholder="club_search_ph"
+                     placeholder="To'garak yoki sinf qidirish..." />
+            </div>
+            <div class="clubs-list" id="clubsListContainer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         7. YANGILIKLAR, E'LONLAR VA YUTUQLAR (#news)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section alt-bg" id="news">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="news_kicker">MAKTAB HAYOTI</span>
+            <h2 class="section-title" data-i18n="news_title">Yangiliklar, e'lonlar va yutuqlar</h2>
+            <p class="section-desc" data-i18n="news_desc">
+              Maktabimizdagi muhim tadbirlar, olimpiada natijalari va ota-onalar uchun rasmiy e'lonlar
+            </p>
+          </div>
+        </div>
+
+        <div class="news-toolbar">
+          <div class="pill-filters" role="group" aria-label="Yangiliklar rukni">
+            <button type="button" class="pill-btn news-filter-btn active" data-ncat="all" data-i18n="news_all">Barchasi</button>
+            <button type="button" class="pill-btn news-filter-btn" data-ncat="yangiliklar" data-i18n="news_yangiliklar">Yangiliklar</button>
+            <button type="button" class="pill-btn news-filter-btn" data-ncat="elonlar" data-i18n="news_elonlar">E'lonlar</button>
+            <button type="button" class="pill-btn news-filter-btn" data-ncat="yutuqlar" data-i18n="news_yutuqlar">Yutuqlar</button>
+            <button type="button" class="pill-btn news-filter-btn" data-ncat="tadbirlar" data-i18n="news_tadbirlar">Tadbirlar</button>
+          </div>
+          <input type="search" class="search-input" id="newsSearchInput"
+                 data-i18n-placeholder="news_search_ph"
+                 placeholder="Yangiliklardan qidirish..." />
+        </div>
+
+        <div class="news-grid" id="newsGridContainer"></div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         8. MAKTAB FOTOGALEREYASI (#gallery)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section" id="gallery" aria-label="Maktab rasmlari galereyasi">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="gallery_kicker">FOTOGALEREYA</span>
+            <h2 class="section-title" data-i18n="gallery_title">Maktab binosi va o'quv muhiti</h2>
+            <p class="section-desc" data-i18n="gallery_desc">
+              26-son umumiy o'rta ta'lim maktabining binosi, hovlisi va ta'lim jarayonidan fotolavhalar
+            </p>
+          </div>
+          <div class="gallery-controls-bar">
+            <button type="button" class="gallery-action-btn" id="autoplayToggleBtn" data-i18n="btn_autoplay_off">▶ Avto-namoyish</button>
+            <button type="button" class="gallery-action-btn" id="openLightboxBtn" data-i18n="btn_fullscreen">🔍 Katta ekranda</button>
+          </div>
+        </div>
+
+        <div class="no-image-state hidden" id="noImageState">
+          <div style="font-size:2.4rem;">🖼️</div>
+          <p>Rasmlar hali yuklanmagan. Admin kirishi orqali fotolavhalar qo'shishingiz mumkin.</p>
+        </div>
+
+        <div class="slider-wrap" id="sliderWrap">
+          <div class="slider-track" id="sliderTrack" role="list"></div>
+          <button type="button" class="slider-btn prev" id="slidePrev" aria-label="Oldingi rasm">&#8592;</button>
+          <button type="button" class="slider-btn next" id="slideNext" aria-label="Keyingi rasm">&#8594;</button>
+        </div>
+        <div class="slider-dots" id="sliderDots" role="tablist"></div>
+        <div class="thumbs-row" id="thumbsRow"></div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         9. INTERAKTIV XARITA VA ONLAYN MUROJAAT (#contact)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section alt-bg" id="contact" aria-label="Maktab joylashuvi va aloqa">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="contact_kicker">JOYLASHUV VA ALOQA</span>
+            <h2 class="section-title" data-i18n="contact_title">Maktab manzili va onlayn murojaat</h2>
+            <p class="section-desc" data-i18n="contact_desc">
+              Xaritadan yo'nalish oling yoki maktab ma'muriyatiga to'g'ridan-to'g'ri onlayn murojaat yuboring
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Xarita paneli -->
+          <div class="card-panel">
+            <div class="card-panel-head">
+              <h3 class="card-panel-title" data-i18n="map_head_title">📍 Marg'ilon shahri, Farg'ona viloyati</h3>
+              <div class="shift-tabs">
+                <button type="button" class="shift-tab active" id="mapStreetBtn" data-i18n="map_layer_street">Xarita</button>
+                <button type="button" class="shift-tab" id="mapSatBtn" data-i18n="map_layer_sat">Sun'iy yo'ldosh</button>
+                <button type="button" class="shift-tab" id="mapResetBtn" data-i18n="map_reset">Markaz</button>
+              </div>
+            </div>
+            <div class="map-body">
+              <div id="map" role="application" aria-label="Marg'ilon 26-maktab interaktiv xaritasi"></div>
+              <div class="map-fallback hidden" id="mapFallback">
+                <div style="font-size:2.2rem;">🗺️</div>
+                <p>Interaktiv xarita xizmati vaqtincha oflayn. Quyidagi xizmatlar orqali aniq manzilni oching:</p>
+              </div>
+
+              <div class="map-nav-chips">
+                <a class="map-chip" href="https://yandex.uz/maps/?pt=71.7380,40.4765&z=16&l=map" target="_blank" rel="noopener noreferrer">
+                  🧭 Yandex Xarita
+                </a>
+                <a class="map-chip" href="https://www.google.com/maps?q=40.4765,71.7380" target="_blank" rel="noopener noreferrer">
+                  📍 Google Maps
+                </a>
+                <a class="map-chip" href="https://www.openstreetmap.org/?mlat=40.4765&mlon=71.7380&zoom=16" target="_blank" rel="noopener noreferrer">
+                  🌍 OpenStreetMap
+                </a>
+                <span class="map-chip" style="color:var(--text-muted);cursor:default;">
+                  GPS: 40.4765° Sh.k., 71.7380° Sh.u.
+                </span>
+              </div>
+
+              <div class="contact-quick-cards">
+                <div class="c-mini-card">
+                  <div class="c-mini-lbl">📞 Telefon</div>
+                  <div class="c-mini-val" id="quickPhone">+998 (73) 253-26-00</div>
+                </div>
+                <div class="c-mini-card">
+                  <div class="c-mini-lbl">✉️ Elektron pochta</div>
+                  <div class="c-mini-val" id="quickEmail">info@maktab26margilan.uz</div>
+                </div>
+                <div class="c-mini-card">
+                  <div class="c-mini-lbl">🕒 Ish vaqti</div>
+                  <div class="c-mini-val" id="quickHours">Du–Sha, 08:00 – 17:00</div>
+                </div>
+                <div class="c-mini-card">
+                  <div class="c-mini-lbl">✈️ Rasmiy kanal</div>
+                  <div class="c-mini-val">
+                    <a id="quickTelegram" href="https://t.me/margilon_26maktab" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">Telegram sahifa ↗</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Onlayn murojaat formasi -->
+          <div class="card-panel appeal-panel">
+            <h3 class="card-panel-title" style="margin-bottom:4px;" data-i18n="form_title">✉️ Onlayn murojaat va qabulga yozilish</h3>
+            <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:18px;" data-i18n="form_sub">
+              Xabaringiz maktab ma'muriyatining boshqaruv paneliga to'g'ridan-to'g'ri yuboriladi
+            </p>
+
+            <form id="appealForm" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="appFullName" data-i18n="lbl_fullname">F.I.Sh. (To'liq ismingiz) *</label>
+                <input class="form-input" type="text" id="appFullName" required
+                       data-i18n-placeholder="ph_fullname"
+                       placeholder="Masalan: Karimov Anvar Rustamovich" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="appPhone" data-i18n="lbl_phone">Telefon raqamingiz *</label>
+                <input class="form-input" type="tel" id="appPhone" required
+                       data-i18n-placeholder="ph_phone"
+                       placeholder="+998 90 123-45-67" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="appTopic" data-i18n="lbl_topic">Murojaat yo'nalishi</label>
+                <select class="form-select" id="appTopic">
+                  <option value="Savol va ma'lumot" data-i18n="opt_question">Ta'lim va maktab bo'yicha savol</option>
+                  <option value="Direktor qabuliga yozilish" data-i18n="opt_reception">Direktor qabuliga yozilish</option>
+                  <option value="To'garakka yozilish" data-i18n="opt_club">Farzandni to'garakka yozdirish</option>
+                  <option value="Taklif va mulohaza" data-i18n="opt_suggestion">Taklif va fikr-mulohaza</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="appMessage" data-i18n="lbl_message">Murojaat matni *</label>
+                <textarea class="form-textarea" id="appMessage" required
+                          data-i18n-placeholder="ph_message"
+                          placeholder="Savol yoki murojaatingizni qisqacha yozib qoldiring..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit" data-i18n="btn_send_appeal">📨 Murojaatni yuborish</button>
+            </form>
+
+            <div class="hidden" id="appealSuccessBanner" style="margin-top:14px;padding:12px 14px;border-radius:8px;background:var(--emerald-soft);color:var(--emerald);font-size:0.84rem;font-weight:600;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         10. KO'P BERILADIGAN SAVOLLAR (#faq)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker" data-i18n="faq_kicker">SAVOL VA JAVOBLAR</span>
+            <h2 class="section-title" data-i18n="faq_title">Ota-onalar ko'p so'raydigan savollar</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>
+              <span data-i18n="faq_q1">Farzandimni 1-sinfga qabul qilish uchun hujjatlar qanday topshiriladi?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer" data-i18n="faq_a1">
+              1-sinfga qabul har yili 20-iyundan boshlab Maktabgacha va maktab ta'limi vazirligining yagona elektron platformasi — <strong>my.maktab.uz</strong> orqali onlayn tarzda yoki maktab qabul komissiyasiga bola tug'ilganlik haqidagi guvohnomasi va ota-ona shaxsini tasdiqlovchi hujjat bilan murojaat qilish orqali amalga oshiriladi.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span data-i18n="faq_q2">eMaktab elektron kundalik tizimiga qanday ulanaman?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer" data-i18n="faq_a2">
+              O'quvchi va ota-onalar uchun shaxsiy login hamda vaqtinchalik parol sinf rahbari tomonidan taqdim etiladi. Ma'lumotlarni olgach, <strong>emaktab.uz</strong> sayti yoki mobil ilovasi orqali baholar, uyga vazifalar va davomatni muntazam kuzatib borishingiz mumkin.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span data-i18n="faq_q3">Maktabdagi fan, IT va sport to'garaklari pullikmi?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer" data-i18n="faq_a3">
+              Yo'q. «Besh muhim tashabbus» va davlat ta'lim dasturlari doirasida 26-son maktabda tashkil etilgan barcha fan, xorijiy til, axborot texnologiyalari va sport to'garaklari o'quvchilarimiz uchun mutlaqo bepul faoliyat yuritadi.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span data-i18n="faq_q4">Maktab ish vaqti va rahbariyat qabul soatlari qachon?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer" data-i18n="faq_a4">
+              Maktab dushanbadan shanbagacha soat 08:00 dan 17:00 gacha (2-smena darslari 18:35 gacha) faoliyat yuritadi. Direktor va o'rinbosarlarning qabul kunlari yuqoridagi «Maktab haqida» bo'limida ko'rsatilgan, shuningdek onlayn murojaat formasidan foydalanishingiz mumkin.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────────────────────────
+         11. FOYDALI DAVLAT TA'LIM RESURSLARI (#resources)
+    ───────────────────────────────────────────────────────────────── -->
+    <section class="page-section alt-bg" id="resources">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:22px;">
+          <div>
+            <span class="section-kicker" data-i18n="res_kicker">FOYDALI DAVLAT TA'LIM RESURSLARI</span>
+          </div>
+        </div>
+        <div class="resources-grid">
+          <a class="res-card" href="https://uzedu.uz/" target="_blank" rel="noopener noreferrer">
+            <span class="res-domain">uzedu.uz ↗</span>
+            <span class="res-name">Maktabgacha va maktab ta'limi vazirligi</span>
+            <span class="res-sub">Rasmiy axborot veb-sayti</span>
+          </a>
+          <a class="res-card" href="https://emaktab.uz/" target="_blank" rel="noopener noreferrer">
+            <span class="res-domain">emaktab.uz ↗</span>
+            <span class="res-name">eMaktab raqamli ta'lim platformasi</span>
+            <span class="res-sub">Elektron jurnal va kundalik</span>
+          </a>
+          <a class="res-card" href="https://my.maktab.uz/" target="_blank" rel="noopener noreferrer">
+            <span class="res-domain">my.maktab.uz ↗</span>
+            <span class="res-name">1-sinfga onlayn qabul tizimi</span>
+            <span class="res-sub">Elektron davlat xizmatlari</span>
+          </a>
+          <a class="res-card" href="https://kitob.uz/" target="_blank" rel="noopener noreferrer">
+            <span class="res-domain">kitob.uz ↗</span>
+            <span class="res-name">Respublika bolalar kutubxonasi</span>
+            <span class="res-sub">Bepul elektron va audiokitoblar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       12. RASMIY FOOTER
+  ═══════════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+            <img src="./assets/img/emblem.svg" alt="26-maktab" width="40" height="40" style="border-radius:9px;" />
+            <strong style="color:#ffffff;font-size:1rem;">Marg'ilon shahri 26-son Maktab</strong>
+          </div>
+          <p style="font-size:0.86rem;line-height:1.7;max-width:420px;" data-i18n="footer_about">
+            Farg'ona viloyati Marg'ilon shahri 26-son davlat umumiy o'rta ta'lim maktabi. 1990-yildan buyon yosh avlodga sifatli ta'lim va tarbiya berib kelmoqda.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer_nav">Portal bo'limlari</h3>
+          <ul class="footer-links">
+            <li><a href="#stats" data-i18n="nav_stats">Ko'rsatkichlar</a></li>
+            <li><a href="#about" data-i18n="nav_about">Maktab haqida</a></li>
+            <li><a href="#schedule" data-i18n="nav_schedule">Qo'ng'iroqlar va to'garaklar</a></li>
+            <li><a href="#news" data-i18n="nav_news">Yangiliklar</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Fotogalereya</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer_contacts">Bog'lanish ma'lumotlari</h3>
+          <address style="font-style:normal;font-size:0.86rem;display:grid;gap:7px;">
+            <span id="footerAddr">📍 Marg'ilon shahri, Farg'ona viloyati, O'zbekiston</span>
+            <span id="footerPhone">📞 +998 (73) 253-26-00</span>
+            <span id="footerEmail">✉️ info@maktab26margilan.uz</span>
+            <span id="footerHours">🕒 Dushanba – Shanba, 08:00 – 17:00</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">© 2026 · Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi. Barcha huquqlar himoyalangan.</span>
+        <button type="button" class="back-top-btn" id="backToTopBtn">↑ Yuqoriga</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       MODALLAR: ADMIN KIRISH, MAQOLA O'QISH VA LIGHTBOX
+  ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- Admin Login Modal -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+    <div class="modal-box">
+      <button type="button" class="btn-close-modal" id="closeModal" aria-label="Yopish">✕</button>
+      <div style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.5rem;margin:0 auto 14px;">🔐</div>
+      <h2 id="loginModalTitle" style="text-align:center;font-family:var(--font-serif);font-size:1.35rem;margin-bottom:4px;">Admin kirish</h2>
+      <p style="text-align:center;font-size:0.84rem;color:var(--text-muted);margin-bottom:20px;">
+        Portal ma'lumotlarini tahrirlash uchun boshqaruv parolini kiriting
+      </p>
+      <div class="form-group">
+        <label class="form-label" for="passwordInput">Parol</label>
+        <input class="form-input" type="password" id="passwordInput" placeholder="••••••" autocomplete="current-password" />
+        <div class="error-msg" id="passError" role="alert">Parol noto'g'ri. Qaytadan urinib ko'ring.</div>
+      </div>
+      <button type="button" class="btn-submit" id="confirmLogin">Tizimga kirish</button>
     </div>
   </div>
 
-</main>
-
-<!-- FOOTER — Google uchun kontakt ma'lumotlari muhim -->
-<footer role="contentinfo">
-  <p>© 2025 · Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi</p>
-  <address>
-    📍 Marg'ilon shahri, Farg'ona viloyati, O'zbekiston
-  </address>
-</footer>
-
-<!-- LOGIN MODAL -->
-<div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-label="Admin kirish">
-  <div class="modal">
-    <button class="btn-close-modal" id="closeModal" aria-label="Yopish">✕</button>
-    <div class="modal-icon" aria-hidden="true">🔐</div>
-    <h2 class="modal-title">Admin kirish</h2>
-    <p class="modal-sub">Boshqaruv paneliga kirish uchun parolni kiriting</p>
-    <div class="modal-fg">
-      <label class="form-label" for="passwordInput">Parol</label>
-      <input class="form-input" type="password" id="passwordInput"
-             placeholder="••••••" autocomplete="current-password" />
-      <div class="error-msg" id="passError" role="alert">
-        Parol noto'g'ri. Qaytadan urinib ko'ring.
+  <!-- News Reader Modal -->
+  <div class="modal-overlay" id="newsReaderModal" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+    <div class="modal-box wide">
+      <button type="button" class="btn-close-modal" id="closeNewsModal" aria-label="Yopish">✕</button>
+      <div class="news-meta" style="margin-bottom:14px;padding-right:34px;">
+        <span class="news-cat yangiliklar" id="readerCat">Yangiliklar</span>
+        <span class="news-date" id="readerDate">2026-10-28</span>
       </div>
+      <h2 id="readerTitle" style="font-family:var(--font-serif);font-size:1.4rem;line-height:1.35;margin-bottom:14px;"></h2>
+      <p id="readerBody" style="font-size:0.96rem;color:var(--text-secondary);line-height:1.75;white-space:pre-line;"></p>
     </div>
-    <button class="btn-primary" id="confirmLogin">Kirish</button>
   </div>
-</div>
 
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!-- Fullscreen Gallery Lightbox -->
+  <div class="lightbox-overlay" id="lightboxOverlay" role="dialog" aria-modal="true" aria-label="Katta ekranda rasm ko'rish">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Yopish">✕</button>
+    <button type="button" class="slider-btn prev" id="lightboxPrev" aria-label="Oldingi rasm">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Maktab fotolavhasi" />
+    <button type="button" class="slider-btn next" id="lightboxNext" aria-label="Keyingi rasm">&#8594;</button>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
 
-<!-- Leaflet JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <!-- Toast Bildirishnoma -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script>
-/* ================================================================
-   SOZLAMALAR
-================================================================ */
-const SCHOOL_LAT = 40.4765;
-const SCHOOL_LNG = 71.7380;
-const ADMIN_PASS = '1234';
-const STORE_KEY  = 'maktab26_v4';
-
-const DEFAULT_DATA = {
-  students: 936, staff: 66, rooms: 32, capacity: 1000,
-  images: [
-    'https://i.ibb.co/sdQpJkkP/photo-2-2026-02-18-11-37-07.jpg',
-    'https://i.ibb.co/JFn1BZ6H/photo-1-2026-02-18-11-37-07.jpg',
-    'https://i.ibb.co/60LHCcWr/photo-3-2026-02-18-11-37-07.jpg'
-  ]
-};
-
-function loadData() {
-  try {
-    const r = localStorage.getItem(STORE_KEY);
-    if (!r) return { ...DEFAULT_DATA };
-    const saved = JSON.parse(r);
-    // Agar saqlangan rasmlar yo'q bo'lsa, default rasmlar ishlatilsin
-    if (!saved.images || saved.images.length === 0) {
-      saved.images = DEFAULT_DATA.images;
-    }
-    return { ...DEFAULT_DATA, ...saved };
-  } catch { return { ...DEFAULT_DATA }; }
-}
-function saveData(d) {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(d)); }
-  catch { showToast("⚠️ Xotirada joy yetarli emas. Ba'zi rasmlarni o'chiring."); }
-}
-
-/* TOAST */
-const toastEl = document.getElementById('toast');
-let toastTimer;
-function showToast(msg) {
-  clearTimeout(toastTimer);
-  toastEl.textContent = msg;
-  toastEl.classList.add('show');
-  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3200);
-}
-
-/* REJIM */
-const themeBtn = document.getElementById('themeBtn');
-applyTheme(localStorage.getItem('maktab_theme') || 'light');
-function applyTheme(t) {
-  document.documentElement.setAttribute('data-theme', t);
-  themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
-  themeBtn.title = t === 'dark' ? 'Kunduzgi rejim' : 'Tungi rejim';
-  localStorage.setItem('maktab_theme', t);
-}
-themeBtn.addEventListener('click', () => {
-  applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-});
-
-/* STATISTIKA */
-function animateNumber(el, target) {
-  const dur = 900, start = parseInt(el.textContent) || 0, t0 = performance.now();
-  (function step(now) {
-    const p = Math.min((now - t0) / dur, 1);
-    const e = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
-    el.textContent = Math.round(start + (target - start) * e).toLocaleString('uz-UZ');
-    if (p < 1) requestAnimationFrame(step);
-  })(performance.now());
-}
-function renderStats(d) {
-  animateNumber(document.getElementById('val-students'), d.students);
-  animateNumber(document.getElementById('val-staff'),    d.staff);
-  animateNumber(document.getElementById('val-rooms'),    d.rooms);
-  animateNumber(document.getElementById('val-capacity'), d.capacity);
-}
-
-/* XARITA */
-function initMap() {
-  if (typeof L === 'undefined') {
-    document.getElementById('map').classList.add('hidden');
-    document.getElementById('mapFallback').classList.remove('hidden');
-    return;
-  }
-  try {
-    const map = L.map('map', {
-      center: [SCHOOL_LAT, SCHOOL_LNG], zoom: 15,
-      dragging: false, scrollWheelZoom: false, doubleClickZoom: false,
-      touchZoom: false, boxZoom: false, keyboard: false, zoomControl: false
-    });
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap ishtirokchilari'
-    }).addTo(map);
-    const icon = L.divIcon({
-      html: `<div style="background:#1e40af;width:28px;height:28px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.4);"></div>`,
-      className: '', iconSize: [28,28], iconAnchor: [14,28]
-    });
-    L.marker([SCHOOL_LAT, SCHOOL_LNG], { icon })
-      .addTo(map)
-      .bindPopup("<b>26-son Maktab</b><br>Marg'ilon shahri, Farg'ona viloyati")
-      .openPopup();
-  } catch {
-    document.getElementById('map').classList.add('hidden');
-    document.getElementById('mapFallback').classList.remove('hidden');
-  }
-}
-window.addEventListener('load', initMap);
-
-/* GALEREYA */
-let currentSlide = 0;
-const noImageState = document.getElementById('noImageState');
-const sliderWrap   = document.getElementById('sliderWrap');
-const sliderTrack  = document.getElementById('sliderTrack');
-const sliderDots   = document.getElementById('sliderDots');
-const thumbsRow    = document.getElementById('thumbsRow');
-const slideCounter = document.getElementById('slideCounter');
-
-function goToSlide(idx, images) {
-  if (!images || !images.length) return;
-  currentSlide = ((idx % images.length) + images.length) % images.length;
-  sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-  slideCounter.textContent = `${currentSlide + 1} / ${images.length}`;
-  document.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('active', i===currentSlide));
-  document.querySelectorAll('.thumb-item').forEach((t,i) => t.classList.toggle('active', i===currentSlide));
-}
-
-document.getElementById('slidePrev').addEventListener('click', () => goToSlide(currentSlide - 1, loadData().images));
-document.getElementById('slideNext').addEventListener('click', () => goToSlide(currentSlide + 1, loadData().images));
-document.addEventListener('keydown', e => {
-  const imgs = loadData().images;
-  if (e.key === 'ArrowLeft')  goToSlide(currentSlide - 1, imgs);
-  if (e.key === 'ArrowRight') goToSlide(currentSlide + 1, imgs);
-});
-let txStart = 0;
-sliderWrap.addEventListener('touchstart', e => { txStart = e.touches[0].clientX; }, { passive: true });
-sliderWrap.addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].clientX - txStart;
-  if (Math.abs(dx) > 50) goToSlide(currentSlide + (dx < 0 ? 1 : -1), loadData().images);
-});
-
-function renderGallery(images) {
-  if (!images || !images.length) {
-    noImageState.classList.remove('hidden');
-    sliderWrap.classList.add('hidden');
-    sliderDots.classList.add('hidden');
-    thumbsRow.classList.add('hidden');
-    return;
-  }
-  noImageState.classList.add('hidden');
-  sliderWrap.classList.remove('hidden');
-  sliderDots.classList.remove('hidden');
-  thumbsRow.classList.remove('hidden');
-
-  sliderTrack.innerHTML = images.map((src, i) =>
-    `<div class="slide" role="listitem">
-       <img src="${src}"
-            alt="Marg'ilon 26-son maktab binosi rasmi ${i+1}"
-            loading="lazy"
-            onerror="this.onerror=null;this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'460\' viewBox=\'0 0 800 460\'><rect width=\'800\' height=\'460\' fill=\'%231a2236\'/><text x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2394a3b8\' font-size=\'18\'>${i+1}-rasm yuklanmadi</text></svg>';"
-       />
-     </div>`
-  ).join('');
-
-  sliderDots.innerHTML = images.map((_, i) =>
-    `<button class="dot${i===currentSlide?' active':''}" data-i="${i}"
-             aria-label="${i+1}-rasm" role="tab"></button>`
-  ).join('');
-  sliderDots.querySelectorAll('.dot').forEach(d =>
-    d.addEventListener('click', () => goToSlide(+d.dataset.i, images)));
-
-  thumbsRow.innerHTML = images.map((src, i) =>
-    `<div class="thumb-item${i===currentSlide?' active':''}" data-i="${i}">
-       <img src="${src}" alt="Rasm ${i+1}" loading="lazy"/>
-     </div>`
-  ).join('');
-  thumbsRow.querySelectorAll('.thumb-item').forEach(t =>
-    t.addEventListener('click', () => goToSlide(+t.dataset.i, images)));
-
-  if (currentSlide >= images.length) currentSlide = images.length - 1;
-  sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-  slideCounter.textContent = `${currentSlide + 1} / ${images.length}`;
-}
-
-/* ADMIN GALEREYA */
-const adminGallery  = document.getElementById('adminGallery');
-const imgCountBadge = document.getElementById('imgCountBadge');
-
-function renderAdminGallery(images) {
-  imgCountBadge.textContent = `🖼️ ${images.length} ta rasm mavjud`;
-  if (!images.length) { adminGallery.classList.add('hidden'); return; }
-  adminGallery.classList.remove('hidden');
-  adminGallery.innerHTML = images.map((src, i) =>
-    `<div class="admin-thumb" title="Rasm ${i+1}">
-       <img src="${src}" alt="Rasm ${i+1}"/>
-       <button class="admin-del-btn" data-i="${i}"
-               aria-label="${i+1}-rasmni o'chirish">✕</button>
-     </div>`
-  ).join('');
-  adminGallery.querySelectorAll('.admin-del-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const idx = +btn.dataset.i;
-      const data = loadData();
-      data.images.splice(idx, 1);
-      if (currentSlide >= data.images.length) currentSlide = Math.max(0, data.images.length - 1);
-      saveData(data);
-      renderGallery(data.images);
-      renderAdminGallery(data.images);
-      showToast(`🗑️ ${idx + 1}-rasm o'chirildi`);
-    });
-  });
-}
-
-/* RASM YUKLASH */
-document.getElementById('imgUpload').addEventListener('change', function(e) {
-  const files = Array.from(e.target.files);
-  if (!files.length) return;
-  const data = loadData();
-  let done = 0;
-  files.forEach(file => {
-    const reader = new FileReader();
-    reader.onload = ev => {
-      data.images.push(ev.target.result);
-      if (++done === files.length) {
-        saveData(data);
-        renderGallery(data.images);
-        renderAdminGallery(data.images);
-        showToast(`✅ ${files.length} ta rasm muvaffaqiyatli yuklandi`);
-      }
-    };
-    reader.readAsDataURL(file);
-  });
-  this.value = '';
-});
-
-/* KO'RSATKICHLARNI SAQLASH */
-document.getElementById('saveBtn').addEventListener('click', () => {
-  const data = loadData();
-  data.students = parseInt(document.getElementById('inp-students').value) || 0;
-  data.staff    = parseInt(document.getElementById('inp-staff').value)    || 0;
-  data.rooms    = parseInt(document.getElementById('inp-rooms').value)    || 0;
-  data.capacity = parseInt(document.getElementById('inp-capacity').value) || 0;
-  saveData(data);
-  renderStats(data);
-  showToast("✅ Ko'rsatkichlar muvaffaqiyatli saqlandi!");
-});
-
-/* ADMIN TIZIMI */
-let isAdmin = false;
-const loginBtn      = document.getElementById('loginBtn');
-const logoutBtn     = document.getElementById('logoutBtn');
-const loginModal    = document.getElementById('loginModal');
-const closeModalBtn = document.getElementById('closeModal');
-const passwordInput = document.getElementById('passwordInput');
-const confirmLogin  = document.getElementById('confirmLogin');
-const passError     = document.getElementById('passError');
-const adminSection  = document.getElementById('admin-section');
-
-loginBtn.addEventListener('click', () => {
-  loginModal.classList.add('active');
-  passwordInput.value = '';
-  passwordInput.classList.remove('error');
-  passError.classList.remove('show');
-  setTimeout(() => passwordInput.focus(), 220);
-});
-function closeLogin() { loginModal.classList.remove('active'); }
-closeModalBtn.addEventListener('click', closeLogin);
-loginModal.addEventListener('click', e => { if (e.target === loginModal) closeLogin(); });
-passwordInput.addEventListener('keydown', e => { if (e.key === 'Enter') confirmLogin.click(); });
-
-confirmLogin.addEventListener('click', () => {
-  if (passwordInput.value.trim() === ADMIN_PASS) {
-    isAdmin = true;
-    closeLogin();
-    loginBtn.classList.add('hidden');
-    logoutBtn.classList.remove('hidden');
-    adminSection.classList.add('visible');
-    adminSection.style.display = 'block';
-    const data = loadData();
-    document.getElementById('inp-students').value = data.students;
-    document.getElementById('inp-staff').value    = data.staff;
-    document.getElementById('inp-rooms').value    = data.rooms;
-    document.getElementById('inp-capacity').value = data.capacity;
-    renderAdminGallery(data.images);
-    showToast('✅ Admin sifatida kirdingiz');
-  } else {
-    passwordInput.classList.add('error');
-    passError.classList.add('show');
-    passwordInput.value = '';
-    passwordInput.focus();
-  }
-});
-logoutBtn.addEventListener('click', () => {
-  isAdmin = false;
-  loginBtn.classList.remove('hidden');
-  logoutBtn.classList.add('hidden');
-  adminSection.classList.remove('visible');
-  adminSection.style.display = 'none';
-  showToast("👋 Tizimdan chiqildi");
-});
-
-/* BOSHLANG'ICH */
-(function init() {
-  const data = loadData();
-  renderStats(data);
-  renderGallery(data.images);
-})();
-</script>
+  <!-- Leaflet JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <!-- Portal Data & Logic -->
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>
