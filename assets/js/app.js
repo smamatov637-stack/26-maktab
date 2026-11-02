@@ -80,11 +80,13 @@
     }
     localStorage.setItem('maktab_theme', t);
   }
-  applyTheme(localStorage.getItem('maktab_theme') || 'light');
+  applyTheme(localStorage.getItem('maktab_theme') || 'dark');
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
       const cur = document.documentElement.getAttribute('data-theme');
-      applyTheme(cur === 'dark' ? 'light' : 'dark');
+      const next = cur === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      window.Maktab3D?.setCampusLighting?.(next === 'light' ? 'day' : 'night');
     });
   }
 
@@ -483,6 +485,7 @@
     setSeg('seg-first', 'cnt-first', d.teacherFirst);
     setSeg('seg-second', 'cnt-second', d.teacherSecond);
     setSeg('seg-spec', 'cnt-spec', d.teacherSpec);
+    window.Maktab3D?.updateStatsHologram?.(d);
 
     // Infratuzilma progress-barlar
     const occVal = document.getElementById('metric-occ-val');
@@ -693,6 +696,7 @@
     container.querySelectorAll('.news-read-btn').forEach(btn => {
       btn.addEventListener('click', () => openNewsReader(btn.dataset.newsId));
     });
+    window.Maktab3D?.attach3DTiltCards?.();
   }
 
   function openNewsReader(id) {
@@ -749,11 +753,45 @@
     return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
   }
 
+  function positionCoverflowSlides() {
+    if (!sliderTrack) return;
+    const slides = sliderTrack.querySelectorAll('.cf-slide');
+    const total = slides.length;
+    if (!total) return;
+
+    slides.forEach((slideEl, i) => {
+      let diff = i - currentSlide;
+      if (total > 2) {
+        if (diff > total / 2) diff -= total;
+        if (diff < -total / 2) diff += total;
+      }
+      const abs = Math.abs(diff);
+      if (abs === 0) {
+        slideEl.style.transform = 'translate(-50%, -50%) translateZ(90px) rotateY(0deg) scale(1)';
+        slideEl.style.opacity = '1';
+        slideEl.style.zIndex = '10';
+        slideEl.style.filter = 'brightness(1)';
+      } else if (abs === 1) {
+        const dir = diff > 0 ? 1 : -1;
+        slideEl.style.transform = `translate(calc(-50% + ${dir * 52}%), -50%) translateZ(-110px) rotateY(${-dir * 38}deg) scale(0.86)`;
+        slideEl.style.opacity = '0.68';
+        slideEl.style.zIndex = '6';
+        slideEl.style.filter = 'brightness(0.68)';
+      } else {
+        const dir = diff > 0 ? 1 : -1;
+        slideEl.style.transform = `translate(calc(-50% + ${dir * 82}%), -50%) translateZ(-240px) rotateY(${-dir * 52}deg) scale(0.72)`;
+        slideEl.style.opacity = '0';
+        slideEl.style.zIndex = '2';
+        slideEl.style.filter = 'brightness(0.4)';
+      }
+    });
+  }
+
   function goToSlide(idx) {
     const imgs = portalData.images || [];
     if (!imgs.length) return;
     currentSlide = ((idx % imgs.length) + imgs.length) % imgs.length;
-    if (sliderTrack) sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+    positionCoverflowSlides();
     document.querySelectorAll('#sliderDots .dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
     document.querySelectorAll('#thumbsRow .thumb-item').forEach((t, i) => t.classList.toggle('active', i === currentSlide));
 
@@ -764,15 +802,6 @@
 
   function renderGallery() {
     const imgs = portalData.images || [];
-    const heroImg = document.getElementById('heroPreviewImg');
-    if (heroImg) {
-      heroImg.src = imgs[0]?.src || makeFallbackSvgDataUri(0);
-      heroImg.onerror = function () {
-        this.onerror = null;
-        this.src = makeFallbackSvgDataUri(0);
-      };
-    }
-
     if (!imgs.length) {
       noImageState?.classList.remove('hidden');
       sliderWrap?.classList.add('hidden');
@@ -793,10 +822,9 @@
         .map((item, i) => {
           const cap = localizeDynamic(item.caption || `26-son Maktab (${i + 1}-rasm)`, currentLang);
           return `
-            <div class="slide" role="listitem">
-              <img src="${escapeHtml(item.src)}"
+            <div class="cf-slide" role="listitem" data-cf-idx="${i}">
+              <${"img"} src="${escapeHtml(item.src)}"
                    alt="${escapeHtml(cap)}"
-                   data-slide-idx="${i}"
                    loading="${i === 0 ? 'eager' : 'lazy'}" />
               <div class="slide-caption-bar">
                 <span class="slide-caption-text">${escapeHtml(cap)}</span>
@@ -806,11 +834,15 @@
         })
         .join('');
 
-      sliderTrack.querySelectorAll('img').forEach((imgEl, idx) => {
-        imgEl.addEventListener('error', function () {
+      sliderTrack.querySelectorAll('.cf-slide').forEach((slideEl, idx) => {
+        const imgEl = slideEl.querySelector('img');
+        imgEl?.addEventListener('error', function () {
           this.src = makeFallbackSvgDataUri(idx);
         }, { once: true });
-        imgEl.addEventListener('click', () => openLightbox(idx));
+        slideEl.addEventListener('click', () => {
+          if (idx === currentSlide) openLightbox(idx);
+          else goToSlide(idx);
+        });
       });
     }
 
@@ -828,7 +860,7 @@
         .map(
           (item, i) => `
           <div class="thumb-item${i === currentSlide ? ' active' : ''}" data-i="${i}">
-            <img src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" loading="lazy" />
+            <${"img"} src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" loading="lazy" />
           </div>`
         )
         .join('');
@@ -1254,7 +1286,7 @@
       .map(
         (item, i) => `
         <div class="admin-photo-card">
-          <img src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" />
+          <${"img"} src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" />
           <div class="admin-photo-actions">
             <input class="form-input" style="padding:5px 8px;font-size:0.76rem;" type="text"
                    data-cap-idx="${i}" value="${escapeHtml(item.caption || '')}" placeholder="Rasm izohi..." />
@@ -1625,5 +1657,109 @@
     syncAdminVisibility();
     updateLiveSchoolStatus();
     setInterval(updateLiveSchoolStatus, 15000);
+    initAiAssistant();
   })();
+
+  /* ------------------------------------------------------------------------
+     12. 26-MAKTAB INTELLEKTUAL AI YORDAMCHISI (Floating Widget)
+     ------------------------------------------------------------------------ */
+  function answerSchoolQuestion(rawQ) {
+    const q = rawQ.toLowerCase();
+    const d = portalData;
+    const bell = evaluateBellState(getTashkentNow());
+
+    if (q.includes('dars') || q.includes('soat') || q.includes('smena') || q.includes('звон') || q.includes('урок')) {
+      return uiText(
+        `🕒 Hozirgi holat: ${bell.detailLabel}. 1-smena 08:00–13:10 da, 2-smena 13:30–18:35 da o'tiladi.`,
+        `🕒 Текущий статус: ${bell.detailLabel}. 1-я смена: 08:00–13:10, 2-я смена: 13:30–18:35.`
+      );
+    }
+    if (q.includes('oquvchi') || q.includes("o'quvchi") || q.includes('sigim') || q.includes("sig'im") || q.includes('soni') || q.includes('ученик')) {
+      return uiText(
+        `🎓 Maktabimizda hozirda ${d.students} nafar o'quvchi tahsil olmoqda. Loyihaviy sig'im: ${d.capacity} o'rin, pedagoglar: ${d.staff} nafar, o'quv xonalari: ${d.rooms} ta.`,
+        `🎓 В школе обучаются ${d.students} учащихся. Вместимость: ${d.capacity} мест, педагогов: ${d.staff}, кабинетов: ${d.rooms}.`
+      );
+    }
+    if (q.includes('togarak') || q.includes("to'garak") || q.includes('sport') || q.includes('круж')) {
+      const names = (d.clubs || []).slice(0, 4).map(c => c.name).join(', ');
+      return uiText(
+        `🎯 Maktabda ${(d.clubs || []).length} ta BEPUL to'garak mavjud: ${names} va boshqalar. Barchasi darsdan tashqari bepul o'tiladi!`,
+        `🎯 В школе работают ${(d.clubs || []).length} БЕСПЛАТНЫХ кружков: ${names} и др.`
+      );
+    }
+    if (q.includes('manzil') || q.includes('qayer') || q.includes('telefon') || q.includes('direktor') || q.includes('qabul') || q.includes('адрес')) {
+      return uiText(
+        `📍 Manzil: ${d.address} (GPS: 40.4765, 71.7380). Tel: ${d.phone}. Direktor qabuli: ${d.directorReception}.`,
+        `📍 Адрес: ${d.address}. Тел: ${d.phone}. Приём директора: ${d.directorReception}.`
+      );
+    }
+    if (q.includes('1-sinf') || q.includes('hujjat') || q.includes('класс')) {
+      return uiText(
+        `🎒 1-sinfga qabul har yili 20-iyundan my.maktab.uz portali orqali onlayn yoki maktab qabul komissiyasida amalga oshiriladi.`,
+        `🎒 Приём в 1-й класс открывается с 20 июня через платформу my.maktab.uz.`
+      );
+    }
+    if (q.includes('3d') || q.includes('qot') || q.includes('gpu')) {
+      return uiText(
+        `🔥 Tepada «🔥 MAX STRESS» tugmasini bossangiz 125 000 ta WebGL zarracha, TorusKnot gologrammalar va 3D mushakbozlik baravariga yonadi!`,
+        `🔥 Нажмите кнопку «🔥 MAX STRESS» в верхней панели для запуска 125 000 частиц WebGL и 3D-салюта!`
+      );
+    }
+    return uiText(
+      `🏫 Marg'ilon shahri 26-son maktab bo'yicha: dars jadvali, ${d.students} o'quvchi ko'rsatkichlari, bepul to'garaklar, 3D kampus yoki qabul kunlari haqida so'rashingiz mumkin!`,
+      `🏫 Вы можете спросить о расписании уроков, числе учеников (${d.students}), бесплатных кружках, 3D-кампусе или часах приёма!`
+    );
+  }
+
+  function initAiAssistant() {
+    const fab = document.getElementById('aiFabBtn');
+    const panel = document.getElementById('aiPanel');
+    const closeBtn = document.getElementById('aiCloseBtn');
+    const form = document.getElementById('aiChatForm');
+    const inp = document.getElementById('aiChatInput');
+    const msgs = document.getElementById('aiMessages');
+
+    if (!fab || !panel || !msgs) return;
+
+    const pushMsg = (text, who) => {
+      const div = document.createElement('div');
+      div.className = `ai-msg ${who}`;
+      div.textContent = text;
+      msgs.appendChild(div);
+      msgs.scrollTop = msgs.scrollHeight;
+    };
+
+    fab.addEventListener('click', () => {
+      window.Maktab3D?.SoundFX?.click?.(760);
+      panel.classList.toggle('hidden');
+      if (!panel.classList.contains('hidden') && !msgs.children.length) {
+        pushMsg(
+          uiText(
+            "Assalomu alaykum! 👋 Men Marg'ilon 26-son maktabning virtual AI yordamchisiman. Dars vaqti, to'garaklar, qabul yoki 3D kampus bo'yicha savolingizni bering!",
+            'Здравствуйте! 👋 Я виртуальный помощник школы №26 г. Маргилан. Задайте вопрос о расписании, кружках или приёме!'
+          ),
+          'bot'
+        );
+      }
+    });
+
+    closeBtn?.addEventListener('click', () => panel.classList.add('hidden'));
+
+    document.querySelectorAll('.ai-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const q = chip.dataset.ask || chip.textContent;
+        pushMsg(q, 'user');
+        setTimeout(() => pushMsg(answerSchoolQuestion(q), 'bot'), 220);
+      });
+    });
+
+    form?.addEventListener('submit', e => {
+      e.preventDefault();
+      const q = (inp?.value || '').trim();
+      if (!q) return;
+      pushMsg(q, 'user');
+      inp.value = '';
+      setTimeout(() => pushMsg(answerSchoolQuestion(q), 'bot'), 240);
+    });
+  }
 })();
