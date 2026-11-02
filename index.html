@@ -20,8 +20,7 @@
   <meta name="theme-color" content="#1e40af" />
 
   <link rel="canonical" href="https://smamatov637-stack.github.io/26-maktab/" />
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="icon" type="image/svg+xml" href="./assets/img/emblem.svg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%20role=%22img%22%20aria-label=%22Marg%27ilon%2026-maktab%20emblemasi%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id=%22crestBg%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%231e40af%22/%3E%20%3Cstop%20offset=%2255%25%22%20stop-color=%22%231d4ed8%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%230d9488%22/%3E%20%3C/linearGradient%3E%20%3ClinearGradient%20id=%22goldGrad%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%23fbbf24%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%23d97706%22/%3E%20%3C/linearGradient%3E%20%3C/defs%3E%20%3C%21--%20Rounded%20shield%20base%20--%3E%20%3Crect%20x=%226%22%20y=%226%22%20width=%22108%22%20height=%22108%22%20rx=%2226%22%20fill=%22url(%23crestBg)%22/%3E%20%3Crect%20x=%2211%22%20y=%2211%22%20width=%2298%22%20height=%2298%22%20rx=%2222%22%20fill=%22none%22%20stroke=%22rgba(255,255,255,0.24)%22%20stroke-width=%221.5%22/%3E%20%3C%21--%20Subtle%20Uzbek%208-point%20star%20ornament%20--%3E%20%3Cg%20opacity=%220.14%22%20stroke=%22%23ffffff%22%20stroke-width=%221.2%22%20fill=%22none%22%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22/%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22%20transform=%22rotate(45%2060%2060)%22/%3E%20%3C/g%3E%20%3C%21--%20Golden%20star%20/%20rays%20above%20book%20--%3E%20%3Cpolygon%20points=%2260,19%2063.2,26.4%2071.2,27.1%2065.1,32.3%2067,40.1%2060,35.9%2053,40.1%2054.9,32.3%2048.8,27.1%2056.8,26.4%22%20fill=%22url(%23goldGrad)%22/%3E%20%3C%21--%20Number%2026%20--%3E%20%3Ctext%20x=%2260%22%20y=%2266%22%20text-anchor=%22middle%22%20font-family=%22Georgia,%20%27Times%20New%20Roman%27,%20serif%22%20font-weight=%22700%22%20font-size=%2230%22%20fill=%22%23ffffff%22%20letter-spacing=%221%22%3E26%3C/text%3E%20%3C%21--%20Open%20book%20motif%20--%3E%20%3Cpath%20d=%22M28%2076%20C38%2072,%2050%2074,%2060%2080%20C70%2074,%2082%2072,%2092%2076%20L92%2091%20C82%2087,%2070%2089,%2060%2095%20C50%2089,%2038%2087,%2028%2091%20Z%22%20fill=%22none%22%20stroke=%22%23ffffff%22%20stroke-width=%223%22%20stroke-linejoin=%22round%22/%3E%20%3Cline%20x1=%2260%22%20y1=%2280%22%20x2=%2260%22%20y2=%2295%22%20stroke=%22%23fbbf24%22%20stroke-width=%222.5%22%20stroke-linecap=%22round%22/%3E%20%3Cpath%20d=%22M33%2096%20C43%2092.5,%2051%2094,%2060%2099%20C69%2094,%2077%2092.5,%2087%2096%22%20fill=%22none%22%20stroke=%22url(%23goldGrad)%22%20stroke-width=%222.2%22%20stroke-linecap=%22round%22/%3E%20%3C/svg%3E" />
 
   <!-- ═══════════════════════════════════════════════════════════════════
        OPEN GRAPH (Telegram, Facebook, WhatsApp ulashish uchun)
@@ -101,8 +100,2501 @@
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
 
-  <!-- Portal Styles -->
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- Portal Styles (100% Standalone Single-File) -->
+  <style>
+/* ==========================================================================
+   MARG'ILON 26-SON UMUMIY O'RTA TA'LIM MAKTABI — DIZAYN TIZIMI (v5.0)
+   ========================================================================== */
+
+:root {
+  --bg-body:        #f6f8fc;
+  --bg-surface:     #ffffff;
+  --bg-subtle:      #eef2f8;
+  --bg-header:      rgba(255, 255, 255, 0.88);
+  --bg-topbar:      #0f2454;
+
+  --border:         #dde5f0;
+  --border-strong:  #c5d2e6;
+
+  --text-primary:   #0f172a;
+  --text-secondary: #334155;
+  --text-muted:     #64748b;
+
+  --accent:         #1d4ed8;
+  --accent-dark:    #1e3a8a;
+  --accent-soft:    #dbeafe;
+  --accent-glow:    rgba(29, 78, 216, 0.14);
+
+  --teal:           #0d9488;
+  --teal-soft:      #ccfbf1;
+  --gold:           #d97706;
+  --gold-soft:      #fef3c7;
+  --emerald:        #059669;
+  --emerald-soft:   #d1fae5;
+  --purple:         #7c3aed;
+  --purple-soft:    #ede9fe;
+  --danger:         #dc2626;
+  --danger-soft:    #fee2e2;
+
+  --shadow-xs:      0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm:      0 2px 8px rgba(15, 23, 42, 0.06);
+  --shadow-md:      0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg:      0 18px 44px rgba(15, 23, 42, 0.14);
+
+  --radius-sm:      8px;
+  --radius-md:      14px;
+  --radius-lg:      20px;
+  --radius-pill:    999px;
+
+  --tr:             0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-sans:      'Golos Text', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif:     'Lora', Georgia, 'Times New Roman', serif;
+  --base-size:      16px;
+}
+
+[data-theme="dark"] {
+  --bg-body:        #080d19;
+  --bg-surface:     #11192c;
+  --bg-subtle:      #17223b;
+  --bg-header:      rgba(14, 21, 38, 0.90);
+  --bg-topbar:      #050912;
+
+  --border:         #1e2d4a;
+  --border-strong:  #2c4066;
+
+  --text-primary:   #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted:     #94a3b8;
+
+  --accent:         #3b82f6;
+  --accent-dark:    #60a5fa;
+  --accent-soft:    rgba(59, 130, 246, 0.16);
+  --accent-glow:    rgba(59, 130, 246, 0.22);
+
+  --teal:           #2dd4bf;
+  --teal-soft:      rgba(45, 212, 191, 0.15);
+  --gold:           #fbbf24;
+  --gold-soft:      rgba(251, 191, 36, 0.16);
+  --emerald:        #34d399;
+  --emerald-soft:   rgba(52, 211, 153, 0.15);
+  --purple:         #a78bfa;
+  --purple-soft:    rgba(167, 139, 250, 0.16);
+  --danger:         #f87171;
+  --danger-soft:    rgba(248, 113, 113, 0.16);
+
+  --shadow-xs:      0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-sm:      0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md:      0 10px 28px rgba(0, 0, 0, 0.5);
+  --shadow-lg:      0 20px 50px rgba(0, 0, 0, 0.65);
+}
+
+html[data-font-scale="sm"] { --base-size: 14.5px; }
+html[data-font-scale="md"] { --base-size: 16px; }
+html[data-font-scale="lg"] { --base-size: 18px; }
+html[data-grayscale="true"] { filter: grayscale(100%); }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--base-size);
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-body);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background var(--tr), color var(--tr);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================================================
+   1. TOP UTILITY BAR (Vazirlik satri, jonli soat, til, maxsus imkoniyatlar)
+   ========================================================================== */
+.topbar {
+  background: var(--bg-topbar);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.78rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 7px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ministry-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.84);
+  font-weight: 500;
+}
+
+.uz-flag-bar {
+  display: inline-flex;
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: linear-gradient(
+    to bottom,
+    #0099b5 0% 32%,
+    #ce1126 32% 36%,
+    #ffffff 36% 64%,
+    #ce1126 64% 68%,
+    #1eb53a 68% 100%
+  );
+}
+
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.live-clock-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7);
+  animation: pulseRing 2s infinite;
+}
+
+.pulse-dot.idle {
+  background: #fbbf24;
+  animation: none;
+}
+
+@keyframes pulseRing {
+  0%   { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.65); }
+  70%  { box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+.lang-switcher {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.lang-btn:hover {
+  color: #ffffff;
+}
+
+.lang-btn.active {
+  background: #ffffff;
+  color: #0f2454;
+}
+
+.a11y-wrap {
+  position: relative;
+}
+
+.a11y-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background var(--tr);
+}
+
+.a11y-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.a11y-popover {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  width: 240px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  box-shadow: var(--shadow-lg);
+  z-index: 600;
+}
+
+.a11y-row {
+  margin-bottom: 12px;
+}
+
+.a11y-row:last-child {
+  margin-bottom: 0;
+}
+
+.a11y-row-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.font-scale-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.scale-btn {
+  padding: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.scale-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.contrast-toggle {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contrast-toggle.active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   2. STICKY MAIN HEADER & NAVIGATION
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 400;
+  background: var(--bg-header);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-xs);
+  transition: background var(--tr), border-color var(--tr);
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.school-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand-emblem {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.22);
+}
+
+.brand-text {
+  min-width: 0;
+}
+
+.brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brand-sub {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--tr);
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.nav-link.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 1.05rem;
+  transition: all var(--tr);
+}
+
+.icon-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.btn-outline-accent {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--tr);
+  white-space: nowrap;
+}
+
+.btn-outline-accent:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-admin-jump {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: all var(--tr);
+}
+
+.btn-admin-jump:hover {
+  background: var(--accent-dark);
+}
+
+.unread-pill {
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  display: inline-grid;
+  place-items: center;
+}
+
+.btn-logout {
+  height: 40px;
+  padding: 0 13px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--danger);
+  background: transparent;
+  color: var(--danger);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.btn-logout:hover {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* Mobile Nav Drawer */
+.mobile-drawer {
+  display: none;
+  border-top: 1px solid var(--border);
+  background: var(--bg-surface);
+  padding: 12px 24px 18px;
+}
+
+.mobile-drawer.open {
+  display: block;
+}
+
+.mobile-nav-list {
+  display: grid;
+  gap: 6px;
+}
+
+.mobile-nav-list .nav-link {
+  display: block;
+  padding: 10px 14px;
+}
+
+@media (max-width: 1080px) {
+  .main-nav {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: grid;
+  }
+}
+
+@media (max-width: 640px) {
+  .ministry-badge span:last-child {
+    display: none;
+  }
+  .brand-title {
+    font-size: 0.92rem;
+  }
+  .header-inner {
+    padding: 0 16px;
+    height: 64px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* ==========================================================================
+   3. HERO SECTION (Milliy naqsh + jonli maktab holati + rasmlar vitrinasi)
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  padding: 52px 0 60px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 12% 18%, var(--accent-glow), transparent 42%),
+    radial-gradient(circle at 88% 80%, rgba(13, 148, 136, 0.10), transparent 40%),
+    var(--bg-surface);
+}
+
+/* Nozik o'zbek geometrik girih naqshi */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%231e40af' stroke-width='1.2'%3E%3Cpolygon points='40,4 50,26 74,26 55,40 62,64 40,50 18,64 25,40 6,26 30,26'/%3E%3Ccircle cx='40' cy='40' r='12'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 44px;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .hero-section {
+    padding: 36px 0 44px;
+  }
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  border: 1px solid rgba(29, 78, 216, 0.16);
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 3.3vw, 2.75rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.hero-desc {
+  font-size: 1.04rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #1e3a8a);
+  color: #ffffff;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.26);
+  transition: transform var(--tr), box-shadow var(--tr);
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(29, 78, 216, 0.34);
+}
+
+.btn-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.btn-cta-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.hero-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hero-trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hero Right Visual Showcase */
+.hero-visual {
+  position: relative;
+}
+
+.hero-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  background: #0f172a;
+  aspect-ratio: 4 / 3;
+}
+
+.hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.hero-frame:hover img {
+  transform: scale(1.03);
+}
+
+.hero-frame-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 13, 25, 0.78) 0%, rgba(8, 13, 25, 0.15) 55%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+.hero-year-chip {
+  align-self: flex-end;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 6px 13px;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.hero-live-card {
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  color: #ffffff;
+}
+
+.hero-live-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.74);
+  margin-bottom: 5px;
+}
+
+.hero-live-status {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-live-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.hero-live-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #34d399, #3b82f6);
+  border-radius: var(--radius-pill);
+  transition: width 0.5s ease;
+}
+
+/* ==========================================================================
+   4. SECTION HEADINGS & LAYOUTS
+   ========================================================================== */
+.page-section {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.page-section.alt-bg {
+  background: var(--bg-surface);
+}
+
+.section-head {
+  margin-bottom: 34px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-kicker {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.section-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  max-width: 660px;
+}
+
+/* ==========================================================================
+   5. STATISTIKA VA TAHLILIY INFOGRAFIKA (#stats)
+   ========================================================================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 960px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
+
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--tr), box-shadow var(--tr), border-color var(--tr);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--card-accent, var(--accent));
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--card-accent, var(--accent));
+}
+
+.stat-card.blue   { --card-accent: #2563eb; }
+.stat-card.green  { --card-accent: #059669; }
+.stat-card.amber  { --card-accent: #d97706; }
+.stat-card.purple { --card-accent: #7c3aed; }
+
+.stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+}
+
+.stat-card.blue .stat-icon   { background: var(--accent-soft); color: var(--accent); }
+.stat-card.green .stat-icon  { background: var(--emerald-soft); color: var(--emerald); }
+.stat-card.amber .stat-icon  { background: var(--gold-soft); color: var(--gold); }
+.stat-card.purple .stat-icon { background: var(--purple-soft); color: var(--purple); }
+
+.stat-tag {
+  font-size: 0.73rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+}
+
+.stat-value {
+  font-size: 2.15rem;
+  font-weight: 800;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.stat-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Analytical 2-Column Breakdown */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .analytics-grid { grid-template-columns: 1fr; }
+}
+
+.analytics-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.analytics-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.segmented-bar {
+  display: flex;
+  height: 14px;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  background: var(--bg-subtle);
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.seg-piece {
+  height: 100%;
+  transition: width 0.6s ease;
+}
+
+.seg-top    { background: #2563eb; }
+.seg-first  { background: #0d9488; }
+.seg-second { background: #f59e0b; }
+.seg-spec   { background: #8b5cf6; }
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .legend-grid { grid-template-columns: 1fr; }
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  font-size: 0.84rem;
+}
+
+.legend-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-val {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-rows {
+  display: grid;
+  gap: 14px;
+}
+
+.metric-row-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.metric-row-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.metric-row-val {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.progress-track {
+  height: 8px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--accent), var(--teal));
+  transition: width 0.6s ease;
+}
+
+/* ==========================================================================
+   6. MAKTAB HAQIDA, YO'NALISHLAR VA PASPORT (#about)
+   ========================================================================== */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 960px) {
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .pillars-grid { grid-template-columns: 1fr; }
+}
+
+.pillar-card {
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  transition: transform var(--tr), border-color var(--tr), box-shadow var(--tr);
+}
+
+.pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-ico {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.pillar-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.pillar-desc {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.passport-leadership-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+}
+
+@media (max-width: 940px) {
+  .passport-leadership-grid { grid-template-columns: 1fr; }
+}
+
+.info-panel {
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.info-panel-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.passport-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.passport-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.passport-table tr:last-child {
+  border-bottom: none;
+}
+
+.passport-table th,
+.passport-table td {
+  padding: 10px 6px;
+  font-size: 0.86rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.passport-table th {
+  width: 42%;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.passport-table td {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.leader-list {
+  display: grid;
+  gap: 12px;
+}
+
+.leader-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.leader-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.leader-role {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.leader-hours {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   7. QO'NG'IROQLAR JADVALI VA TO'GARAKLAR (#schedule)
+   ========================================================================== */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (max-width: 980px) {
+  .schedule-grid { grid-template-columns: 1fr; }
+}
+
+.card-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.card-panel-head {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-panel-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.shift-tabs {
+  display: inline-flex;
+  background: var(--bg-subtle);
+  padding: 3px;
+  border-radius: var(--radius-sm);
+  gap: 4px;
+}
+
+.shift-tab {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.shift-tab.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.bell-list {
+  padding: 16px 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.bell-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  border: 1px solid transparent;
+  transition: all var(--tr);
+}
+
+.bell-row.current-lesson {
+  background: var(--emerald-soft);
+  border-color: var(--emerald);
+}
+
+.bell-num-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bell-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.bell-row.current-lesson .bell-num {
+  background: var(--emerald);
+  color: #ffffff;
+  border-color: var(--emerald);
+}
+
+.bell-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.bell-time {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.bell-break {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Clubs directory */
+.clubs-toolbar {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pill-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill-btn {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.pill-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pill-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.search-input {
+  padding: 8px 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-body);
+  color: var(--text-primary);
+  font-size: 0.83rem;
+  outline: none;
+  min-width: 200px;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+}
+
+.clubs-list {
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+  .clubs-list { grid-template-columns: 1fr; }
+}
+
+.club-card {
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  transition: border-color var(--tr);
+}
+
+.club-card:hover {
+  border-color: var(--accent);
+}
+
+.club-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.club-grade-badge {
+  font-size: 0.71rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.club-room {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.club-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.club-meta {
+  font-size: 0.77rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   8. YANGILIKLAR, E'LONLAR VA YUTUQLAR (#news)
+   ========================================================================== */
+.news-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 820px) {
+  .news-grid { grid-template-columns: 1fr; }
+}
+
+.news-card {
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--tr), box-shadow var(--tr), border-color var(--tr);
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.news-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.news-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.news-cat.yutuqlar    { background: var(--emerald-soft); color: var(--emerald); }
+.news-cat.elonlar     { background: var(--gold-soft); color: var(--gold); }
+.news-cat.yangiliklar { background: var(--accent-soft); color: var(--accent); }
+.news-cat.tadbirlar   { background: var(--purple-soft); color: var(--purple); }
+
+.news-date {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.news-title {
+  font-family: var(--font-serif);
+  font-size: 1.14rem;
+  font-weight: 700;
+  line-height: 1.38;
+  margin-bottom: 10px;
+}
+
+.news-summary {
+  font-size: 0.89rem;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+}
+
+.news-read-btn {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-read-btn:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   9. FOTOGALEREYA VA LIGHTBOX (#gallery)
+   ========================================================================== */
+.gallery-controls-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gallery-action-btn {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.gallery-action-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.no-image-state {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-wrap {
+  position: relative;
+  width: 100%;
+  background: #0b1120;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  cursor: zoom-in;
+}
+
+@media (max-width: 720px) {
+  .slide img { height: 270px; }
+}
+
+.slide-caption-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 28px 22px 16px;
+  background: linear-gradient(to top, rgba(8, 13, 25, 0.86), transparent);
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  pointer-events: none;
+}
+
+.slide-caption-text {
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.slide-counter {
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all var(--tr);
+  z-index: 10;
+}
+
+.slider-btn:hover {
+  background: var(--accent);
+  border-color: #ffffff;
+}
+
+.slider-btn.prev { left: 16px; }
+.slider-btn.next { right: 16px; }
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding: 14px 0 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--border-strong);
+  border: none;
+  cursor: pointer;
+  transition: all var(--tr);
+}
+
+.dot.active {
+  width: 24px;
+  background: var(--accent);
+}
+
+.thumbs-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.thumb-item {
+  width: 96px;
+  height: 68px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  border: 2.5px solid transparent;
+  flex-shrink: 0;
+  opacity: 0.72;
+  transition: all var(--tr);
+}
+
+.thumb-item:hover,
+.thumb-item.active {
+  opacity: 1;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fullscreen Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 9, 18, 0.94);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--tr);
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-img {
+  max-width: 92vw;
+  max-height: 78vh;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-caption {
+  color: #e2e8f0;
+  margin-top: 14px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   10. XARITA VA ONLAYN MUROJAAT (#contact) + FAQ (#faq)
+   ========================================================================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+#map {
+  width: 100%;
+  height: 340px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  z-index: 1;
+}
+
+.map-fallback {
+  width: 100%;
+  height: 340px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.map-body {
+  padding: 18px;
+}
+
+.map-nav-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.map-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all var(--tr);
+}
+
+.map-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.contact-quick-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+
+@media (max-width: 520px) {
+  .contact-quick-cards { grid-template-columns: 1fr; }
+}
+
+.c-mini-card {
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+  font-size: 0.82rem;
+}
+
+.c-mini-lbl {
+  color: var(--text-muted);
+  font-size: 0.73rem;
+  margin-bottom: 2px;
+}
+
+.c-mini-val {
+  font-weight: 700;
+  word-break: break-word;
+}
+
+/* Appeal Form */
+.appeal-panel {
+  padding: 24px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--bg-body);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--tr), box-shadow var(--tr);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background var(--tr), transform var(--tr);
+}
+
+.btn-submit:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+/* FAQ Accordion */
+.faq-list {
+  display: grid;
+  gap: 12px;
+  max-width: 920px;
+}
+
+.faq-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  list-style: none;
+  padding: 18px 22px;
+  font-weight: 700;
+  font-size: 0.96rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-plus {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform var(--tr), background var(--tr);
+}
+
+.faq-item[open] .faq-plus {
+  transform: rotate(45deg);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.faq-answer {
+  padding: 0 22px 18px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Useful Govt Resources */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .resources-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .resources-grid { grid-template-columns: 1fr; }
+}
+
+.res-card {
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all var(--tr);
+}
+
+.res-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.res-domain {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.res-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.res-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   11. ADMIN BOSHQARUV MARKAZI (Multi-Tab CMS)
+   ========================================================================== */
+#admin-section {
+  display: none;
+  padding: 52px 0;
+  background: var(--bg-subtle);
+  border-bottom: 2px solid var(--accent);
+}
+
+#admin-section.visible {
+  display: block;
+}
+
+.admin-shell {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.admin-header {
+  padding: 18px 24px;
+  background: var(--accent-soft);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 12px 24px;
+  background: var(--bg-body);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.admin-tab {
+  padding: 9px 15px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--tr);
+}
+
+.admin-tab:hover {
+  background: var(--bg-surface);
+  color: var(--accent);
+}
+
+.admin-tab.active {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.admin-pane {
+  display: none;
+  padding: 26px 24px;
+}
+
+.admin-pane.active {
+  display: block;
+}
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 860px) {
+  .admin-form-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .admin-form-grid { grid-template-columns: 1fr; }
+}
+
+.admin-subhead {
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin: 18px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-subhead:first-child {
+  margin-top: 0;
+}
+
+.upload-zone {
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  background: var(--bg-body);
+  margin-bottom: 16px;
+  transition: all var(--tr);
+}
+
+.upload-zone:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.upload-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.admin-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.admin-photo-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-body);
+}
+
+.admin-photo-card img {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  display: block;
+}
+
+.admin-photo-actions {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-photo-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.mini-btn {
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.mini-btn.danger {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.mini-btn.danger:hover {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.admin-list-item {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-body);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.btn-save {
+  padding: 11px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--tr);
+}
+
+.btn-save:hover {
+  background: var(--accent-dark);
+}
+
+/* ==========================================================================
+   12. MODALS, TOAST & FOOTER
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 22, 0.62);
+  backdrop-filter: blur(5px);
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--tr);
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  transform: translateY(16px) scale(0.98);
+  transition: transform var(--tr);
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.modal-box.wide {
+  max-width: 640px;
+}
+
+.modal-overlay.active .modal-box {
+  transform: translateY(0) scale(1);
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.error-msg {
+  font-size: 0.78rem;
+  color: var(--danger);
+  margin-top: 5px;
+  display: none;
+}
+
+.error-msg.show {
+  display: block;
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f172a;
+  color: #ffffff;
+  border-left: 4px solid #34d399;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: all var(--tr);
+  pointer-events: none;
+  max-width: 360px;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+.site-footer {
+  background: #0b1326;
+  color: #cbd5e1;
+  padding: 52px 0 28px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 1fr;
+  gap: 36px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 860px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+.footer-col-title {
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  font-size: 0.86rem;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.back-top-btn {
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   13. PRINT STYLES (Maktab pasportini chop etish uchun)
+   ========================================================================== */
+@media print {
+  .topbar,
+  .site-header,
+  .hero-actions,
+  .hero-visual,
+  #schedule,
+  #news,
+  #gallery,
+  #contact,
+  #faq,
+  #resources,
+  #admin-section,
+  .site-footer,
+  .modal-overlay,
+  .lightbox-overlay,
+  .toast {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .page-section,
+  .hero-section {
+    padding: 18px 0 !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+  .stat-card,
+  .analytics-card,
+  .info-panel,
+  .pillar-card {
+    box-shadow: none !important;
+    border: 1px solid #bbb !important;
+    break-inside: avoid;
+  }
+}
+  </style>
 </head>
 <body>
 
@@ -163,7 +2655,7 @@
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="#hero" class="school-brand">
-        <img src="./assets/img/emblem.svg" alt="26-maktab gerbi" class="brand-emblem" width="44" height="44" />
+        <img src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%20role=%22img%22%20aria-label=%22Marg%27ilon%2026-maktab%20emblemasi%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id=%22crestBg%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%231e40af%22/%3E%20%3Cstop%20offset=%2255%25%22%20stop-color=%22%231d4ed8%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%230d9488%22/%3E%20%3C/linearGradient%3E%20%3ClinearGradient%20id=%22goldGrad%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%23fbbf24%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%23d97706%22/%3E%20%3C/linearGradient%3E%20%3C/defs%3E%20%3C%21--%20Rounded%20shield%20base%20--%3E%20%3Crect%20x=%226%22%20y=%226%22%20width=%22108%22%20height=%22108%22%20rx=%2226%22%20fill=%22url(%23crestBg)%22/%3E%20%3Crect%20x=%2211%22%20y=%2211%22%20width=%2298%22%20height=%2298%22%20rx=%2222%22%20fill=%22none%22%20stroke=%22rgba(255,255,255,0.24)%22%20stroke-width=%221.5%22/%3E%20%3C%21--%20Subtle%20Uzbek%208-point%20star%20ornament%20--%3E%20%3Cg%20opacity=%220.14%22%20stroke=%22%23ffffff%22%20stroke-width=%221.2%22%20fill=%22none%22%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22/%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22%20transform=%22rotate(45%2060%2060)%22/%3E%20%3C/g%3E%20%3C%21--%20Golden%20star%20/%20rays%20above%20book%20--%3E%20%3Cpolygon%20points=%2260,19%2063.2,26.4%2071.2,27.1%2065.1,32.3%2067,40.1%2060,35.9%2053,40.1%2054.9,32.3%2048.8,27.1%2056.8,26.4%22%20fill=%22url(%23goldGrad)%22/%3E%20%3C%21--%20Number%2026%20--%3E%20%3Ctext%20x=%2260%22%20y=%2266%22%20text-anchor=%22middle%22%20font-family=%22Georgia,%20%27Times%20New%20Roman%27,%20serif%22%20font-weight=%22700%22%20font-size=%2230%22%20fill=%22%23ffffff%22%20letter-spacing=%221%22%3E26%3C/text%3E%20%3C%21--%20Open%20book%20motif%20--%3E%20%3Cpath%20d=%22M28%2076%20C38%2072,%2050%2074,%2060%2080%20C70%2074,%2082%2072,%2092%2076%20L92%2091%20C82%2087,%2070%2089,%2060%2095%20C50%2089,%2038%2087,%2028%2091%20Z%22%20fill=%22none%22%20stroke=%22%23ffffff%22%20stroke-width=%223%22%20stroke-linejoin=%22round%22/%3E%20%3Cline%20x1=%2260%22%20y1=%2280%22%20x2=%2260%22%20y2=%2295%22%20stroke=%22%23fbbf24%22%20stroke-width=%222.5%22%20stroke-linecap=%22round%22/%3E%20%3Cpath%20d=%22M33%2096%20C43%2092.5,%2051%2094,%2060%2099%20C69%2094,%2077%2092.5,%2087%2096%22%20fill=%22none%22%20stroke=%22url(%23goldGrad)%22%20stroke-width=%222.2%22%20stroke-linecap=%22round%22/%3E%20%3C/svg%3E" alt="26-maktab gerbi" class="brand-emblem" width="44" height="44" />
         <div class="brand-text">
           <h1 class="brand-title" data-i18n="brand_title">Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi</h1>
           <p class="brand-sub" data-i18n="brand_sub">Rasmiy axborot portali · Farg'ona viloyati</p>
@@ -1099,7 +3591,7 @@
       <div class="footer-grid">
         <div>
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
-            <img src="./assets/img/emblem.svg" alt="26-maktab" width="40" height="40" style="border-radius:9px;" />
+            <img src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%20role=%22img%22%20aria-label=%22Marg%27ilon%2026-maktab%20emblemasi%22%3E%20%3Cdefs%3E%20%3ClinearGradient%20id=%22crestBg%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%231e40af%22/%3E%20%3Cstop%20offset=%2255%25%22%20stop-color=%22%231d4ed8%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%230d9488%22/%3E%20%3C/linearGradient%3E%20%3ClinearGradient%20id=%22goldGrad%22%20x1=%220%25%22%20y1=%220%25%22%20x2=%22100%25%22%20y2=%22100%25%22%3E%20%3Cstop%20offset=%220%25%22%20stop-color=%22%23fbbf24%22/%3E%20%3Cstop%20offset=%22100%25%22%20stop-color=%22%23d97706%22/%3E%20%3C/linearGradient%3E%20%3C/defs%3E%20%3C%21--%20Rounded%20shield%20base%20--%3E%20%3Crect%20x=%226%22%20y=%226%22%20width=%22108%22%20height=%22108%22%20rx=%2226%22%20fill=%22url(%23crestBg)%22/%3E%20%3Crect%20x=%2211%22%20y=%2211%22%20width=%2298%22%20height=%2298%22%20rx=%2222%22%20fill=%22none%22%20stroke=%22rgba(255,255,255,0.24)%22%20stroke-width=%221.5%22/%3E%20%3C%21--%20Subtle%20Uzbek%208-point%20star%20ornament%20--%3E%20%3Cg%20opacity=%220.14%22%20stroke=%22%23ffffff%22%20stroke-width=%221.2%22%20fill=%22none%22%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22/%3E%20%3Crect%20x=%2230%22%20y=%2230%22%20width=%2260%22%20height=%2260%22%20rx=%224%22%20transform=%22rotate(45%2060%2060)%22/%3E%20%3C/g%3E%20%3C%21--%20Golden%20star%20/%20rays%20above%20book%20--%3E%20%3Cpolygon%20points=%2260,19%2063.2,26.4%2071.2,27.1%2065.1,32.3%2067,40.1%2060,35.9%2053,40.1%2054.9,32.3%2048.8,27.1%2056.8,26.4%22%20fill=%22url(%23goldGrad)%22/%3E%20%3C%21--%20Number%2026%20--%3E%20%3Ctext%20x=%2260%22%20y=%2266%22%20text-anchor=%22middle%22%20font-family=%22Georgia,%20%27Times%20New%20Roman%27,%20serif%22%20font-weight=%22700%22%20font-size=%2230%22%20fill=%22%23ffffff%22%20letter-spacing=%221%22%3E26%3C/text%3E%20%3C%21--%20Open%20book%20motif%20--%3E%20%3Cpath%20d=%22M28%2076%20C38%2072,%2050%2074,%2060%2080%20C70%2074,%2082%2072,%2092%2076%20L92%2091%20C82%2087,%2070%2089,%2060%2095%20C50%2089,%2038%2087,%2028%2091%20Z%22%20fill=%22none%22%20stroke=%22%23ffffff%22%20stroke-width=%223%22%20stroke-linejoin=%22round%22/%3E%20%3Cline%20x1=%2260%22%20y1=%2280%22%20x2=%2260%22%20y2=%2295%22%20stroke=%22%23fbbf24%22%20stroke-width=%222.5%22%20stroke-linecap=%22round%22/%3E%20%3Cpath%20d=%22M33%2096%20C43%2092.5,%2051%2094,%2060%2099%20C69%2094,%2077%2092.5,%2087%2096%22%20fill=%22none%22%20stroke=%22url(%23goldGrad)%22%20stroke-width=%222.2%22%20stroke-linecap=%22round%22/%3E%20%3C/svg%3E" alt="26-maktab" width="40" height="40" style="border-radius:9px;" />
             <strong style="color:#ffffff;font-size:1rem;">Marg'ilon shahri 26-son Maktab</strong>
           </div>
           <p style="font-size:0.86rem;line-height:1.7;max-width:420px;" data-i18n="footer_about">
@@ -1185,8 +3677,2204 @@
 
   <!-- Leaflet JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <!-- Portal Data & Logic -->
-  <script src="./assets/js/data.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <!-- Portal Data & Logic (100% Standalone Single-File) -->
+  <script>
+/* ==========================================================================
+   MARG'ILON 26-SON MAKTAB — MA'LUMOTLAR BAZASI VA KO'P TILLI LUG'AT (i18n)
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  const SCHOOL_COORDS = { lat: 40.4765, lng: 71.7380 };
+  const LEGACY_STORE_KEY = 'maktab26_v4';
+  const STORE_KEY = 'maktab26_portal_v5';
+
+  const DEFAULT_IMAGES = [
+    {
+      src: 'https://i.ibb.co/sdQpJkkP/photo-2-2026-02-18-11-37-07.jpg',
+      caption: "Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi bosh binosi"
+    },
+    {
+      src: 'https://i.ibb.co/JFn1BZ6H/photo-1-2026-02-18-11-37-07.jpg',
+      caption: "Maktab hududi va obodonlashtirilgan o'quv hovlisi"
+    },
+    {
+      src: 'https://i.ibb.co/60LHCcWr/photo-3-2026-02-18-11-37-07.jpg',
+      caption: "Zamonaviy ta'lim maskani — o'quv korpusi ko'rinishi"
+    }
+  ];
+
+  const DEFAULT_NEWS = [
+    {
+      id: 'n1',
+      category: 'yutuqlar',
+      date: '2026-10-28',
+      title: "Asosiy fan olimpiadasining maktab va shahar bosqichida yuqori natijalar qayd etildi",
+      summary: "Maktabimizning 9–11-sinf o'quvchilari matematika, ingliz tili va ona tili fanlaridan faxrli o'rinlarni qo'lga kiritishdi.",
+      body: "2026–2027 o'quv yili doirasida o'tkazilgan asosiy fan olimpiadalarida Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi o'quvchilari munosib ishtirok etishdi. Matematika, fizika, ingliz tili hamda ona tili va adabiyot yo'nalishlarida iqtidorli o'quvchilarimiz yuqori ball to'plab, keyingi bosqich yo'llanmasini qo'lga kiritdilar. G'olib o'quvchilar va ularning ustozlari maktab ma'muriyati tomonidan faxriy yorliq hamda esdalik sovg'alari bilan taqdirlandi."
+    },
+    {
+      id: 'n2',
+      category: 'elonlar',
+      date: '2026-10-24',
+      title: "Ota-onalar uchun «Ochiq eshiklar kuni» va choraklik muloqot uchrashuvlari",
+      summary: "Farzandingizning o'zlashtirish ko'rsatkichlari, davomati va to'garaklardagi ishtiroki bilan yaqindan tanishing.",
+      body: "Hurmatli ota-onalar! Maktabimizda ta'lim sifatini oshirish hamda «Oila — mahalla — maktab» hamkorligini mustahkamlash maqsadida har shanba kuni soat 10:00 dan 13:00 ga qadar ochiq muloqot soatlari tashkil etilmoqda. Tashrif davomida fan o'qituvchilari, sinf rahbarlari va maktab psixologi bilan suhbatlashishingiz, shuningdek eMaktab raqamli kundalik tizimidagi natijalar bo'yicha maslahat olishingiz mumkin."
+    },
+    {
+      id: 'n3',
+      category: 'yangiliklar',
+      date: '2026-10-16',
+      title: "Axborot texnologiyalari va xorijiy tillar to'garaklariga qo'shimcha qabul boshlandi",
+      summary: "5–11-sinf o'quvchilari uchun kompyuter savodxonligi, algoritmlash va ingliz tili suhbat klublari bepul faoliyat yuritmoqda.",
+      body: "O'quvchilarning bo'sh vaqtini mazmunli tashkil etish hamda zamonaviy kasb va til ko'nikmalarini shakllantirish maqsadida maktabimizda darsdan tashqari bepul fan va IT to'garaklari kengaytirildi. Mashg'ulotlar zamonaviy kompyuter xonalarida malakali pedagoglar tomonidan haftada 3 marotaba olib boriladi. Ro'yxatdan o'tish uchun sinf rahbari yoki o'quv ishlari bo'yicha direktor o'rinbosariga murojaat qiling."
+    },
+    {
+      id: 'n4',
+      category: 'tadbirlar',
+      date: '2026-10-09',
+      title: "«Besh muhim tashabbus» doirasida shaxmat va kitobxonlik haftaligi bo'lib o'tdi",
+      summary: "Maktab axborot-resurs markazida «Yosh kitobxon» ko'rik-tanlovi hamda sinflararo shaxmat birinchiligi o'tkazildi.",
+      body: "O'quvchi-yoshlar o'rtasida kitobxonlik madaniyatini yuksaltirish va mantiqiy fikrlashni rivojlantirish maqsadida 26-son maktabda ma'naviy-ma'rifiy haftalik tashkil etildi. Tanlovda 120 nafardan ortiq o'quvchilar o'zbek va jahon adabiyoti durdonalari bo'yicha bilimlarini sinovdan o'tkazdilar. Shaxmat musobaqasi g'oliblari shahar birinchiligida maktabimiz sharafini himoya qiladilar."
+    }
+  ];
+
+  const DEFAULT_CLUBS = [
+    {
+      id: 'c1',
+      category: 'stem',
+      name: 'Yosh matematiklar va mantiq',
+      grades: '5–11-sinflar',
+      room: '204-xona',
+      schedule: 'Dushanba · Chorshanba · Juma | 13:30 – 15:00',
+      mentor: 'Aniq fanlar uslubiy birlashmasi'
+    },
+    {
+      id: 'c2',
+      category: 'lang',
+      name: 'English Speaking & CEFR tayyorlov',
+      grades: '5–11-sinflar',
+      room: '211-xona',
+      schedule: 'Seshanba · Payshanba · Shanba | 14:00 – 15:30',
+      mentor: 'Xorijiy tillar kafedrasi'
+    },
+    {
+      id: 'c3',
+      category: 'it',
+      name: 'Raqamli texnologiyalar va dasturlash',
+      grades: '6–11-sinflar',
+      room: 'AKT-1 sinfi',
+      schedule: 'Dushanba · Payshanba | 14:00 – 15:30',
+      mentor: 'Informatika va AKT fani'
+    },
+    {
+      id: 'c4',
+      category: 'stem',
+      name: 'Amaliy fizika va laboratoriya',
+      grades: '7–11-sinflar',
+      room: 'Fizika lab.',
+      schedule: 'Chorshanba · Juma | 14:00 – 15:30',
+      mentor: 'Tabiiy va aniq fanlar'
+    },
+    {
+      id: 'c5',
+      category: 'lang',
+      name: 'Rus tili erkin muloqot klubi',
+      grades: '2–9-sinflar',
+      room: '108-xona',
+      schedule: 'Seshanba · Juma | 13:00 – 14:30',
+      mentor: 'Rus tili va adabiyoti'
+    },
+    {
+      id: 'c6',
+      category: 'sport',
+      name: 'Shaxmat — aql gimnastikasi',
+      grades: '1–11-sinflar',
+      room: "Ma'naviyat xonasi",
+      schedule: 'Dushanba · Chorshanba · Shanba | 12:30 – 14:00',
+      mentor: 'Sport va intellektual klub'
+    },
+    {
+      id: 'c7',
+      category: 'sport',
+      name: 'Mini-futbol va voleybol seksiyasi',
+      grades: '4–11-sinflar',
+      room: 'Sport zali',
+      schedule: 'Seshanba · Payshanba · Shanba | 15:00 – 16:30',
+      mentor: 'Jismoniy tarbiya birlashmasi'
+    },
+    {
+      id: 'c8',
+      category: 'sport',
+      name: 'Tasviriy san’at va ijodkorlik',
+      grades: '1–8-sinflar',
+      room: "San'at xonasi",
+      schedule: 'Chorshanba · Shanba | 13:00 – 14:30',
+      mentor: 'Estetik tarbiya yo‘nalishi'
+    }
+  ];
+
+  const BELL_SCHEDULE = {
+    shift1: [
+      { num: 1, start: '08:00', end: '08:45', breakMin: 5 },
+      { num: 2, start: '08:50', end: '09:35', breakMin: 10 },
+      { num: 3, start: '09:45', end: '10:30', breakMin: 15 },
+      { num: 4, start: '10:45', end: '11:30', breakMin: 5 },
+      { num: 5, start: '11:35', end: '12:20', breakMin: 5 },
+      { num: 6, start: '12:25', end: '13:10', breakMin: 0 }
+    ],
+    shift2: [
+      { num: 1, start: '13:30', end: '14:15', breakMin: 5 },
+      { num: 2, start: '14:20', end: '15:05', breakMin: 10 },
+      { num: 3, start: '15:15', end: '16:00', breakMin: 10 },
+      { num: 4, start: '16:10', end: '16:55', breakMin: 5 },
+      { num: 5, start: '17:00', end: '17:45', breakMin: 5 },
+      { num: 6, start: '17:50', end: '18:35', breakMin: 0 }
+    ]
+  };
+
+  const DEFAULT_DATA = {
+    students: 936,
+    staff: 66,
+    rooms: 32,
+    capacity: 1000,
+    teacherTop: 18,
+    teacherFirst: 24,
+    teacherSecond: 15,
+    teacherSpec: 9,
+    gradRate: 84,
+    booksCount: 14500,
+    itLabs: 2,
+    foundedYear: 1990,
+    phone: '+998 (73) 253-26-00',
+    email: 'info@maktab26margilan.uz',
+    telegram: 'https://t.me/margilon_26maktab',
+    address: "Marg'ilon shahri, Farg'ona viloyati, O'zbekiston",
+    workHours: 'Dushanba – Shanba, 08:00 – 17:00',
+    shifts: '2 smenali · 1–11-sinflar',
+    directorName: 'Maktab direktori',
+    directorReception: 'Seshanba va Juma · 14:00 – 17:00',
+    deputyAcademic: "O'quv ishlari bo'yicha direktor o'rinbosari",
+    deputyAcademicReception: 'Dushanba va Payshanba · 14:00 – 16:30',
+    deputySpiritual: "Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar",
+    deputySpiritualReception: 'Chorshanba va Shanba · 10:00 – 13:00',
+    adminPass: '1234',
+    images: DEFAULT_IMAGES,
+    news: DEFAULT_NEWS,
+    clubs: DEFAULT_CLUBS,
+    appeals: []
+  };
+
+  function normalizeImages(imgs) {
+    if (!Array.isArray(imgs) || imgs.length === 0) {
+      return DEFAULT_IMAGES.map(item => ({ ...item }));
+    }
+    return imgs
+      .map((item, idx) => {
+        if (typeof item === 'string') {
+          return {
+            src: item,
+            caption: DEFAULT_IMAGES[idx]
+              ? DEFAULT_IMAGES[idx].caption
+              : `Marg'ilon 26-son maktab fotolavhasi (${idx + 1}-rasm)`
+          };
+        }
+        if (item && typeof item === 'object' && item.src) {
+          return {
+            src: String(item.src),
+            caption: item.caption || `Marg'ilon 26-son maktab fotolavhasi (${idx + 1}-rasm)`
+          };
+        }
+        return null;
+      })
+      .filter(Boolean);
+  }
+
+  function loadPortalData() {
+    try {
+      const rawV5 = localStorage.getItem(STORE_KEY);
+      if (rawV5) {
+        const parsed = JSON.parse(rawV5);
+        return {
+          ...DEFAULT_DATA,
+          ...parsed,
+          images: normalizeImages(parsed.images),
+          news: Array.isArray(parsed.news) ? parsed.news : DEFAULT_NEWS.map(n => ({ ...n })),
+          clubs: Array.isArray(parsed.clubs) ? parsed.clubs : DEFAULT_CLUBS.map(c => ({ ...c })),
+          appeals: Array.isArray(parsed.appeals) ? parsed.appeals : []
+        };
+      }
+      // Avvalgi versiyadan (maktab26_v4) ma'lumotlarni ehtiyotkorlik bilan ko'chirish
+      const rawLegacy = localStorage.getItem(LEGACY_STORE_KEY);
+      if (rawLegacy) {
+        const legacy = JSON.parse(rawLegacy);
+        const migrated = {
+          ...DEFAULT_DATA,
+          students: typeof legacy.students === 'number' ? legacy.students : DEFAULT_DATA.students,
+          staff: typeof legacy.staff === 'number' ? legacy.staff : DEFAULT_DATA.staff,
+          rooms: typeof legacy.rooms === 'number' ? legacy.rooms : DEFAULT_DATA.rooms,
+          capacity: typeof legacy.capacity === 'number' ? legacy.capacity : DEFAULT_DATA.capacity,
+          images: normalizeImages(legacy.images)
+        };
+        localStorage.setItem(STORE_KEY, JSON.stringify(migrated));
+        return migrated;
+      }
+    } catch (err) {
+      console.warn('LocalStorage o‘qishda xatolik:', err);
+    }
+    return JSON.parse(JSON.stringify(DEFAULT_DATA));
+  }
+
+  function savePortalData(data) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(data));
+  }
+
+  function getStorageUsageKB() {
+    try {
+      const str = localStorage.getItem(STORE_KEY) || '';
+      return Math.round((str.length * 2) / 1024);
+    } catch {
+      return 0;
+    }
+  }
+
+  /* ========================================================================
+     O'ZBEK LOTIN -> KIRILL AVTOMATIK TRANSLITERATORI
+     (URL, email va raqamlarga tegmagan holda aniq o'giradi)
+     ======================================================================== */
+  function latinToCyrillic(input) {
+    if (!input || typeof input !== 'string') return input;
+
+    // URL, email va xalqaro abbreviaturalarni vaqtincha himoyalash
+    const protectedTokens = [];
+    let text = input.replace(/(https?:\/\/[^\s]+|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|\b(?:eMaktab|CEFR|STEM|IELTS|HTML|JSON|PDF|UZ|GPS|UTC)\b)/g, match => {
+      protectedTokens.push(match);
+      return `\uE000${protectedTokens.length - 1}\uE001`;
+    });
+
+    // Apostroflarni yagona shaklga keltirish
+    text = text.replace(/[‘’ʼ`´]/g, "'");
+
+    // Qo'sh harflar (digraflar)
+    text = text
+      .replace(/O'/g, 'Ў')
+      .replace(/o'/g, 'ў')
+      .replace(/G'/g, 'Ғ')
+      .replace(/g'/g, 'ғ')
+      .replace(/YO'/g, 'ЙЎ')
+      .replace(/Yo'/g, 'Йў')
+      .replace(/yo'/g, 'йў')
+      .replace(/SH/g, 'Ш')
+      .replace(/Sh/g, 'Ш')
+      .replace(/sh/g, 'ш')
+      .replace(/CH/g, 'Ч')
+      .replace(/Ch/g, 'Ч')
+      .replace(/ch/g, 'ч')
+      .replace(/YO/g, 'Ё')
+      .replace(/Yo/g, 'Ё')
+      .replace(/yo/g, 'ё')
+      .replace(/YU/g, 'Ю')
+      .replace(/Yu/g, 'Ю')
+      .replace(/yu/g, 'ю')
+      .replace(/YA/g, 'Я')
+      .replace(/Ya/g, 'Я')
+      .replace(/ya/g, 'я')
+      .replace(/TS/g, 'Ц')
+      .replace(/Ts/g, 'Ц')
+      .replace(/ts/g, 'ц')
+      .replace(/YE/g, 'Е')
+      .replace(/Ye/g, 'Е')
+      .replace(/ye/g, 'е');
+
+    // So'z boshida yoki unlidan/tutuq belgisidan keyin kelgan E/e -> Э/э
+    text = text.replace(/(^|[\s(\["«—\-])E/g, '$1Э');
+    text = text.replace(/(^|[\s(\["«—\-])e/g, '$1э');
+
+    // Tutuq belgisi
+    text = text.replace(/([A-Za-zА-Яа-яЎўҚқҒғҲҳ])'([A-Za-zА-Яа-яЎўҚқҒғҲҳ])/g, '$1ъ$2');
+    text = text.replace(/'/g, '');
+
+    const charMap = {
+      A: 'А', a: 'а',
+      B: 'Б', b: 'б',
+      D: 'Д', d: 'д',
+      E: 'Е', e: 'е',
+      F: 'Ф', f: 'ф',
+      G: 'Г', g: 'г',
+      H: 'Ҳ', h: 'ҳ',
+      I: 'И', i: 'и',
+      J: 'Ж', j: 'ж',
+      K: 'К', k: 'к',
+      L: 'Л', l: 'л',
+      M: 'М', m: 'м',
+      N: 'Н', n: 'н',
+      O: 'О', o: 'о',
+      P: 'П', p: 'п',
+      Q: 'Қ', q: 'қ',
+      R: 'Р', r: 'р',
+      S: 'С', s: 'с',
+      T: 'Т', t: 'т',
+      U: 'У', u: 'у',
+      V: 'В', v: 'в',
+      X: 'Х', x: 'х',
+      Y: 'Й', y: 'й',
+      Z: 'З', z: 'з',
+      C: 'К', c: 'к',
+      W: 'В', w: 'в'
+    };
+
+    text = text.replace(/[A-Za-z]/g, ch => charMap[ch] || ch);
+
+    // Himoyalangan URL/emaillarni qayta tiklash
+    text = text.replace(/\uE000(\d+)\uE001/g, (_, idx) => protectedTokens[Number(idx)] || '');
+    return text;
+  }
+
+  /* ========================================================================
+     RUS TILI UCHUN TARJIMALAR (RU)
+     ======================================================================== */
+  const RU_TRANSLATIONS = {
+    ministry_line: 'Министерство дошкольного и школьного образования РУз · Отдел ММТБ г. Маргилан',
+    brand_title: 'Общеобразовательная школа №26 города Маргилан',
+    brand_sub: 'Официальный информационный портал · Ферганская область',
+    nav_stats: 'Показатели',
+    nav_about: 'О школе',
+    nav_schedule: 'Расписание',
+    nav_news: 'Новости',
+    nav_gallery: 'Галерея',
+    nav_contact: 'Контакты',
+    btn_login: '🔐 Вход',
+    btn_admin_panel: '⚙️ Панель',
+    btn_logout: 'Выйти',
+    a11y_label: 'Спец. возможности',
+    a11y_font: 'Размер шрифта',
+    a11y_contrast: 'Черно-белый режим',
+
+    hero_badge: '🏛️ Качественное образование с 1990 года · город Маргилан',
+    hero_title: 'Средняя общеобразовательная школа №26 города Маргилан',
+    hero_desc: 'Современная образовательная среда, национальные ценности и передовые методики обучения. Раскрываем потенциал и таланты каждого ученика с 1 по 11 класс.',
+    hero_cta_primary: '📬 Обращение и приём',
+    hero_cta_schedule: '🕒 Расписание звонков',
+    hero_cta_passport: '🖨️ Паспорт школы',
+    hero_pill_1: '✓ 1–11 классы (гос. стандарт)',
+    hero_pill_2: '✓ Цифровой дневник eMaktab',
+    hero_pill_3: '✓ Бесплатные кружки и спорт',
+    hero_live_title: 'Учебный процесс (Ташкент UTC+5)',
+    hero_year_badge: '2026–2027 учебный год',
+
+    stats_kicker: 'ОСНОВНЫЕ ПОКАЗАТЕЛИ',
+    stats_title: 'Школа в цифрах и фактах',
+    stats_desc: 'Открытые статистические показатели деятельности школы №26 города Маргилан за 2026–2027 учебный год',
+    stat_students: 'Численность учащихся',
+    stat_students_sub: 'Обучаются в 1–11 классах',
+    stat_staff: 'Педагогический состав',
+    stat_staff_sub: 'Квалифицированные учителя и наставники',
+    stat_rooms: 'Учебные кабинеты',
+    stat_rooms_sub: 'Предметные кабинеты и лаборатории',
+    stat_capacity: 'Проектная мощность',
+    stat_capacity_sub: 'Мест расчётной вместимости',
+    analytics_teachers_title: 'Квалификационный потенциал педагогов',
+    cat_top: 'Высшая категория',
+    cat_first: 'I категория',
+    cat_second: 'II категория',
+    cat_spec: 'Специалисты',
+    analytics_infra_title: 'Инфраструктура и эффективность',
+    metric_occupancy: 'Заполняемость школы',
+    metric_ratio: 'Соотношение ученик / учитель',
+    metric_grad: 'Поступление выпускников в ВУЗы и проф. учебные заведения',
+    metric_books: 'Фонд информационно-ресурсного центра (книг)',
+
+    about_kicker: 'О НАШЕЙ ШКОЛЕ',
+    about_title: 'Образовательные направления и паспорт учреждения',
+    about_desc: 'Гармоничное сочетание фундаментальных знаний, цифровых навыков и духовно-просветительского воспитания',
+    pillar_1_t: 'Точные и естественные науки (STEM)',
+    pillar_1_d: 'Углублённые занятия по математике, физике, химии и биологии с лабораторной практикой.',
+    pillar_2_t: 'Иностранные языки',
+    pillar_2_d: 'Обучение английскому и русскому языкам по коммуникативной методике, подготовка к сертификатам CEFR.',
+    pillar_3_t: 'Цифровые технологии и ИТ',
+    pillar_3_d: 'Компьютерная грамотность, основы алгоритмизации и работа в современных компьютерных классах.',
+    pillar_4_t: 'Олимпиады и работа с одарёнными',
+    pillar_4_d: 'Системная подготовка к предметным олимпиадам, интеллектуальным играм «Заковат» и конкурсам.',
+    pillar_5_t: 'Спорт и Пять важных инициатив',
+    pillar_5_d: 'Секции шахмат, мини-футбола, волейбола, изобразительного искусства и музыкального творчества.',
+    pillar_6_t: 'Информационно-ресурсный центр',
+    pillar_6_d: 'Богатый библиотечный фонд учебной и художественной литературы, читальный зал для школьников.',
+
+    passport_title: '📋 Официальный паспорт школы',
+    pass_name_lbl: 'Полное наименование',
+    pass_name_val: 'Общеобразовательная школа №26 г. Маргилан Ферганской области',
+    pass_year_lbl: 'Год основания',
+    pass_type_lbl: 'Тип учреждения',
+    pass_type_val: 'Государственная средняя общеобразовательная школа (1–11 кл.)',
+    pass_lang_lbl: 'Язык обучения',
+    pass_lang_val: 'Узбекский язык',
+    pass_shift_lbl: 'Режим сменности',
+    pass_hours_lbl: 'Рабочее время',
+    pass_addr_lbl: 'Юридический адрес',
+
+    admin_card_title: '🏛️ Руководство и часы приёма граждан',
+    admin_card_sub: 'Родители и граждане могут обратиться в установленные дни приёма или оставить онлайн-заявку',
+
+    sched_kicker: 'УЧЕБНЫЙ РИТМ И КРУЖКИ',
+    sched_title: 'Расписание звонков и бесплатные кружки',
+    sched_desc: 'Актуальное время уроков в реальном времени и расписание внеклассных секций',
+    bell_panel_title: '🔔 Расписание звонков',
+    shift_1_btn: '1-я смена (08:00)',
+    shift_2_btn: '2-я смена (13:30)',
+    lesson_word: '-й урок',
+    break_word: 'Перемена',
+    break_none: 'Окончание смены',
+    clubs_panel_title: '🎯 Предметные и спортивные кружки',
+    filter_all: 'Все',
+    filter_stem: 'Точные науки',
+    filter_lang: 'Языки',
+    filter_it: 'ИТ',
+    filter_sport: 'Спорт и творчество',
+    club_search_ph: 'Поиск кружка или класса...',
+
+    news_kicker: 'ЖИЗНЬ ШКОЛЫ',
+    news_title: 'Новости, объявления и достижения',
+    news_desc: 'Важные события, результаты олимпиад и объявления для учащихся и родителей',
+    news_all: 'Все',
+    news_yangiliklar: 'Новости',
+    news_elonlar: 'Объявления',
+    news_yutuqlar: 'Достижения',
+    news_tadbirlar: 'Мероприятия',
+    news_search_ph: 'Поиск по новостям...',
+    read_more: 'Подробнее →',
+
+    gallery_kicker: 'ФОТОГАЛЕРЕЯ',
+    gallery_title: 'Здание и учебная среда школы №26',
+    gallery_desc: 'Фотографии территории, учебных корпусов и школьной жизни',
+    btn_autoplay_on: '⏸ Пауза',
+    btn_autoplay_off: '▶ Автопоказ',
+    btn_fullscreen: '🔍 На весь экран',
+
+    contact_kicker: 'КОНТАКТЫ И ОБРАЩЕНИЯ',
+    contact_title: 'Расположение на карте и онлайн-приёмная',
+    contact_desc: 'Свяжитесь с администрацией школы, проложите маршрут или отправьте обращение онлайн',
+    map_head_title: '📍 Адрес школы — г. Маргилан, Ферганская область',
+    map_layer_street: 'Схема',
+    map_layer_sat: 'Спутник',
+    map_reset: 'Центрировать',
+    form_title: '✉️ Онлайн-обращение и запись на приём',
+    form_sub: 'Ваше сообщение поступает напрямую в панель администрации школы',
+    lbl_fullname: 'Ф.И.О. заявителя *',
+    ph_fullname: 'Например: Каримов Анвар Рустамович',
+    lbl_phone: 'Контактный телефон *',
+    ph_phone: '+998 90 123-45-67',
+    lbl_topic: 'Тема обращения',
+    opt_question: 'Вопрос об обучении / школе',
+    opt_reception: 'Запись на приём к директору',
+    opt_club: 'Запись ребёнка в кружок',
+    opt_suggestion: 'Предложение и отзыв',
+    lbl_message: 'Текст обращения *',
+    ph_message: 'Кратко опишите ваш вопрос или обращение...',
+    btn_send_appeal: 'Отправить обращение',
+
+    faq_kicker: 'ВОПРОСЫ И ОТВЕТЫ',
+    faq_title: 'Часто задаваемые вопросы родителей',
+    faq_q1: 'Как подать документы для приёма ребёнка в 1-й класс?',
+    faq_a1: 'Приём в 1-й класс осуществляется ежегодно с 20 июня через единую электронную платформу Министерства дошкольного и школьного образования my.maktab.uz либо при личном обращении в приёмную комиссию школы с метрикой ребёнка и паспортом родителя.',
+    faq_q2: 'Как подключиться к электронному дневнику eMaktab?',
+    faq_a2: 'Логин и временный пароль для родителей и учеников выдаются классным руководителем. После получения данных войдите на платформу emaktab.uz для отслеживания оценок, расписания уроков и домашних заданий.',
+    faq_q3: 'Бесплатны ли школьные кружки и спортивные секции?',
+    faq_a3: 'Да, все предметные кружки, компьютерные занятия и спортивные секции в рамках «Пяти важных инициатив» внутри школы №26 проводятся абсолютно бесплатно.',
+    faq_q4: 'В какие часы работает школа и когда приёмные дни администрации?',
+    faq_a4: 'Школа открыта с понедельника по субботу с 08:00 до 17:00 (2-я смена учится до 18:35). График приёма директора и заместителей указан в разделе «О школе» выше, также доступна форма онлайн-обращения.',
+
+    res_kicker: 'ГОСУДАРСТВЕННЫЕ ОБРАЗОВАТЕЛЬНЫЕ РЕСУРСЫ',
+    footer_about: 'Государственная средняя общеобразовательная школа №26 города Маргилан Ферганской области. Качественное образование и воспитание с 1990 года.',
+    footer_nav: 'Разделы портала',
+    footer_contacts: 'Контактные данные',
+    footer_rights: '© 2026 · Общеобразовательная школа №26 г. Маргилан Ферганской области. Все права защищены.'
+  };
+
+  const RU_DYNAMIC_MAP = {
+    "Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi bosh binosi": "Главный учебный корпус общеобразовательной школы №26 города Маргилан",
+    "Maktab hududi va obodonlashtirilgan o'quv hovlisi": "Благоустроенная территория и внутренний двор школы №26",
+    "Zamonaviy ta'lim maskani — o'quv korpusi ko'rinishi": "Современное образовательное учреждение — вид учебного корпуса",
+    "Asosiy fan olimpiadasining maktab va shahar bosqichida yuqori natijalar qayd etildi": "Высокие результаты учащихся на школьном и городском этапах предметных олимпиад",
+    "Maktabimizning 9–11-sinf o'quvchilari matematika, ingliz tili va ona tili fanlaridan faxrli o'rinlarni qo'lga kiritishdi.": "Ученики 9–11 классов заняли призовые места по математике, английскому языку и родному языку.",
+    "Ota-onalar uchun «Ochiq eshiklar kuni» va choraklik muloqot uchrashuvlari": "«День открытых дверей» и еженедельные встречи для родителей",
+    "Farzandingizning o'zlashtirish ko'rsatkichlari, davomati va to'garaklardagi ishtiroki bilan yaqindan tanishing.": "Ознакомьтесь с успеваемостью, посещаемостью и участием вашего ребёнка во внеклассных кружках.",
+    "Axborot texnologiyalari va xorijiy tillar to'garaklariga qo'shimcha qabul boshlandi": "Открыт дополнительный набор в бесплатные кружки по ИТ и иностранным языкам",
+    "5–11-sinf o'quvchilari uchun kompyuter savodxonligi, algoritmlash va ingliz tili suhbat klublari bepul faoliyat yuritmoqda.": "Для учащихся 5–11 классов бесплатно работают клубы компьютерной грамотности, алгоритмизации и разговорного английского.",
+    "«Besh muhim tashabbus» doirasida shaxmat va kitobxonlik haftaligi bo'lib o'tdi": "В рамках «Пяти важных инициатив» прошла неделя шахмат и чтения книг",
+    "Maktab axborot-resurs markazida «Yosh kitobxon» ko'rik-tanlovi hamda sinflararo shaxmat birinchiligi o'tkazildi.": "В информационно-ресурсном центре школы прошли конкурс «Юный читатель» и межшкольный турнир по шахматам.",
+    "Yosh matematiklar va mantiq": "Юные математики и логика",
+    "English Speaking & CEFR tayyorlov": "English Speaking & подготовка к CEFR",
+    "Raqamli texnologiyalar va dasturlash": "Цифровые технологии и программирование",
+    "Amaliy fizika va laboratoriya": "Практическая физика и лаборатория",
+    "Rus tili erkin muloqot klubi": "Клуб свободного общения на русском языке",
+    "Shaxmat — aql gimnastikasi": "Шахматы — гимнастика ума",
+    "Mini-futbol va voleybol seksiyasi": "Секция мини-футбола и волейбола",
+    "Tasviriy san’at va ijodkorlik": "Изобразительное искусство и творчество",
+    "Maktab direktori": "Директор школы",
+    "O'quv ishlari bo'yicha direktor o'rinbosari": "Заместитель директора по учебной работе",
+    "Ma'naviy-ma'rifiy ishlar bo'yicha o'rinbosar": "Заместитель директора по духовно-просветительской работе",
+    "Seshanba va Juma · 14:00 – 17:00": "Вторник и Пятница · 14:00 – 17:00",
+    "Dushanba va Payshanba · 14:00 – 16:30": "Понедельник и Четверг · 14:00 – 16:30",
+    "Chorshanba va Shanba · 10:00 – 13:00": "Среда и Суббота · 10:00 – 13:00",
+    "Dushanba – Shanba, 08:00 – 17:00": "Понедельник – Суббота, 08:00 – 17:00",
+    "2 smenali · 1–11-sinflar": "2 смены · 1–11 классы",
+    "Marg'ilon shahri, Farg'ona viloyati, O'zbekiston": "г. Маргилан, Ферганская область, Узбекистан"
+  };
+
+  function localizeDynamic(text, lang) {
+    if (!text) return '';
+    if (lang === 'uzc') return latinToCyrillic(text);
+    if (lang === 'ru') return RU_DYNAMIC_MAP[text] || text;
+    return text;
+  }
+
+  window.MaktabData = {
+    SCHOOL_COORDS,
+    STORE_KEY,
+    DEFAULT_DATA,
+    DEFAULT_IMAGES,
+    DEFAULT_NEWS,
+    DEFAULT_CLUBS,
+    BELL_SCHEDULE,
+    RU_TRANSLATIONS,
+    RU_DYNAMIC_MAP,
+    loadPortalData,
+    savePortalData,
+    getStorageUsageKB,
+    latinToCyrillic,
+    localizeDynamic
+  };
+})();
+
+/* ==========================================================================
+   MARG'ILON 26-SON MAKTAB — ASOSIY INTERAKTIV ILOVA MANTIQI (app.js)
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  const {
+    SCHOOL_COORDS,
+    DEFAULT_DATA,
+    DEFAULT_IMAGES,
+    BELL_SCHEDULE,
+    RU_TRANSLATIONS,
+    loadPortalData,
+    savePortalData,
+    getStorageUsageKB,
+    latinToCyrillic,
+    localizeDynamic
+  } = window.MaktabData;
+
+  /* ------------------------------------------------------------------------
+     HOLAT (STATE)
+     ------------------------------------------------------------------------ */
+  let portalData = loadPortalData();
+  let currentLang = localStorage.getItem('maktab26_lang') || 'uz';
+  let activeShift = 'shift1';
+  let activeClubCat = 'all';
+  let activeNewsCat = 'all';
+  let currentSlide = 0;
+  let autoplayTimer = null;
+  let isAdmin = sessionStorage.getItem('maktab26_admin') === '1';
+
+  /* ------------------------------------------------------------------------
+     YORDAMCHI FUNKSIYALAR
+     ------------------------------------------------------------------------ */
+  function escapeHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  const toastEl = document.getElementById('toast');
+  let toastTimeout = null;
+  function showToast(msg) {
+    if (!toastEl) return;
+    clearTimeout(toastTimeout);
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    toastTimeout = setTimeout(() => toastEl.classList.remove('show'), 3400);
+  }
+
+  function persistAndRefresh() {
+    try {
+      savePortalData(portalData);
+      return true;
+    } catch (err) {
+      showToast("⚠️ Xotira to'ldi! Ba'zi katta rasmlarni o'chiring yoki URL orqali qo'shing.");
+      return false;
+    }
+  }
+
+  function uiText(uzLat, ruText) {
+    if (currentLang === 'ru') return ruText;
+    if (currentLang === 'uzc') return latinToCyrillic(uzLat);
+    return uzLat;
+  }
+
+  /* ------------------------------------------------------------------------
+     1. MAVZU (DARK / LIGHT) VA MAXSUS IMKONIYATLAR (A11Y)
+     ------------------------------------------------------------------------ */
+  const themeBtn = document.getElementById('themeBtn');
+  function applyTheme(theme) {
+    const t = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+    if (themeBtn) {
+      themeBtn.textContent = t === 'dark' ? '☀️' : '🌙';
+      themeBtn.title = t === 'dark' ? 'Kunduzgi rejim' : 'Tungi rejim';
+    }
+    localStorage.setItem('maktab_theme', t);
+  }
+  applyTheme(localStorage.getItem('maktab_theme') || 'light');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme');
+      applyTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  // Maxsus imkoniyatlar menyusi
+  const a11yToggleBtn = document.getElementById('a11yToggleBtn');
+  const a11yPopover = document.getElementById('a11yPopover');
+  const contrastToggleBtn = document.getElementById('contrastToggleBtn');
+
+  function applyFontScale(scale) {
+    const s = ['sm', 'md', 'lg'].includes(scale) ? scale : 'md';
+    document.documentElement.setAttribute('data-font-scale', s);
+    localStorage.setItem('maktab26_scale', s);
+    document.querySelectorAll('.scale-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.scale === s);
+    });
+  }
+  applyFontScale(localStorage.getItem('maktab26_scale') || 'md');
+
+  function applyGrayscale(enabled) {
+    const val = enabled ? 'true' : 'false';
+    document.documentElement.setAttribute('data-grayscale', val);
+    localStorage.setItem('maktab26_gray', val);
+    if (contrastToggleBtn) contrastToggleBtn.classList.toggle('active', enabled);
+  }
+  applyGrayscale(localStorage.getItem('maktab26_gray') === 'true');
+
+  if (a11yToggleBtn && a11yPopover) {
+    a11yToggleBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      const willOpen = a11yPopover.classList.contains('hidden');
+      a11yPopover.classList.toggle('hidden', !willOpen);
+      a11yToggleBtn.setAttribute('aria-expanded', String(willOpen));
+    });
+    document.addEventListener('click', e => {
+      if (!a11yPopover.contains(e.target) && e.target !== a11yToggleBtn) {
+        a11yPopover.classList.add('hidden');
+        a11yToggleBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  document.querySelectorAll('.scale-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyFontScale(btn.dataset.scale));
+  });
+
+  if (contrastToggleBtn) {
+    contrastToggleBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-grayscale') === 'true';
+      applyGrayscale(!cur);
+    });
+  }
+
+  /* ------------------------------------------------------------------------
+     2. MOBIL MENYU VA SCROLL ACTIVE NAV SPY
+     ------------------------------------------------------------------------ */
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  if (mobileMenuBtn && mobileDrawer) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const open = mobileDrawer.classList.toggle('open');
+      mobileMenuBtn.textContent = open ? '✕' : '☰';
+    });
+    mobileDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+        mobileMenuBtn.textContent = '☰';
+      });
+    });
+  }
+
+  // Yuqoriga qaytish va Pasportni chop etish
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+  const printPassportBtn = document.getElementById('printPassportBtn');
+  if (printPassportBtn) {
+    printPassportBtn.addEventListener('click', () => window.print());
+  }
+
+  // Bo'limlarni kuzatish (Active Nav Link)
+  if ('IntersectionObserver' in window) {
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.main-nav .nav-link');
+    const spy = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(a => {
+              a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
+            });
+          }
+        });
+      },
+      { rootMargin: '-30% 0px -60% 0px' }
+    );
+    sections.forEach(sec => spy.observe(sec));
+  }
+
+  /* ------------------------------------------------------------------------
+     3. KO'P TILLI TIZIM (O'Z LOTIN / ЎЗ КИРИЛЛ / РУССКИЙ)
+     ------------------------------------------------------------------------ */
+  function convertHtmlTextNodesToCyrillic(htmlStr) {
+    const temp = document.createElement('div');
+    temp.innerHTML = htmlStr;
+    const walker = document.createTreeWalker(temp, NodeFilter.SHOW_TEXT, null);
+    let node;
+    while ((node = walker.nextNode())) {
+      node.nodeValue = latinToCyrillic(node.nodeValue);
+    }
+    return temp.innerHTML;
+  }
+
+  function applyLanguage(lang) {
+    currentLang = ['uz', 'uzc', 'ru'].includes(lang) ? lang : 'uz';
+    localStorage.setItem('maktab26_lang', currentLang);
+    document.documentElement.lang = currentLang === 'ru' ? 'ru' : 'uz';
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === currentLang);
+    });
+
+    // Statik matnlar
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      if (!el.hasAttribute('data-orig-html')) {
+        el.setAttribute('data-orig-html', el.innerHTML.trim());
+      }
+      const key = el.getAttribute('data-i18n');
+      const origHtml = el.getAttribute('data-orig-html');
+
+      if (currentLang === 'uz') {
+        el.innerHTML = origHtml;
+      } else if (currentLang === 'uzc') {
+        el.innerHTML = convertHtmlTextNodesToCyrillic(origHtml);
+      } else if (currentLang === 'ru' && RU_TRANSLATIONS[key]) {
+        el.textContent = RU_TRANSLATIONS[key];
+      }
+    });
+
+    // Input placeholderlar
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(inp => {
+      if (!inp.hasAttribute('data-orig-ph')) {
+        inp.setAttribute('data-orig-ph', inp.getAttribute('placeholder') || '');
+      }
+      const key = inp.getAttribute('data-i18n-placeholder');
+      const origPh = inp.getAttribute('data-orig-ph');
+
+      if (currentLang === 'uz') {
+        inp.setAttribute('placeholder', origPh);
+      } else if (currentLang === 'uzc') {
+        inp.setAttribute('placeholder', latinToCyrillic(origPh));
+      } else if (currentLang === 'ru' && RU_TRANSLATIONS[key]) {
+        inp.setAttribute('placeholder', RU_TRANSLATIONS[key]);
+      }
+    });
+
+    // Dinamik bloklarni qayta chizish
+    renderAllDynamicContent(false);
+    const apBtn = document.getElementById('autoplayToggleBtn');
+    if (apBtn) {
+      apBtn.textContent = autoplayTimer
+        ? uiText("⏸ To'xtatish", '⏸ Пауза')
+        : uiText('▶ Avto-namoyish', '▶ Автопоказ');
+    }
+    updateLiveSchoolStatus();
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+  });
+
+  /* ------------------------------------------------------------------------
+     4. JONLI TOSHKENT SOATI VA QO'NG'IROQ HOLATI (UTC+5)
+     ------------------------------------------------------------------------ */
+  function getTashkentNow() {
+    try {
+      const now = new Date();
+      const parts = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Asia/Tashkent',
+        hour12: false,
+        weekday: 'short',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      }).formatToParts(now);
+      const map = {};
+      parts.forEach(p => { map[p.type] = p.value; });
+      const wdMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+      const h = parseInt(map.hour, 10) || 0;
+      const m = parseInt(map.minute, 10) || 0;
+      const s = parseInt(map.second, 10) || 0;
+      return {
+        day: wdMap[map.weekday] ?? now.getDay(),
+        hour: h,
+        minute: m,
+        second: s,
+        totalMin: h * 60 + m,
+        timeStr: `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`
+      };
+    } catch {
+      const d = new Date();
+      return {
+        day: d.getDay(),
+        hour: d.getHours(),
+        minute: d.getMinutes(),
+        second: d.getSeconds(),
+        totalMin: d.getHours() * 60 + d.getMinutes(),
+        timeStr: `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`
+      };
+    }
+  }
+
+  function parseHM(hm) {
+    const [h, m] = hm.split(':').map(Number);
+    return h * 60 + m;
+  }
+
+  function evaluateBellState(tNow) {
+    // Yakshanba (0) — dam olish kuni
+    if (tNow.day === 0) {
+      return {
+        active: false,
+        shift: null,
+        lessonNum: null,
+        progress: 0,
+        shortLabel: uiText('Dam olish kuni', 'Выходной день'),
+        detailLabel: uiText('Yakshanba — darslar dushanba 08:00 da boshlanadi', 'Воскресенье — занятия с понедельника в 08:00')
+      };
+    }
+
+    const checkShift = (shiftKey, shiftNum) => {
+      const list = BELL_SCHEDULE[shiftKey];
+      for (let i = 0; i < list.length; i++) {
+        const item = list[i];
+        const sMin = parseHM(item.start);
+        const eMin = parseHM(item.end);
+        if (tNow.totalMin >= sMin && tNow.totalMin < eMin) {
+          const left = eMin - tNow.totalMin;
+          const pct = Math.min(100, Math.max(5, Math.round(((tNow.totalMin - sMin) / (eMin - sMin)) * 100)));
+          return {
+            active: true,
+            shift: shiftKey,
+            lessonNum: item.num,
+            progress: pct,
+            shortLabel: uiText(
+              `${shiftNum}-smena · ${item.num}-dars`,
+              `${shiftNum}-я смена · ${item.num}-й урок`
+            ),
+            detailLabel: uiText(
+              `${shiftNum}-smena, ${item.num}-soat davom etmoqda (${left} daqiqa qoldi)`,
+              `Идёт ${item.num}-й урок ${shiftNum}-й смены (осталось ${left} мин.)`
+            )
+          };
+        }
+        if (i < list.length - 1) {
+          const nextStart = parseHM(list[i + 1].start);
+          if (tNow.totalMin >= eMin && tNow.totalMin < nextStart) {
+            const left = nextStart - tNow.totalMin;
+            return {
+              active: true,
+              shift: shiftKey,
+              lessonNum: null,
+              progress: 100,
+              shortLabel: uiText(`${shiftNum}-smena · Tanaffus`, `${shiftNum}-я смена · Перемена`),
+              detailLabel: uiText(
+                `Tanaffus — ${item.num + 1}-dars ${left} daqiqadan so'ng (${list[i + 1].start})`,
+                `Перемена — ${item.num + 1}-й урок через ${left} мин. (${list[i + 1].start})`
+              )
+            };
+          }
+        }
+      }
+      return null;
+    };
+
+    const s1 = checkShift('shift1', 1);
+    if (s1) return s1;
+    const s2 = checkShift('shift2', 2);
+    if (s2) return s2;
+
+    if (tNow.totalMin >= parseHM('13:10') && tNow.totalMin < parseHM('13:30')) {
+      return {
+        active: true,
+        shift: 'shift2',
+        lessonNum: null,
+        progress: 50,
+        shortLabel: uiText('Smena almashinuvi', 'Пересменка'),
+        detailLabel: uiText('2-smena darslari soat 13:30 da boshlanadi', 'Уроки 2-й смены начнутся в 13:30')
+      };
+    }
+
+    if (tNow.totalMin < parseHM('08:00')) {
+      return {
+        active: false,
+        shift: null,
+        lessonNum: null,
+        progress: 0,
+        shortLabel: uiText('Darsgacha vaqt', 'До начала уроков'),
+        detailLabel: uiText('1-smena darslari soat 08:00 da boshlanadi', 'Уроки 1-й смены начинаются в 08:00')
+      };
+    }
+
+    return {
+      active: false,
+      shift: null,
+      lessonNum: null,
+      progress: 0,
+      shortLabel: uiText('Darsdan tashqari vaqt', 'Внеучебное время'),
+      detailLabel: uiText("Bugungi o'quv darslari yakunlangan", 'Учебные занятия на сегодня завершены')
+    };
+  }
+
+  let lastHighlightKey = '';
+  function updateLiveSchoolStatus() {
+    const tNow = getTashkentNow();
+    const state = evaluateBellState(tNow);
+
+    const clockEl = document.getElementById('liveClockText');
+    const dotEl = document.getElementById('livePulseDot');
+    const heroStatusEl = document.getElementById('heroLiveStatusText');
+    const heroDotEl = document.getElementById('heroLiveDot');
+    const heroSubEl = document.getElementById('heroLiveSubText');
+    const heroFillEl = document.getElementById('heroLiveProgressFill');
+
+    if (clockEl) clockEl.textContent = `${tNow.timeStr} · ${state.shortLabel}`;
+    if (dotEl) dotEl.classList.toggle('idle', !state.active);
+    if (heroStatusEl) heroStatusEl.textContent = state.detailLabel;
+    if (heroDotEl) heroDotEl.classList.toggle('idle', !state.active);
+    if (heroSubEl) heroSubEl.textContent = `${tNow.timeStr} (UTC+5)`;
+    if (heroFillEl) heroFillEl.style.width = `${state.progress}%`;
+
+    const highlightKey = `${state.shift}-${state.lessonNum}`;
+    if (highlightKey !== lastHighlightKey) {
+      lastHighlightKey = highlightKey;
+      renderBellSchedule(state);
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     5. STATISTIKA VA PASPORTNI CHIZISH
+     ------------------------------------------------------------------------ */
+  function animateCounter(el, target, animate) {
+    if (!el) return;
+    if (!animate) {
+      el.textContent = Number(target || 0).toLocaleString('uz-UZ');
+      return;
+    }
+    const startVal = parseInt(String(el.textContent).replace(/\D/g, ''), 10) || 0;
+    const duration = 800;
+    const startTime = performance.now();
+
+    function step(now) {
+      const p = Math.min((now - startTime) / duration, 1);
+      const ease = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+      const cur = Math.round(startVal + (target - startVal) * ease);
+      el.textContent = cur.toLocaleString('uz-UZ');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function renderStatsAndPassport(animate = false) {
+    const d = portalData;
+    animateCounter(document.getElementById('val-students'), d.students, animate);
+    animateCounter(document.getElementById('val-staff'), d.staff, animate);
+    animateCounter(document.getElementById('val-rooms'), d.rooms, animate);
+    animateCounter(document.getElementById('val-capacity'), d.capacity, animate);
+
+    const occupancyPct = d.capacity > 0 ? Math.min(100, +((d.students / d.capacity) * 100).toFixed(1)) : 0;
+    const ratio = d.staff > 0 ? (d.students / d.staff).toFixed(1) : '0';
+
+    const tagOcc = document.getElementById('tag-occupancy');
+    const tagRatio = document.getElementById('tag-ratio');
+    if (tagOcc) tagOcc.textContent = `${occupancyPct}%`;
+    if (tagRatio) tagRatio.textContent = `${ratio} : 1`;
+
+    // Hero yili va o'quvchi soni
+    const heroYearStat = document.getElementById('heroYearStat');
+    if (heroYearStat) {
+      heroYearStat.textContent = uiText(
+        `2026–2027 o'quv yili · ${d.students} o'quvchi`,
+        `2026–2027 уч. год · ${d.students} уч.`
+      );
+    }
+
+    // Pedagoglar toifalari
+    const tTotal = Math.max(1, (d.teacherTop || 0) + (d.teacherFirst || 0) + (d.teacherSecond || 0) + (d.teacherSpec || 0));
+    const setSeg = (id, cntId, val) => {
+      const seg = document.getElementById(id);
+      const cnt = document.getElementById(cntId);
+      if (seg) seg.style.width = `${((val || 0) / tTotal) * 100}%`;
+      if (cnt) cnt.textContent = String(val || 0);
+    };
+    setSeg('seg-top', 'cnt-top', d.teacherTop);
+    setSeg('seg-first', 'cnt-first', d.teacherFirst);
+    setSeg('seg-second', 'cnt-second', d.teacherSecond);
+    setSeg('seg-spec', 'cnt-spec', d.teacherSpec);
+
+    // Infratuzilma progress-barlar
+    const occVal = document.getElementById('metric-occ-val');
+    const occBar = document.getElementById('metric-occ-bar');
+    if (occVal) occVal.textContent = `${occupancyPct}% (${d.students} / ${d.capacity})`;
+    if (occBar) occBar.style.width = `${occupancyPct}%`;
+
+    const gradVal = document.getElementById('metric-grad-val');
+    const gradBar = document.getElementById('metric-grad-bar');
+    if (gradVal) gradVal.textContent = `${d.gradRate || 84}%`;
+    if (gradBar) gradBar.style.width = `${Math.min(100, d.gradRate || 84)}%`;
+
+    const booksVal = document.getElementById('metric-books-val');
+    const booksBar = document.getElementById('metric-books-bar');
+    if (booksVal) booksVal.textContent = `${Number(d.booksCount || 14500).toLocaleString('uz-UZ')}+`;
+    if (booksBar) booksBar.style.width = `${Math.min(100, Math.round(((d.booksCount || 14500) / 18000) * 100))}%`;
+
+    // Pasport va kontaktlar
+    const setTxt = (id, txt) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = txt;
+    };
+    setTxt('pass-year', uiText(`${d.foundedYear || 1990}-yil`, `${d.foundedYear || 1990} г.`));
+    setTxt('pass-shifts', localizeDynamic(d.shifts, currentLang));
+    setTxt('pass-hours', localizeDynamic(d.workHours, currentLang));
+    setTxt('pass-address', localizeDynamic(d.address, currentLang));
+
+    setTxt('quickPhone', d.phone);
+    setTxt('quickEmail', d.email);
+    setTxt('quickHours', localizeDynamic(d.workHours, currentLang));
+    const tgLink = document.getElementById('quickTelegram');
+    if (tgLink && d.telegram) tgLink.href = d.telegram;
+
+    setTxt('footerAddr', `📍 ${localizeDynamic(d.address, currentLang)}`);
+    setTxt('footerPhone', `📞 ${d.phone}`);
+    setTxt('footerEmail', `✉️ ${d.email}`);
+    setTxt('footerHours', `🕒 ${localizeDynamic(d.workHours, currentLang)}`);
+
+    // Rahbariyat ro'yxati
+    const leadEl = document.getElementById('leadershipList');
+    if (leadEl) {
+      const leaders = [
+        { ico: '👔', role: d.directorName, hours: d.directorReception },
+        { ico: '📘', role: d.deputyAcademic, hours: d.deputyAcademicReception },
+        { ico: '🌟', role: d.deputySpiritual, hours: d.deputySpiritualReception }
+      ];
+      leadEl.innerHTML = leaders
+        .map(
+          l => `
+          <div class="leader-card">
+            <div class="leader-avatar" aria-hidden="true">${l.ico}</div>
+            <div>
+              <div class="leader-role">${escapeHtml(localizeDynamic(l.role, currentLang))}</div>
+              <div class="leader-hours">🕒 ${escapeHtml(localizeDynamic(l.hours, currentLang))}</div>
+            </div>
+          </div>`
+        )
+        .join('');
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     6. QO'NG'IROQLAR JADVALI VA TO'GARAKLAR
+     ------------------------------------------------------------------------ */
+  function renderBellSchedule(bellState) {
+    const container = document.getElementById('bellScheduleList');
+    if (!container) return;
+    const state = bellState || evaluateBellState(getTashkentNow());
+    const lessons = BELL_SCHEDULE[activeShift] || BELL_SCHEDULE.shift1;
+
+    container.innerHTML = lessons
+      .map(item => {
+        const isCurrent = state.shift === activeShift && state.lessonNum === item.num;
+        const lessonLabel =
+          currentLang === 'ru'
+            ? `${item.num}${RU_TRANSLATIONS.lesson_word}`
+            : localizeDynamic(`${item.num}-soat dars`, currentLang);
+
+        const breakLabel =
+          item.breakMin > 0
+            ? uiText(`Tanaffus: ${item.breakMin} daq.`, `Перемена: ${item.breakMin} мин.`)
+            : uiText('Smena yakuni', 'Конец смены');
+
+        return `
+          <div class="bell-row${isCurrent ? ' current-lesson' : ''}">
+            <div class="bell-num-wrap">
+              <span class="bell-num">${item.num}</span>
+              <div>
+                <div class="bell-name">${escapeHtml(lessonLabel)}</div>
+                <div class="bell-break">${escapeHtml(breakLabel)}</div>
+              </div>
+            </div>
+            <div class="bell-time">${item.start} – ${item.end}</div>
+          </div>`;
+      })
+      .join('');
+  }
+
+  document.querySelectorAll('.shift-tab[data-shift]').forEach(tab => {
+    tab.addEventListener('click', () => {
+      activeShift = tab.dataset.shift;
+      document.querySelectorAll('.shift-tab[data-shift]').forEach(t => {
+        t.classList.toggle('active', t.dataset.shift === activeShift);
+      });
+      renderBellSchedule();
+    });
+  });
+
+  function renderClubs() {
+    const container = document.getElementById('clubsListContainer');
+    if (!container) return;
+    const searchVal = (document.getElementById('clubSearchInput')?.value || '').trim().toLowerCase();
+
+    const filtered = (portalData.clubs || []).filter(club => {
+      const catOk = activeClubCat === 'all' || club.category === activeClubCat;
+      if (!catOk) return false;
+      if (!searchVal) return true;
+      const hay = `${club.name} ${club.grades} ${club.room} ${club.schedule} ${club.mentor}`.toLowerCase();
+      return hay.includes(searchVal);
+    });
+
+    if (!filtered.length) {
+      container.innerHTML = `<p style="grid-column:1/-1;color:var(--text-muted);font-size:0.88rem;padding:12px 0;">${escapeHtml(
+        uiText("Qidiruv bo'yicha to'garak topilmadi.", 'Кружки по запросу не найдены.')
+      )}</p>`;
+      return;
+    }
+
+    container.innerHTML = filtered
+      .map(
+        c => `
+        <article class="club-card">
+          <div class="club-top">
+            <span class="club-grade-badge">${escapeHtml(localizeDynamic(c.grades, currentLang))}</span>
+            <span class="club-room">🚪 ${escapeHtml(localizeDynamic(c.room, currentLang))}</span>
+          </div>
+          <h4 class="club-name">${escapeHtml(localizeDynamic(c.name, currentLang))}</h4>
+          <p class="club-meta">🗓️ ${escapeHtml(localizeDynamic(c.schedule, currentLang))}</p>
+          <p class="club-meta" style="margin-top:3px;">👩‍🏫 ${escapeHtml(localizeDynamic(c.mentor, currentLang))}</p>
+        </article>`
+      )
+      .join('');
+  }
+
+  document.querySelectorAll('.club-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeClubCat = btn.dataset.cat;
+      document.querySelectorAll('.club-filter-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.cat === activeClubCat);
+      });
+      renderClubs();
+    });
+  });
+  document.getElementById('clubSearchInput')?.addEventListener('input', renderClubs);
+
+  /* ------------------------------------------------------------------------
+     7. YANGILIKLAR VA MAQOLA O'QISH MODALI
+     ------------------------------------------------------------------------ */
+  const NEWS_CAT_LABELS = {
+    yangiliklar: { uz: 'Yangiliklar', ru: 'Новости' },
+    elonlar: { uz: "E'lonlar", ru: 'Объявления' },
+    yutuqlar: { uz: 'Yutuqlar', ru: 'Достижения' },
+    tadbirlar: { uz: 'Tadbirlar', ru: 'Мероприятия' }
+  };
+
+  function getCatLabel(cat) {
+    const item = NEWS_CAT_LABELS[cat] || NEWS_CAT_LABELS.yangiliklar;
+    return uiText(item.uz, item.ru);
+  }
+
+  function renderNews() {
+    const container = document.getElementById('newsGridContainer');
+    if (!container) return;
+    const q = (document.getElementById('newsSearchInput')?.value || '').trim().toLowerCase();
+
+    const filtered = (portalData.news || []).filter(n => {
+      const catOk = activeNewsCat === 'all' || n.category === activeNewsCat;
+      if (!catOk) return false;
+      if (!q) return true;
+      return `${n.title} ${n.summary} ${n.body}`.toLowerCase().includes(q);
+    });
+
+    if (!filtered.length) {
+      container.innerHTML = `<p style="grid-column:1/-1;color:var(--text-muted);font-size:0.9rem;">${escapeHtml(
+        uiText("Ushbu ruknda hozircha ma'lumot topilmadi.", 'В данной рубрике записей пока нет.')
+      )}</p>`;
+      return;
+    }
+
+    const readMoreLabel = uiText("Batafsil o'qish →", 'Подробнее →');
+    container.innerHTML = filtered
+      .map(
+        n => `
+        <article class="news-card">
+          <div>
+            <div class="news-meta">
+              <span class="news-cat ${escapeHtml(n.category)}">${escapeHtml(getCatLabel(n.category))}</span>
+              <time class="news-date" datetime="${escapeHtml(n.date)}">📅 ${escapeHtml(n.date)}</time>
+            </div>
+            <h3 class="news-title">${escapeHtml(localizeDynamic(n.title, currentLang))}</h3>
+            <p class="news-summary">${escapeHtml(localizeDynamic(n.summary, currentLang))}</p>
+          </div>
+          <button type="button" class="news-read-btn" data-news-id="${escapeHtml(n.id)}">${escapeHtml(readMoreLabel)}</button>
+        </article>`
+      )
+      .join('');
+
+    container.querySelectorAll('.news-read-btn').forEach(btn => {
+      btn.addEventListener('click', () => openNewsReader(btn.dataset.newsId));
+    });
+  }
+
+  function openNewsReader(id) {
+    const article = (portalData.news || []).find(n => n.id === id);
+    if (!article) return;
+    const modal = document.getElementById('newsReaderModal');
+    const catEl = document.getElementById('readerCat');
+    const dateEl = document.getElementById('readerDate');
+    const titleEl = document.getElementById('readerTitle');
+    const bodyEl = document.getElementById('readerBody');
+
+    if (catEl) {
+      catEl.className = `news-cat ${article.category}`;
+      catEl.textContent = getCatLabel(article.category);
+    }
+    if (dateEl) dateEl.textContent = `📅 ${article.date}`;
+    if (titleEl) titleEl.textContent = localizeDynamic(article.title, currentLang);
+    if (bodyEl) bodyEl.textContent = localizeDynamic(article.body || article.summary, currentLang);
+    modal?.classList.add('active');
+  }
+
+  document.getElementById('closeNewsModal')?.addEventListener('click', () => {
+    document.getElementById('newsReaderModal')?.classList.remove('active');
+  });
+  document.getElementById('newsReaderModal')?.addEventListener('click', e => {
+    if (e.target.id === 'newsReaderModal') e.target.classList.remove('active');
+  });
+
+  document.querySelectorAll('.news-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeNewsCat = btn.dataset.ncat;
+      document.querySelectorAll('.news-filter-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.ncat === activeNewsCat);
+      });
+      renderNews();
+    });
+  });
+  document.getElementById('newsSearchInput')?.addEventListener('input', renderNews);
+
+  /* ------------------------------------------------------------------------
+     8. FOTOGALEREYA, AVTO-NAMOYISH VA FULLSCREEN LIGHTBOX
+     ------------------------------------------------------------------------ */
+  const noImageState = document.getElementById('noImageState');
+  const sliderWrap = document.getElementById('sliderWrap');
+  const sliderTrack = document.getElementById('sliderTrack');
+  const sliderDots = document.getElementById('sliderDots');
+  const thumbsRow = document.getElementById('thumbsRow');
+  const lightboxOverlay = document.getElementById('lightboxOverlay');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+
+  function makeFallbackSvgDataUri(index) {
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f2454"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect width="960" height="540" fill="url(#g)"/><text x="50%" y="46%" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="30" font-weight="700">Marg'ilon 26-son Maktab</text><text x="50%" y="55%" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="18">${index + 1}-fotolavha</text></svg>`;
+    return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  }
+
+  function goToSlide(idx) {
+    const imgs = portalData.images || [];
+    if (!imgs.length) return;
+    currentSlide = ((idx % imgs.length) + imgs.length) % imgs.length;
+    if (sliderTrack) sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+    document.querySelectorAll('#sliderDots .dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    document.querySelectorAll('#thumbsRow .thumb-item').forEach((t, i) => t.classList.toggle('active', i === currentSlide));
+
+    if (lightboxOverlay?.classList.contains('active')) {
+      syncLightbox();
+    }
+  }
+
+  function renderGallery() {
+    const imgs = portalData.images || [];
+    const heroImg = document.getElementById('heroPreviewImg');
+    if (heroImg) {
+      heroImg.src = imgs[0]?.src || makeFallbackSvgDataUri(0);
+      heroImg.onerror = function () {
+        this.onerror = null;
+        this.src = makeFallbackSvgDataUri(0);
+      };
+    }
+
+    if (!imgs.length) {
+      noImageState?.classList.remove('hidden');
+      sliderWrap?.classList.add('hidden');
+      sliderDots?.classList.add('hidden');
+      thumbsRow?.classList.add('hidden');
+      return;
+    }
+
+    noImageState?.classList.add('hidden');
+    sliderWrap?.classList.remove('hidden');
+    sliderDots?.classList.remove('hidden');
+    thumbsRow?.classList.remove('hidden');
+
+    if (currentSlide >= imgs.length) currentSlide = 0;
+
+    if (sliderTrack) {
+      sliderTrack.innerHTML = imgs
+        .map((item, i) => {
+          const cap = localizeDynamic(item.caption || `26-son Maktab (${i + 1}-rasm)`, currentLang);
+          return `
+            <div class="slide" role="listitem">
+              <img src="${escapeHtml(item.src)}"
+                   alt="${escapeHtml(cap)}"
+                   data-slide-idx="${i}"
+                   loading="${i === 0 ? 'eager' : 'lazy'}" />
+              <div class="slide-caption-bar">
+                <span class="slide-caption-text">${escapeHtml(cap)}</span>
+                <span class="slide-counter">${i + 1} / ${imgs.length}</span>
+              </div>
+            </div>`;
+        })
+        .join('');
+
+      sliderTrack.querySelectorAll('img').forEach((imgEl, idx) => {
+        imgEl.addEventListener('error', function () {
+          this.src = makeFallbackSvgDataUri(idx);
+        }, { once: true });
+        imgEl.addEventListener('click', () => openLightbox(idx));
+      });
+    }
+
+    if (sliderDots) {
+      sliderDots.innerHTML = imgs
+        .map((_, i) => `<button type="button" class="dot${i === currentSlide ? ' active' : ''}" data-i="${i}" aria-label="${i + 1}-rasm"></button>`)
+        .join('');
+      sliderDots.querySelectorAll('.dot').forEach(dot => {
+        dot.addEventListener('click', () => goToSlide(Number(dot.dataset.i)));
+      });
+    }
+
+    if (thumbsRow) {
+      thumbsRow.innerHTML = imgs
+        .map(
+          (item, i) => `
+          <div class="thumb-item${i === currentSlide ? ' active' : ''}" data-i="${i}">
+            <img src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" loading="lazy" />
+          </div>`
+        )
+        .join('');
+      thumbsRow.querySelectorAll('img').forEach((imgEl, idx) => {
+        imgEl.addEventListener('error', function () {
+          this.src = makeFallbackSvgDataUri(idx);
+        }, { once: true });
+      });
+      thumbsRow.querySelectorAll('.thumb-item').forEach(t => {
+        t.addEventListener('click', () => goToSlide(Number(t.dataset.i)));
+      });
+    }
+
+    goToSlide(currentSlide);
+  }
+
+  document.getElementById('slidePrev')?.addEventListener('click', () => goToSlide(currentSlide - 1));
+  document.getElementById('slideNext')?.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+  // Avto-namoyish
+  const autoplayBtn = document.getElementById('autoplayToggleBtn');
+  function toggleAutoplay() {
+    if (autoplayTimer) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+      if (autoplayBtn) autoplayBtn.textContent = uiText('▶ Avto-namoyish', '▶ Автопоказ');
+    } else {
+      autoplayTimer = setInterval(() => goToSlide(currentSlide + 1), 4200);
+      if (autoplayBtn) autoplayBtn.textContent = uiText('⏸ To‘xtatish', '⏸ Пауза');
+    }
+  }
+  autoplayBtn?.addEventListener('click', toggleAutoplay);
+
+  // Lightbox
+  function syncLightbox() {
+    const imgs = portalData.images || [];
+    if (!imgs.length || !lightboxImg) return;
+    const item = imgs[currentSlide] || imgs[0];
+    lightboxImg.src = item.src;
+    lightboxImg.onerror = function () {
+      this.onerror = null;
+      this.src = makeFallbackSvgDataUri(currentSlide);
+    };
+    if (lightboxCaption) {
+      lightboxCaption.textContent = `${currentSlide + 1} / ${imgs.length} — ${localizeDynamic(item.caption, currentLang)}`;
+    }
+  }
+
+  function openLightbox(idx) {
+    if (typeof idx === 'number') goToSlide(idx);
+    syncLightbox();
+    lightboxOverlay?.classList.add('active');
+  }
+
+  function closeLightbox() {
+    lightboxOverlay?.classList.remove('active');
+  }
+
+  document.getElementById('openLightboxBtn')?.addEventListener('click', () => openLightbox(currentSlide));
+  document.getElementById('lightboxClose')?.addEventListener('click', closeLightbox);
+  document.getElementById('lightboxPrev')?.addEventListener('click', () => goToSlide(currentSlide - 1));
+  document.getElementById('lightboxNext')?.addEventListener('click', () => goToSlide(currentSlide + 1));
+  lightboxOverlay?.addEventListener('click', e => {
+    if (e.target === lightboxOverlay) closeLightbox();
+  });
+
+  // Klaviatura va sensor (swipe) boshqaruvi
+  document.addEventListener('keydown', e => {
+    const tag = (e.target?.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+    if (e.key === 'Escape') {
+      closeLightbox();
+      document.getElementById('loginModal')?.classList.remove('active');
+      document.getElementById('newsReaderModal')?.classList.remove('active');
+    } else if (e.key === 'ArrowLeft') {
+      goToSlide(currentSlide - 1);
+    } else if (e.key === 'ArrowRight') {
+      goToSlide(currentSlide + 1);
+    }
+  });
+
+  let touchStartX = 0;
+  sliderWrap?.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  sliderWrap?.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 45) goToSlide(currentSlide + (dx < 0 ? 1 : -1));
+  });
+
+  /* ------------------------------------------------------------------------
+     9. INTERAKTIV XARITA (Leaflet — Ko'cha va Sun'iy yo'ldosh qatlami)
+     ------------------------------------------------------------------------ */
+  let leafletMap = null;
+  let streetLayer = null;
+  let satLayer = null;
+
+  function initMap() {
+    const mapEl = document.getElementById('map');
+    const fallbackEl = document.getElementById('mapFallback');
+    if (!mapEl) return;
+
+    if (typeof L === 'undefined') {
+      mapEl.classList.add('hidden');
+      fallbackEl?.classList.remove('hidden');
+      return;
+    }
+
+    try {
+      leafletMap = L.map('map', {
+        center: [SCHOOL_COORDS.lat, SCHOOL_COORDS.lng],
+        zoom: 16,
+        scrollWheelZoom: false
+      });
+
+      streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+      }).addTo(leafletMap);
+
+      satLayer = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        {
+          maxZoom: 19,
+          attribution: '© Esri'
+        }
+      );
+
+      leafletMap.on('click', () => leafletMap.scrollWheelZoom.enable());
+
+      const pinIcon = L.divIcon({
+        html: `<div style="background:#1d4ed8;width:32px;height:32px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.45);"></div>`,
+        className: '',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -28]
+      });
+
+      L.marker([SCHOOL_COORDS.lat, SCHOOL_COORDS.lng], { icon: pinIcon })
+        .addTo(leafletMap)
+        .bindPopup("<b>Marg'ilon shahri 26-son Maktab</b><br>Farg'ona viloyati, O'zbekiston")
+        .openPopup();
+
+      document.getElementById('mapStreetBtn')?.addEventListener('click', function () {
+        if (satLayer && leafletMap.hasLayer(satLayer)) leafletMap.removeLayer(satLayer);
+        streetLayer.addTo(leafletMap);
+        this.classList.add('active');
+        document.getElementById('mapSatBtn')?.classList.remove('active');
+      });
+
+      document.getElementById('mapSatBtn')?.addEventListener('click', function () {
+        if (streetLayer && leafletMap.hasLayer(streetLayer)) leafletMap.removeLayer(streetLayer);
+        satLayer.addTo(leafletMap);
+        this.classList.add('active');
+        document.getElementById('mapStreetBtn')?.classList.remove('active');
+      });
+
+      document.getElementById('mapResetBtn')?.addEventListener('click', () => {
+        leafletMap.setView([SCHOOL_COORDS.lat, SCHOOL_COORDS.lng], 16, { animate: true });
+      });
+    } catch {
+      mapEl.classList.add('hidden');
+      fallbackEl?.classList.remove('hidden');
+    }
+  }
+  window.addEventListener('load', initMap);
+
+  /* ------------------------------------------------------------------------
+     10. ONLAYN MUROJAAT FORMASI
+     ------------------------------------------------------------------------ */
+  const appealForm = document.getElementById('appealForm');
+  const appealBanner = document.getElementById('appealSuccessBanner');
+
+  appealForm?.addEventListener('submit', e => {
+    e.preventDefault();
+    const fullName = document.getElementById('appFullName')?.value.trim() || '';
+    const phone = document.getElementById('appPhone')?.value.trim() || '';
+    const topic = document.getElementById('appTopic')?.value || "Savol va ma'lumot";
+    const message = document.getElementById('appMessage')?.value.trim() || '';
+
+    if (fullName.length < 3 || phone.length < 7 || message.length < 5) {
+      showToast(uiText("⚠️ Iltimos, barcha majburiy maydonlarni to'ldiring.", '⚠️ Пожалуйста, заполните все обязательные поля.'));
+      return;
+    }
+
+    const refCode = `M26-${Math.floor(1000 + Math.random() * 9000)}`;
+    const nowStr = new Date().toISOString().slice(0, 16).replace('T', ' ');
+
+    portalData.appeals = portalData.appeals || [];
+    portalData.appeals.unshift({
+      id: `ap_${Date.now()}`,
+      refCode,
+      fullName,
+      phone,
+      topic,
+      message,
+      createdAt: nowStr,
+      resolved: false
+    });
+
+    persistAndRefresh();
+    updateUnreadAppealsBadges();
+    if (isAdmin) renderAdminAppeals();
+
+    appealForm.reset();
+    if (appealBanner) {
+      appealBanner.textContent = uiText(
+        `✅ Murojaatingiz qabul qilindi! Ro'yxat raqami: #${refCode}. Ma'muriyat tez orada siz bilan bog'lanadi.`,
+        `✅ Обращение принято! Номер заявки: #${refCode}. Администрация свяжется с вами.`
+      );
+      appealBanner.classList.remove('hidden');
+    }
+    showToast(uiText(`✅ Murojaat yuborildi (#${refCode})`, `✅ Заявка отправлена (#${refCode})`));
+  });
+
+  /* ------------------------------------------------------------------------
+     11. ADMIN CMS TIZIMI (Kirish, Ko'rsatkichlar, Galereya, Yangiliklar, Inbox)
+     ------------------------------------------------------------------------ */
+  const loginBtn = document.getElementById('loginBtn');
+  const adminJumpBtn = document.getElementById('adminJumpBtn');
+  const logoutBtn = document.getElementById('logoutBtn');
+  const loginModal = document.getElementById('loginModal');
+  const passwordInput = document.getElementById('passwordInput');
+  const passError = document.getElementById('passError');
+  const adminSection = document.getElementById('admin-section');
+
+  function updateUnreadAppealsBadges() {
+    const unread = (portalData.appeals || []).filter(a => !a.resolved).length;
+    ['unreadAppealsBadge', 'tabAppealsCount'].forEach(id => {
+      const badge = document.getElementById(id);
+      if (badge) {
+        badge.textContent = String(unread);
+        badge.classList.toggle('hidden', unread === 0);
+      }
+    });
+  }
+
+  function syncAdminVisibility() {
+    if (isAdmin) {
+      loginBtn?.classList.add('hidden');
+      adminJumpBtn?.classList.remove('hidden');
+      logoutBtn?.classList.remove('hidden');
+      adminSection?.classList.add('visible');
+      populateAdminInputs();
+      renderAdminGallery();
+      renderAdminNews();
+      renderAdminClubs();
+      renderAdminAppeals();
+    } else {
+      loginBtn?.classList.remove('hidden');
+      adminJumpBtn?.classList.add('hidden');
+      logoutBtn?.classList.add('hidden');
+      adminSection?.classList.remove('visible');
+    }
+    updateUnreadAppealsBadges();
+  }
+
+  loginBtn?.addEventListener('click', () => {
+    loginModal?.classList.add('active');
+    if (passwordInput) {
+      passwordInput.value = '';
+      setTimeout(() => passwordInput.focus(), 160);
+    }
+    passError?.classList.remove('show');
+  });
+
+  document.getElementById('closeModal')?.addEventListener('click', () => loginModal?.classList.remove('active'));
+  loginModal?.addEventListener('click', e => {
+    if (e.target === loginModal) loginModal.classList.remove('active');
+  });
+
+  document.getElementById('confirmLogin')?.addEventListener('click', () => {
+    const entered = (passwordInput?.value || '').trim();
+    const expected = portalData.adminPass || '1234';
+    if (entered === expected) {
+      isAdmin = true;
+      sessionStorage.setItem('maktab26_admin', '1');
+      loginModal?.classList.remove('active');
+      syncAdminVisibility();
+      adminSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      showToast('✅ Admin boshqaruv markaziga xush kelibsiz!');
+    } else {
+      passError?.classList.add('show');
+      if (passwordInput) {
+        passwordInput.value = '';
+        passwordInput.focus();
+      }
+    }
+  });
+
+  passwordInput?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') document.getElementById('confirmLogin')?.click();
+  });
+
+  adminJumpBtn?.addEventListener('click', () => {
+    adminSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  logoutBtn?.addEventListener('click', () => {
+    isAdmin = false;
+    sessionStorage.removeItem('maktab26_admin');
+    syncAdminVisibility();
+    showToast('👋 Admin tizimidan chiqildi');
+  });
+
+  // Admin Tablarni almashtirish
+  document.querySelectorAll('.admin-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetPane = tab.dataset.pane;
+      document.querySelectorAll('.admin-tab').forEach(t => t.classList.toggle('active', t === tab));
+      document.querySelectorAll('.admin-pane').forEach(p => p.classList.toggle('active', p.id === targetPane));
+    });
+  });
+
+  // Pane 1: Ko'rsatkichlar va pasport
+  function populateAdminInputs() {
+    const d = portalData;
+    const setVal = (id, v) => {
+      const el = document.getElementById(id);
+      if (el) el.value = v ?? '';
+    };
+    setVal('inp-students', d.students);
+    setVal('inp-staff', d.staff);
+    setVal('inp-rooms', d.rooms);
+    setVal('inp-capacity', d.capacity);
+    setVal('inp-grad-rate', d.gradRate);
+    setVal('inp-books', d.booksCount);
+    setVal('inp-t-top', d.teacherTop);
+    setVal('inp-t-first', d.teacherFirst);
+    setVal('inp-t-second', d.teacherSecond);
+    setVal('inp-t-spec', d.teacherSpec);
+    setVal('inp-phone', d.phone);
+    setVal('inp-email', d.email);
+    setVal('inp-telegram', d.telegram);
+    setVal('inp-address', d.address);
+    setVal('inp-hours', d.workHours);
+    setVal('inp-dir-name', d.directorName);
+    setVal('inp-dir-rec', d.directorReception);
+    setVal('inp-dep1-name', d.deputyAcademic);
+    setVal('inp-dep1-rec', d.deputyAcademicReception);
+    setVal('inp-dep2-name', d.deputySpiritual);
+    setVal('inp-dep2-rec', d.deputySpiritualReception);
+
+    const dateInp = document.getElementById('newsDateInp');
+    if (dateInp && !dateInp.value) dateInp.value = new Date().toISOString().slice(0, 10);
+  }
+
+  document.getElementById('saveStatsPassportBtn')?.addEventListener('click', () => {
+    const num = id => Math.max(0, parseInt(document.getElementById(id)?.value, 10) || 0);
+    const str = id => (document.getElementById(id)?.value || '').trim();
+
+    portalData.students = num('inp-students');
+    portalData.staff = num('inp-staff');
+    portalData.rooms = num('inp-rooms');
+    portalData.capacity = Math.max(1, num('inp-capacity'));
+    portalData.gradRate = Math.min(100, num('inp-grad-rate'));
+    portalData.booksCount = num('inp-books');
+    portalData.teacherTop = num('inp-t-top');
+    portalData.teacherFirst = num('inp-t-first');
+    portalData.teacherSecond = num('inp-t-second');
+    portalData.teacherSpec = num('inp-t-spec');
+
+    if (str('inp-phone')) portalData.phone = str('inp-phone');
+    if (str('inp-email')) portalData.email = str('inp-email');
+    if (str('inp-telegram')) portalData.telegram = str('inp-telegram');
+    if (str('inp-address')) portalData.address = str('inp-address');
+    if (str('inp-hours')) portalData.workHours = str('inp-hours');
+    if (str('inp-dir-name')) portalData.directorName = str('inp-dir-name');
+    if (str('inp-dir-rec')) portalData.directorReception = str('inp-dir-rec');
+    if (str('inp-dep1-name')) portalData.deputyAcademic = str('inp-dep1-name');
+    if (str('inp-dep1-rec')) portalData.deputyAcademicReception = str('inp-dep1-rec');
+    if (str('inp-dep2-name')) portalData.deputySpiritual = str('inp-dep2-name');
+    if (str('inp-dep2-rec')) portalData.deputySpiritualReception = str('inp-dep2-rec');
+
+    if (persistAndRefresh()) {
+      renderStatsAndPassport(true);
+      showToast("✅ Barcha ko'rsatkichlar va pasport ma'lumotlari saqlandi!");
+    }
+  });
+
+  // Pane 2: Galereya + Aqlli rasm siqish (Canvas Image Compression)
+  function compressImageFile(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = reject;
+      reader.onload = ev => {
+        const img = new Image();
+        img.onerror = () => resolve(ev.target.result);
+        img.onload = () => {
+          const maxDim = 1400;
+          let { width, height } = img;
+          if (width > maxDim || height > maxDim) {
+            if (width > height) {
+              height = Math.round((height * maxDim) / width);
+              width = maxDim;
+            } else {
+              width = Math.round((width * maxDim) / height);
+              height = maxDim;
+            }
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+          resolve(canvas.toDataURL('image/jpeg', 0.82));
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function renderAdminGallery() {
+    const grid = document.getElementById('adminGallery');
+    const countBadge = document.getElementById('imgCountBadge');
+    const memBadge = document.getElementById('storageUsageBadge');
+    const imgs = portalData.images || [];
+
+    if (countBadge) countBadge.textContent = `🖼️ ${imgs.length} ta rasm mavjud`;
+    if (memBadge) memBadge.textContent = `💾 Xotira: ${getStorageUsageKB()} KB / 5000 KB`;
+    if (!grid) return;
+
+    grid.innerHTML = imgs
+      .map(
+        (item, i) => `
+        <div class="admin-photo-card">
+          <img src="${escapeHtml(item.src)}" alt="Rasm ${i + 1}" />
+          <div class="admin-photo-actions">
+            <input class="form-input" style="padding:5px 8px;font-size:0.76rem;" type="text"
+                   data-cap-idx="${i}" value="${escapeHtml(item.caption || '')}" placeholder="Rasm izohi..." />
+            <div class="admin-photo-btns">
+              <div>
+                <button type="button" class="mini-btn" data-move="-1" data-idx="${i}" ${i === 0 ? 'disabled' : ''}>←</button>
+                <button type="button" class="mini-btn" data-move="1" data-idx="${i}" ${i === imgs.length - 1 ? 'disabled' : ''}>→</button>
+              </div>
+              <button type="button" class="mini-btn danger" data-del-img="${i}">✕ O'chirish</button>
+            </div>
+          </div>
+        </div>`
+      )
+      .join('');
+
+    grid.querySelectorAll('img').forEach((imgEl, idx) => {
+      imgEl.addEventListener('error', function () {
+        this.src = makeFallbackSvgDataUri(idx);
+      }, { once: true });
+    });
+
+    grid.querySelectorAll('[data-cap-idx]').forEach(inp => {
+      inp.addEventListener('change', () => {
+        const idx = Number(inp.dataset.capIdx);
+        if (portalData.images[idx]) {
+          portalData.images[idx].caption = inp.value.trim();
+          persistAndRefresh();
+          renderGallery();
+        }
+      });
+    });
+
+    grid.querySelectorAll('[data-move]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.dataset.idx);
+        const dir = Number(btn.dataset.move);
+        const target = idx + dir;
+        if (target < 0 || target >= portalData.images.length) return;
+        const tmp = portalData.images[idx];
+        portalData.images[idx] = portalData.images[target];
+        portalData.images[target] = tmp;
+        persistAndRefresh();
+        renderGallery();
+        renderAdminGallery();
+      });
+    });
+
+    grid.querySelectorAll('[data-del-img]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.dataset.delImg);
+        portalData.images.splice(idx, 1);
+        persistAndRefresh();
+        renderGallery();
+        renderAdminGallery();
+        showToast("🗑️ Rasm o'chirildi");
+      });
+    });
+  }
+
+  document.getElementById('imgUpload')?.addEventListener('change', async function (e) {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+    showToast('⏳ Rasmlar optimallashtirilmoqda...');
+    for (const file of files) {
+      try {
+        const compressed = await compressImageFile(file);
+        portalData.images.push({
+          src: compressed,
+          caption: file.name.replace(/\.[^.]+$/, '') || '26-son Maktab fotolavhasi'
+        });
+      } catch {
+        // Xatolik bo'lsa o'tkazib yuboramiz
+      }
+    }
+    if (persistAndRefresh()) {
+      renderGallery();
+      renderAdminGallery();
+      showToast(`✅ ${files.length} ta rasm muvaffaqiyatli yuklandi!`);
+    }
+    this.value = '';
+  });
+
+  document.getElementById('addImgUrlBtn')?.addEventListener('click', () => {
+    const urlInp = document.getElementById('imgUrlInput');
+    const capInp = document.getElementById('imgCaptionInput');
+    const url = (urlInp?.value || '').trim();
+    if (!url.startsWith('http')) {
+      showToast("⚠️ To'g'ri rasm URL manzilini kiriting (https://...)");
+      return;
+    }
+    portalData.images.push({
+      src: url,
+      caption: (capInp?.value || '').trim() || "Marg'ilon 26-son maktab fotolavhasi"
+    });
+    if (persistAndRefresh()) {
+      if (urlInp) urlInp.value = '';
+      if (capInp) capInp.value = '';
+      renderGallery();
+      renderAdminGallery();
+      showToast("✅ Rasm URL orqali qo'shildi!");
+    }
+  });
+
+  document.getElementById('resetDefaultImgsBtn')?.addEventListener('click', () => {
+    portalData.images = DEFAULT_IMAGES.map(item => ({ ...item }));
+    currentSlide = 0;
+    persistAndRefresh();
+    renderGallery();
+    renderAdminGallery();
+    showToast('↺ Standart maktab rasmlari tiklandi');
+  });
+
+  // Pane 3: Yangiliklar CRUD
+  function renderAdminNews() {
+    const box = document.getElementById('adminNewsList');
+    if (!box) return;
+    const list = portalData.news || [];
+    if (!list.length) {
+      box.innerHTML = `<p style="color:var(--text-muted);font-size:0.85rem;">Hozircha e'lonlar yo'q.</p>`;
+      return;
+    }
+    box.innerHTML = list
+      .map(
+        n => `
+        <div class="admin-list-item">
+          <div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">${escapeHtml(n.date)} · ${escapeHtml(getCatLabel(n.category))}</div>
+            <strong style="font-size:0.92rem;">${escapeHtml(n.title)}</strong>
+          </div>
+          <button type="button" class="mini-btn danger" data-del-news="${escapeHtml(n.id)}">✕ O'chirish</button>
+        </div>`
+      )
+      .join('');
+
+    box.querySelectorAll('[data-del-news]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        portalData.news = portalData.news.filter(n => n.id !== btn.dataset.delNews);
+        persistAndRefresh();
+        renderNews();
+        renderAdminNews();
+        showToast("🗑️ E'lon o'chirildi");
+      });
+    });
+  }
+
+  document.getElementById('addNewsBtn')?.addEventListener('click', () => {
+    const title = (document.getElementById('newsTitleInp')?.value || '').trim();
+    const category = document.getElementById('newsCatInp')?.value || 'yangiliklar';
+    const date = document.getElementById('newsDateInp')?.value || new Date().toISOString().slice(0, 10);
+    const summary = (document.getElementById('newsSummaryInp')?.value || '').trim();
+    const body = (document.getElementById('newsBodyInp')?.value || '').trim();
+
+    if (!title || !summary) {
+      showToast("⚠️ Sarlavha va qisqacha mazmunni kiriting!");
+      return;
+    }
+
+    portalData.news.unshift({
+      id: `n_${Date.now()}`,
+      category,
+      date,
+      title,
+      summary,
+      body: body || summary
+    });
+
+    if (persistAndRefresh()) {
+      document.getElementById('newsTitleInp').value = '';
+      document.getElementById('newsSummaryInp').value = '';
+      document.getElementById('newsBodyInp').value = '';
+      renderNews();
+      renderAdminNews();
+      showToast("📢 Yangi e'lon chop etildi!");
+    }
+  });
+
+  // Pane 4: To'garaklar CRUD
+  function renderAdminClubs() {
+    const box = document.getElementById('adminClubsList');
+    if (!box) return;
+    const list = portalData.clubs || [];
+    box.innerHTML = list
+      .map(
+        c => `
+        <div class="admin-list-item">
+          <div>
+            <strong style="font-size:0.9rem;">${escapeHtml(c.name)}</strong>
+            <div style="font-size:0.78rem;color:var(--text-muted);">${escapeHtml(c.grades)} · ${escapeHtml(c.room)} · ${escapeHtml(c.schedule)}</div>
+          </div>
+          <button type="button" class="mini-btn danger" data-del-club="${escapeHtml(c.id)}">✕ O'chirish</button>
+        </div>`
+      )
+      .join('');
+
+    box.querySelectorAll('[data-del-club]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        portalData.clubs = portalData.clubs.filter(c => c.id !== btn.dataset.delClub);
+        persistAndRefresh();
+        renderClubs();
+        renderAdminClubs();
+        showToast("🗑️ To'garak o'chirildi");
+      });
+    });
+  }
+
+  document.getElementById('addClubBtn')?.addEventListener('click', () => {
+    const name = (document.getElementById('clubNameInp')?.value || '').trim();
+    const category = document.getElementById('clubCatInp')?.value || 'stem';
+    const grades = (document.getElementById('clubGradesInp')?.value || '').trim() || '5–11-sinflar';
+    const room = (document.getElementById('clubRoomInp')?.value || '').trim() || "O'quv xonasi";
+    const schedule = (document.getElementById('clubSchedInp')?.value || '').trim();
+    const mentor = (document.getElementById('clubMentorInp')?.value || '').trim() || 'Fan o‘qituvchisi';
+
+    if (!name || !schedule) {
+      showToast("⚠️ To'garak nomi va vaqtini kiriting!");
+      return;
+    }
+
+    portalData.clubs.unshift({
+      id: `c_${Date.now()}`,
+      category,
+      name,
+      grades,
+      room,
+      schedule,
+      mentor
+    });
+
+    if (persistAndRefresh()) {
+      document.getElementById('clubNameInp').value = '';
+      document.getElementById('clubSchedInp').value = '';
+      renderClubs();
+      renderAdminClubs();
+      showToast("✅ Yangi to'garak qo'shildi!");
+    }
+  });
+
+  // Pane 5: Murojaatlar Inbox
+  function renderAdminAppeals() {
+    const box = document.getElementById('adminAppealsList');
+    if (!box) return;
+    const list = portalData.appeals || [];
+    if (!list.length) {
+      box.innerHTML = `<p style="color:var(--text-muted);font-size:0.88rem;">Hozircha kelib tushgan murojaatlar yo'q.</p>`;
+      return;
+    }
+
+    box.innerHTML = list
+      .map(
+        a => `
+        <div class="admin-list-item" style="border-left:4px solid ${a.resolved ? 'var(--emerald)' : 'var(--gold)'};">
+          <div style="flex:1;">
+            <div style="font-size:0.76rem;color:var(--text-muted);margin-bottom:4px;">
+              <strong>#${escapeHtml(a.refCode)}</strong> · ${escapeHtml(a.createdAt)} · ${escapeHtml(a.topic)}
+              ${a.resolved ? '<span style="color:var(--emerald);font-weight:700;"> · ✓ Ko‘rib chiqildi</span>' : '<span style="color:var(--gold);font-weight:700;"> · ● Yangi</span>'}
+            </div>
+            <div style="font-weight:700;font-size:0.94rem;">${escapeHtml(a.fullName)} — <a href="tel:${escapeHtml(a.phone)}" style="color:var(--accent);">${escapeHtml(a.phone)}</a></div>
+            <p style="font-size:0.86rem;color:var(--text-secondary);margin-top:6px;">${escapeHtml(a.message)}</p>
+          </div>
+          <div style="display:flex;gap:6px;flex-shrink:0;">
+            ${!a.resolved ? `<button type="button" class="mini-btn" data-resolve-ap="${escapeHtml(a.id)}">✓ Bajarildi</button>` : ''}
+            <button type="button" class="mini-btn danger" data-del-ap="${escapeHtml(a.id)}">✕</button>
+          </div>
+        </div>`
+      )
+      .join('');
+
+    box.querySelectorAll('[data-resolve-ap]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = portalData.appeals.find(x => x.id === btn.dataset.resolveAp);
+        if (item) item.resolved = true;
+        persistAndRefresh();
+        updateUnreadAppealsBadges();
+        renderAdminAppeals();
+      });
+    });
+
+    box.querySelectorAll('[data-del-ap]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        portalData.appeals = portalData.appeals.filter(x => x.id !== btn.dataset.delAp);
+        persistAndRefresh();
+        updateUnreadAppealsBadges();
+        renderAdminAppeals();
+      });
+    });
+  }
+
+  // Pane 6: JSON Eksport / Import, Parol va Reset
+  document.getElementById('exportJsonBtn')?.addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(portalData, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `margilon-26-maktab-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('⬇️ Zaxira nusxa (JSON) yuklab olindi!');
+  });
+
+  document.getElementById('importJsonInput')?.addEventListener('change', function (e) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      try {
+        const imported = JSON.parse(ev.target.result);
+        portalData = { ...DEFAULT_DATA, ...imported };
+        persistAndRefresh();
+        renderAllDynamicContent(true);
+        syncAdminVisibility();
+        showToast('✅ Zaxira fayl muvaffaqiyatli tiklandi!');
+      } catch {
+        showToast("⚠️ Noto'g'ri JSON fayl formati!");
+      }
+    };
+    reader.readAsText(file);
+    this.value = '';
+  });
+
+  document.getElementById('savePassBtn')?.addEventListener('click', () => {
+    const inp = document.getElementById('newAdminPassInp');
+    const newPass = (inp?.value || '').trim();
+    if (newPass.length < 4) {
+      showToast("⚠️ Parol kamida 4 ta belgidan iborat bo'lishi kerak!");
+      return;
+    }
+    portalData.adminPass = newPass;
+    if (persistAndRefresh()) {
+      inp.value = '';
+      showToast('🔑 Admin paroli muvaffaqiyatli yangilandi!');
+    }
+  });
+
+  document.getElementById('factoryResetBtn')?.addEventListener('click', () => {
+    if (!window.confirm("Haqiqatan ham barcha ma'lumotlarni boshlang'ich holatga qaytarmoqchimisiz?")) return;
+    localStorage.removeItem('maktab26_portal_v5');
+    localStorage.removeItem('maktab26_v4');
+    portalData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    currentSlide = 0;
+    renderAllDynamicContent(true);
+    syncAdminVisibility();
+    showToast("↺ Portal boshlang'ich holatga qaytarildi");
+  });
+
+  /* ------------------------------------------------------------------------
+     UMUMIY BOSHLANG'ICH ISHGA TUSHIRISH
+     ------------------------------------------------------------------------ */
+  function renderAllDynamicContent(animateStats = true) {
+    renderStatsAndPassport(animateStats);
+    renderBellSchedule();
+    renderClubs();
+    renderNews();
+    renderGallery();
+  }
+
+  (function bootstrap() {
+    // Agar Toshkent vaqtida 2-smena payti bo'lsa, jadvalni 2-smenaga moslab ochish
+    const tNow = getTashkentNow();
+    if (tNow.totalMin >= parseHM('13:15') && tNow.totalMin <= parseHM('18:45')) {
+      activeShift = 'shift2';
+      document.querySelectorAll('.shift-tab[data-shift]').forEach(t => {
+        t.classList.toggle('active', t.dataset.shift === 'shift2');
+      });
+    }
+
+    applyLanguage(currentLang);
+    renderStatsAndPassport(true);
+    syncAdminVisibility();
+    updateLiveSchoolStatus();
+    setInterval(updateLiveSchoolStatus, 15000);
+  })();
+})();
+  </script>
 </body>
 </html>
