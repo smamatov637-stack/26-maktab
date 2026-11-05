@@ -1,0 +1,18 @@
+{
+  "name": "Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabi",
+  "short_name": "26-Maktab",
+  "description": "Farg'ona viloyati Marg'ilon shahri 26-son umumiy o'rta ta'lim maktabining rasmiy axborot portali.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e40af",
+  "lang": "uz",
+  "icons": [
+    {
+      "src": "./assets/img/emblem.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
