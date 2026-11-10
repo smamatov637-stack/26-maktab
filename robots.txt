@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smamatov637-stack.github.io/26-maktab/sitemap.xml
